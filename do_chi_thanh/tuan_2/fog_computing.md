@@ -18,14 +18,14 @@
     * Yêu cầu nhiều người để cài đặt, duy trì hơn cloud computing.
  
 * Các vấn đề trong Fog Computing
-    * Fog Network: Quản lý mạng lưới, duy trì kết nối, cung cấp dịch vụ 
-    * Quality of Service: Chất lượng dịch vụ: Gồm 4 tiêu chí: 
+    * Fog Network: Quản lý mạng fog, duy trì kết nối, cung cấp dịch vụ.
+    * Quality of Service: Đảm bảo chất lượng dịch vụ dựa trên 4 tiêu chí: 
         * Tính kết nối
         * Tính sẵn dùng
         * Khả năng
         * Độ trễ
     * Interfacing and programming model: Thống nhất mô hình liên kết và lập trình
-    * Computation offloading: Tính toán tải
+    * Computation offloading: Giảm tải công việc tính toán cho fog node: Do Fog Node là các thiết bị có khả năng hạn chế về mặt tính toán, xử lý dữ liệu, do đó, một phần công việc tính toán nặng nhọc phải được gửi lên cloud để thực hiện. Vấn đề là phải xác định được khi nào thì gửi yêu cầu lên cloud.
     * Accouting, billing, monitoring: Giám sát, thanh toán chi phí dịch vụ.
     * Provisioning and resource managerment: Cung cấp và quản lý tài nguyên.
     * Security and Privacy: An toàn và bảo mật. 
@@ -34,15 +34,13 @@
                2. Nhà cung cấp dịch vụ Cloud Computing
                3. Người dùng sở hữu các private cloud, muốn chuyển đổi sang fog và cho thuê các tài nguyên dư thừa.
          * Rogue Fog Node: Các phát hiện một fog node giả mạo
-         * Authentication: Sử dụng NFC, sinh trắc học để xác thực.
+         * Authentication: Vấn đề xác thực: Các thiết bị gửi dữ liệu lên fog node cần xác thực fog node đó đúng là fog node đích, fog node cần xác thực các thiết bị gửi dữ liệu lên không bị giả mạo; xác thực trong quá trình gửi dữ liệu giữa fog node và cloud.
          * Network security: Vấn đề an toàn mạng không dây trong fog network.
          * Secure data storage: Đảm bảo an toàn kho dữ liệu
          * Secure and Private data computation: Đảm bảo an toàn, bảo mật cho dữ liệu tính toán.
          * Privacy
-         
-    * Access Control: Điều khiển truy cập.
-    * Intrust detection: Phát hiện truy cập trái phép
- 
+         * Access Control: Do các mô hình điều khiển truy nhập sẵn có không phù hợp với mô hình của fog nên cần đưa ra các mô hình điều khiển truy nhập mới phù hợp hơn.
+         * Intrust detection: Phát hiện truy cập trái phép
  
 
 * Tham khảo: 
