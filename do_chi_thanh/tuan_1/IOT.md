@@ -36,7 +36,7 @@ Cung cấp dịch vụ cho phép người sử dụng triển khai các ứng d�
 
 #### Infrastructure as  a Service (IaaS): 
 
-Cung cấp cho người dùng các **hạ tầng phần cứng**, người dùng sử dụng các hạ tầng phần cứng đó và triển khai các ứng dụng. Trong mô hình này, người sử dụng phải quan tâm tới các yêu cầu về phầm mềm của ứng dụng cần được triển khai. VD: Hệ điều hành, thư viện lập trình, ngôn ngữ lập trình,...
+Cung cấp cho người dùng các **hạ tầng phần cứng**, người dùng sử dụng các hạ tầng phần cứng đó và triển khai các ứng dụng. Trong mô hình này, người sử dụng phải quan tâm tới các yêu cầu về phầm mềm của ứng dụng cần được triển khai. VD: Hệ điều hành, thư viện lập trình, ngôn ngữ lập trình,...  
 
 ## 4 mô hình triển khai
 
