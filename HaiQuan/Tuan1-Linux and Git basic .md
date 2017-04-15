@@ -145,7 +145,25 @@ Trong Linux shell có 2 loại biến:
 
 #### Init System là gì?
 
-Quá trình khởi động của máy tính bắt đầu với BIOS. Sau khi hoàn thành quá trình kiểm tra phần cứng, BIOS sẽ kích hoạt bootloader. Bootloader sẽ truy cập vào Master Boot Record (MBR) trên thiết bị lưu trữ và bắt đầu chạy nhân Linux
+Quá trình khởi động của máy tính bắt đầu khi có tín hiệu bật máy, BIOS được thực hiện. Chương trình này kiểm tra các thiết bị phần cứng cơ bản của hệ thống. Nếu lỗi thì sẽ báo cho người sử dụng, hoặc tắt máy nếu không thể khắc phục. Nếu không hệ thống sẽ thực hiện khởi động theo chế độ mặc định, tìm kiểm một thiết bị lưu trữ để có thể tải nhân HĐH . Để có thể tải hệ điều hành các hệ thống thường sử dụng sector đầu tiên trên các thiết bị lưu trữ (Master Boot Record). Trong sector này sẽ chứa một chương trình con sẽ khởi động toàn bộ quá trình tải nhân hệ điều hành. Chương trình này sẽ tìm ra các phân vùng tích cực ( chứa hệ điều hành ) (chương trình con có thể là GRUB, LILO...) để tải hệ điều hành 
+
+Trong những năm gần đấy BIOS và MBR đang dần được thay thế bằng UEFI và GPT
+
+So sánh MBR và GPT :
+
+|MBR|GPT|
+|-------|--------|
+|Hỗ trợ ổ cứng tối đa 2.2TB|Hỗ trợ ổ cứng tối đa 9.4ZB|
+|Hỗ trợ tối đa 4 phân vùng trên mỗi ổ đĩa|Hỗ trợ tối đa 128 phân vùng ổ đĩa|
+|Có thể sử dụng trên cả máy dùng BOIS hay UEFI| Chỉ dùng trên các máy tính có UEFI|
+
+So sánh BOIS và UEFI :
+
+|BOIS|UEFI|
+|------|------|
+|Không hỗ trợ GPT|Hỗ trợ cả MBR và GPT|
+|Tốc độ khởi động trung bình|Tốc độ khởi động nhanh|
+
 
 Init System là tiến trình đầu tiên chạy khi mà nhân Linux được kích hoạt. Process ID của Init System luôn là 1. Nó phải khởi động tất cả các tiến trình, dịch vụ cần thiết để hệ điều hành hoạt động.
 
@@ -187,7 +205,7 @@ Tùy chọn thường dùng:
 	
 	- reboot.target: khởi động lại
 	
-	Ngoài ra người dùng có thể tự định nghĩa các `.target` mới 
+	Ngoài ra người dùng có thể tự định nghĩa các `target` mới 
 
 
 ## Phần 2. Git
@@ -205,6 +223,13 @@ Cơ chế quản lý phiên bản 1 cách thô sở nhất đó là copy các fi
 ### 2. Basic Git command and workflow
 
 Mỗi tệp tin trong Git được quản lý dựa trên ba trạng thái: committed, modified, và staged. Committed có nghĩa là dữ liệu đã được lưu trữ một cách an toàn trong cơ sở dữ liệu. Modified có nghĩa là bạn đã thay đổi tệp tin nhưng chưa commit vào cơ sở dữ liệu. Và staged là bạn đã đánh dấu sẽ commit phiên bản hiện tại của một tập tin đã chỉnh sửa trong lần commit sắp tới. Điều này tạo ra ba phần riêng biệt của một dự án sử dụng Git: thư mục Git (git directory), thư mục làm việc(working directory), và khu vực tổ chức (staging area).
+
+![](https://git-scm.com/figures/18333fig0106-tn.png) 
+
+
+Tệp tin trong `working directory` có thể có 2 trạng thái: `tracked` hoặc `untracked`. Tệp tin `tracked` là tệp tin đã có mặt trong `snapshot` trước, chúng có thể là `unmodified`, `modified`, hoặc `staged`. Tệp tin `untracked` là các tập tin chưa có trong một `snapshot` trước hay trong `staging area`. Ban đầu khi tạo ra `clone` một repository thì tất cả các tệp tin sẽ ở trạng thái `tracked` và `unmodified` vì bạn mới tải chúng về và chưa thực hiện bất kỳ thay đổi nào. Khi bạn chỉnh sửa các tệp tin này thì bạn phải `stage` các tệp tin này và `commit` lại chúng 
+
+![](https://git-scm.com/figures/18333fig0201-tn.png) 
 
 **Tiến trình công việc (workflow)**:
 
