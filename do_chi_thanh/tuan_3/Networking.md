@@ -83,37 +83,26 @@
    * Kiểm soát luồng: Đảm bảo bên nhận không quá tải
    * Kiểm soát lỗi: Phát hiện và sửa lỗi bit trên các khung tin: Sử dụng chủ yếu mã vòng CRC
    
+* Các đặc điểm chính: 
+   * Điều khiển truyền dữ liệu trên liên kết vật lý giữa 2 nút mạng kế tiếp
+   * Triển khai trên mọi nút mạng, trên cạc mạng hoặc chip tích hợp
    
-   
- 
+* Định địa chỉ MAC:
+   * Địa chỉ MAC gồm 48 bit, được quản lý bởi IEEE
+   * Mỗi cổng mạng được gán một địa chỉ MAC
+   * Địa chỉ MAC của một thiết bị là không đổi
+         --> Không thể thay đổi địa chỉ vật lý
+   * ARP : Tầng mạng sử dụng địa chỉ IP, tầng liên kết sử dụng địa chỉ MAC, do đó cần sử dụng một bảng để ánh xạ tương ứng địa chỉ IP và địa chỉ MAC của thiết bị.
+  
+* Điều khiển truy nhập đường truyền
+   * Các dạng liên kết đường truyền : Điểm - điểm và điểm - đa điểm
+   * Các phương pháp điều khiển truy nhập
+      * Phân tài nguyên sử dụng kỹ thuật chia kênh
+      * Truy cập ngẫu nhiên
+      * Lần lượt
       
+* Chuyển tiếp dữ liệu trong mạng LAN
+    * Sử dụng địa chỉ MAC
+    * Cơ chế tự học
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-     
-     
+  
