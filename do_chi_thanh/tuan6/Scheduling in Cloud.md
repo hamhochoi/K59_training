@@ -62,7 +62,7 @@
 
 Tài liệu tham khảo:
   1. http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.401.8928&rep=rep1&type=pdf
-  2. http://ijcsit.com/docs/Volume%207/vol7issue3/ijcsit2016070309.pdf
+  2. https://www.researchgate.net/file.PostFileLoader.html?id=588b43dedc332d2885646a64&assetKey=AS%3A455125929074691%401485521885745
   3. http://gridbus.csse.unimelb.edu.au/papers/Workflow_JSP_2005.pdf
   4. http://www.scielo.edu.uy/scielo.php?script=sci_arttext&pid=S0717-50002014000100003
   5. https://www.ijsr.net/archive/v3i5/MDIwMTMxOTc0.pdf
