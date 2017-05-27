@@ -1,4 +1,4 @@
-#Scheduling in cloud computing
+# Scheduling in cloud computing
 
 - Bài toán mapping task trong môi trường phân tán thuộc bài toán NP khó, không có thuật toán giải trong thời gian đa thức
 
@@ -19,9 +19,19 @@
 - Lưu các yêu cầu vào một hàng đợi
 - Xử lý các yêu cầu theo thời gian, lần lượt từ các yêu cầu đến trước được phục vụ trước.
 
+## Thuật toán Min-Min[5]
+- Công việc có thời gian tính toán ngắn nhất được thực hiện trước, công việc có thời gian tính toán lâu được thực hiện sau.
+- Ưu điểm: Các công việc nhỏ không phải đơi lâu
+- Nhược điểm: Các công việc lớn phải đợi lâu mới được thực hiện
 
+## Thuật toám Max-Min[5]
+- Công việc có thời gian tính toán lớn nhất được thực hiện trước, công việc có thời gian tính toán nhanh được thực hiện sau
+- Ưu điểm: Các công việc lớn không phải đơi lâu
+- Nhược điểm: Các công việc nhỏ phải đợi lâu mới được thực hiện
 
-
+## Thuật toán most-fit[5]
+- Thực hiện các công việc có thười gian thù hợp nhất trước
+- Không tối ưu
 
 ## Thuật toán Round Robin
 - Phân bố các VM trên các máy vật lý một cách lần lượt, đều nhau
@@ -42,7 +52,9 @@
   - Lặp lại bước 2, 3 cho tới khi hội tụ
   
 
-##
+## Giải thuật bầy đàn [4]
+
+## 
 
 
 
@@ -52,6 +64,8 @@ Tài liệu tham khảo:
   1. http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.401.8928&rep=rep1&type=pdf
   2. http://ijcsit.com/docs/Volume%207/vol7issue3/ijcsit2016070309.pdf
   3. http://gridbus.csse.unimelb.edu.au/papers/Workflow_JSP_2005.pdf
+  4. http://www.scielo.edu.uy/scielo.php?script=sci_arttext&pid=S0717-50002014000100003
+  5. https://www.ijsr.net/archive/v3i5/MDIwMTMxOTc0.pdf
   
   
   
