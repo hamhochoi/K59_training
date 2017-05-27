@@ -41,7 +41,7 @@
 ## Giải thuật di truyền[3]
 
 - Là một giải thuật tìm kiếm một solution cho một task dựa trên chiến lược lựa chọn tự nhiên (nature selection strategy)
-- Tìm ra một solution có phẩm chất cao từ một miền tìm kiếm rộng lớn trong thời gian đa thức bằng việc áp dụng nguyên tắc của sự phát triển
+- Tìm ra một solution có phẩm chất cao từ một miền tìm kiếm rộng lớn trong thời gian đa thức bằng việc áp dụng nguyên tắc của sự tiến hóa
 - Một giải thuật di truyền bao gồm solution tốt nhất đã tìm được và các solution trong các vùng tìm kiếm mới
 - Một giải thuật di truyền sẽ duy trì một số lượng các cá thể được tiến hóa theo các thế hệ
 - Phẩm chất của một cá thể được xác định bởi một hàm đánh giá, hàm này chỉ ra độ tốt của một solution so với các solution khác.
@@ -66,6 +66,9 @@ Tài liệu tham khảo:
   3. http://gridbus.csse.unimelb.edu.au/papers/Workflow_JSP_2005.pdf
   4. http://www.scielo.edu.uy/scielo.php?script=sci_arttext&pid=S0717-50002014000100003
   5. https://www.ijsr.net/archive/v3i5/MDIwMTMxOTc0.pdf
+  6. http://www.sersc.org/journals/IJGDC/vol9_no7/10.pdf
+  7. http://research.ijcaonline.org/volume120/number6/pxc3903964.pdf
+  8. http://www.ijeit.com/vol%202/Issue%2011/IJEIT1412201305_25.pdf
   
   
   
