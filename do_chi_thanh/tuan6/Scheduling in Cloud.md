@@ -73,6 +73,34 @@ Tài liệu tham khảo:
   
   
   
+  ---------------------------------------------------
+- Các tài nguyên trong Cloud
+  - Storage
+  - Ram
+  - CPU
+  - Năng lượng tiêu thụ
+  - Băng thông tiêu thụ
+  
+  
+- Các thuật toán Schedule trên tầng Cloud
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+- Thuật toán lập lịch để giảm tiêu thụ năng lượng
+  - http://esatjournals.net/ijret/2014v03/i03/IJRET20140303071.pdf
+  
+ 
+ 
+ 
+ 
+ 
+ 
