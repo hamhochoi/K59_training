@@ -74,31 +74,41 @@ Tài liệu tham khảo:
   
   
   ---------------------------------------------------
-- Các tài nguyên trong Cloud
+## Các tài nguyên trong Cloud
   - Storage
-  - Ram
+  - Memory
   - CPU
   - Năng lượng tiêu thụ
   - Băng thông tiêu thụ
   
   
-- Các thuật toán Schedule trên tầng Cloud
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+## Các thuật toán Schedule trên tầng Cloud
+
 - Thuật toán lập lịch để giảm tiêu thụ năng lượng
   - http://esatjournals.net/ijret/2014v03/i03/IJRET20140303071.pdf
   
- 
+- Thuật toán giảm băng thông tiêu thụ
+  - http://cgi.di.uoa.gr/~ad/M155/Papers/ContentICDCS13.pdf: 
+  - Tối ưu dựa trên nội dung của các VM image: Tính toán độ tương đồng của các VM trên các máy chủ vật lý với VM image cần triển khai. Tìm VM trên máy chủ vật lý có độ tương đồng cao nhất, tính toán phần sai khác và chỉ truyền đi phần sai khác tới các VM trên máy chủ vật lý. Từ đó trên máy chủ vật lý có thể tạo ra VM cần triển khai. Do đó giảm được lượng lớn băng thông truyền qua mạng.
+  
+- Thuật toán migrate VM để giảm cache-miss và trễ truy cập memory.
+  - https://www.usenix.org/system/files/conference/hotcloud12/hotcloud12-final16.pdf
+  - http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.401.8928&rep=rep1&type=pdf: 
+  - Trong mỗi máy chủ vật lý có một bộ giám sát tình trạng cach-miss và hiệu năng của hệ thống. Định kỳ bộ phận giám sát sẽ gửi thông tin về cho cloud scheduler. Tùy vào tình trạng của mỗi máy chủ, cloud scheduler sẽ ra quyết định để di chuyển các VM để giảm tổng cach-miss và thời gian trễ để truy cập memory.
+  
+- Một phương pháp luận về cân bằng tải cho server
+  - https://www.cse.iitb.ac.in/~sahoo/papers/cloud2011_mayank.pdf
+  - http://www.ijcaonline.org/research/volume136/number9/chakankar-2016-ijca-908552.pdf
+  - Các yêu cầu về tài nguyên (CPU, memory, network) được biểu diễn dưới dạng vector RRV
+  - Tài nguyên tiêu thụ của mãy chủ vật lý được biểu diễ dưới dạng vector RUV
+  - Tổng các tài nguyên của PM được biểu diễn dưới dạng vector TCV
+  - Phương pháp này tập trung vào cân bằng các tài nguyên trên server nhưng chỉ đưa ra lý thuyết, không có dẫn chứng thực tế.
+  
+- Thuật toán dựa trên thời gian thực hiện để phân bố VM vào PM
+  - Chọn ngẫu nhiên một VM
+  - Phân bố nó vào PM nào có thời gian thực hiện ngắn nhất
+  - https://core.ac.uk/display/36727972?source=3&algorithmId=14&similarToDoc=24348762&similarToDocKey=CORE&recSetID=46c2dd04-edb4-453c-a4f4-7ed00f8bf6e5&position=1&recommendation_type=same_repo&otherRecs=36727972,24943688,25047985,42506237,35096244
+  
  
  
  
