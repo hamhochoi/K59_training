@@ -6,15 +6,25 @@ Chuẩn bị một thẻ SD và đầu đọc thẻ nhớ để cài đặt.
 
 Tải `Raspbian` từ địa chỉ https://www.raspberrypi.org/downloads/raspbian/ . Trong đây có: RASPBIAN JESSIE WITH DESKTOP và RASPBIAN JESSIE LITE. Ta chọn RASPBIAN JESSIE WITH DESKTOP để cài đặt ( có thể sử dụng được giao diện nếu muốn ) 
 
-Sau khi tải xong RASPBIAN về máy ta cắm thẻ nhớ vào đầu đọc thẻ và sử dụng `Etcher` ( hoặc phần mềm nào khác ) để Burn file images Raspbian vừa tải vào thẻ SD. Link download Etcher: https://etcher.io/ . Cái này chỉ cần vào ấn ấn và tận hưởng. 
+Sau khi tải xong RASPBIAN về máy ta cắm thẻ nhớ vào đầu đọc thẻ và sử dụng `Etcher` ( hoặc phần mềm nào khác ) để Burn file images Raspbian vừa tải vào thẻ SD. Link download Etcher: https://etcher.io/ . Cái này chỉ cần vào chọn image và đợi kết quả. 
+
+Nếu không muốn tải Etcher và đang ở trên Linux thì ta có thể sử dụng các câu lệnh:
+
+- `df -h ` : để xem thiết bị đã mount trên máy và chú ý đến thẻ nhớ. Giả sử trường hợp của mình là `/dev/sdb`
+
+- Vào thư mục đã giải nén image chạy lệnh: `sudo dd bs=4M if=file_image of=tên_vừa_có_ở_lệnh_trước conv=fsync`
+
+- Đợi quá trình kế thúc và eject (unmount) thẻ nhớ trước khi rút ra khỏi máy 
 
 ## Cấu hình static IP và SSH 
 
-Trên máy Ubuntu, vào phần `Edit Connections...` (chỗ cái biểu tượng mạng góc phải phía trên màn hình ). Nó hiện như hình :
+### Các thiết lập của máy tính 
+
+Trên máy Ubuntu, vào phần `Edit Connections...` (biểu tượng mạng góc phải phía trên màn hình ). Nó hiện như hình :
 
 ![](./image/editConnection.png) 
 
-Chọn ấn vào phần `Ethernet` và chọn `Add` sẽ có điều bất ngờ:
+Chọn ấn vào phần `Ethernet` và chọn `Add`:
 
 ![](./image/connectionType.png) 
 
@@ -24,21 +34,25 @@ Chọn `Create...` . Cửa sổ tiếp theo hiện ra ta đặt tên cho kết n
 
 Ấn `Save`. Các bước trên để phục vụ cho việc khi ta sử dụng dây mạng nối từ máy tính sang Pi.
 
-Giờ cắm thẻ vào khe trên Pi, cắm dây mạng từ Pi vào máy tính, cắm dây nguồn từ Pi vào ổ điện. Nếu kết nối vừa tạo nó connect thành công thì chuẩn rồi đấy. Nhưng ta chưa kết nối được đến Pi đâu vì Pi chưa có IP.
+Giờ cắm thẻ vào khe trên Pi, cắm dây mạng từ Pi vào máy tính, cắm dây nguồn từ Pi vào ổ điện. Nếu kết nối vừa tạo hiện `connected` trên máy tính thì mạng ta vừa tạo đã thông. Nhưng ta chưa kết nối được đến Pi vì Pi chưa có IP.
 
-Giờ ta sẽ tạo IP tĩnh cho nó. Khi connect thành công thì ta vào `Connection Information` cũng ở góc phải phía trên màn hình máy tính thân thương của chúng ta. Chọn vào cái tên mạng mà chúng ta vừa tạo ở bước trước. Tên mạng mình tạo là `pi` nên nó sẽ như hình: 
+Giờ ta sẽ tạo IP tĩnh cho nó. Khi connect thành công thì ta vào `Connection Information` vẫn ở góc phải phía trên màn hình máy tính. Chọn vào cái tên mạng mà chúng ta vừa tạo ở bước trước. Tên mạng đã tạo là `pi` nên nó sẽ như hình: 
 
 ![](./image/connectInformation.png)
 
 Chú ý đến phần `IP Address` ở `IPv4` là `10.42.0.1` và `Subnet Mask` là `255.255.255.0`. Giờ thì rút nguồn Pi, rút mạng Pi, rút thẻ nhớ Pi. Cắm thẻ nhớ vào đầu đọc thẻ và cắm vào máy tính của ta. 
 
-Truy cập vào file `etc/dhcpcd.conf`. Nhớ phải vào cái ổ có etc rồi mới dùng lệnh nhe. Đừng vào ổ boot. :))))
+
+### Các thiết lập cho Pi 
+
+Truy cập vào file `etc/dhcpcd.conf`.
 
 ~~~
 sudo nano etc/dhcpcd.conf 
 ~~~
 
 Sau khi vào được file ta thêm đoạn sau vào cuối file 
+
 ~~~
 
 # Custom static IP address for eth0.
@@ -49,23 +63,61 @@ interface eth0
 
 ~~~
 
-Cái `10.42.0.11` là địa chỉ IP mà mình sẽ đặt cho thằng Pi với subnet là `24` (do mạng mình là 255.255.255.0 lúc trên ghi đấy.. hihi ). Hai cái thông số còn lại cho nó đến cái máy tính của mình. Rồi `Ctrl + X` để lưu lại. 
+Địa chỉ `10.42.0.11` là địa chỉ IP mà mình sẽ đặt cho thằng Pi với subnet là `24` (do mạng vừa tạo là 255.255.255.0 ). Hai cái thông số còn lại trỏ  đến cái máy tính của mình. Rồi `Ctrl + X` để lưu lại. 
 
-Xong bước trên là ta đã có IP tĩnh cho PI rồi ta chuyển sang bước SSH . ( Nếu không thành công thì anh em đập đi xây lại nhé. Vì nhiều lúc cũng ko giải thích được đâu. Mình bị 1 lần rồi. Như một phép màu vậy !!! ). 
+Xong bước trên là ta đã có IP tĩnh cho PI và giờ ta chuyển sang bước SSH .
 
-Thiết lập IP để làm gì?. Cũng chỉ là để ta SSH vào Pi thôi ( vì nghèo không có tiền mua HDMI nên thế đấy ). Không may thay thằng từ thằng Pi 3 trở đi theo mình hóng được thì nó ko để SSH là mặc định nữa nên ta phải bật nó lên. Thế bật bằng cách nào. Yên tâm đã có Quân đây!!!! Vào ổ `boot` ( nhớ là vẫn cắm thẻ nhớ vào máy tính của mình nhé chứ ko cắm Pi đâu ) tạo một file `ssh`nhớ là file có tên là `ssh` và ko có phần mở rộng, trong file này cũng chẳng cần có cái gì. Tạo file `ssh` xong ta có thể rút thẻ nhớ ra và cắm vào pi rồi, cắm mạng từ pi vào máy tính, cắm điện từ pi vào ổ điện. 
+Thiết lập IP là để ta SSH vào Pi nhưng không may thay thằng từ thằng Pi 3 trở đi SSH là mặc định nữa nên ta phải bật nó lên. Vào ổ `boot` ( nhớ là vẫn cắm thẻ nhớ vào máy tính của mình nhé chứ ko cắm Pi ) tạo một file `ssh`nhớ là file có tên là `ssh` và ko có phần mở rộng, trong file không cần có dữ liệu. Tạo file `ssh` xong ta có thể rút thẻ nhớ ra và cắm vào pi, cắm dây mạng từ pi vào máy tính, cắm điện từ pi vào ổ điện. 
 
 Bật terminal máy tính lên: 
 ~~~
 	sudo ssh pi@10.42.0.11
 ~~~
 
-`10.42.0.11` là cái IP mà mình đặt cho Pi ở mấy bước trên. Tài khoản mặc định của Pi3 là : 
+`10.42.0.11` là cái IP đã đặt cho Pi ở mấy bước trên. Tài khoản mặc định của Pi3 là : 
 ~~~
  user: pi
  password: raspberry 
 ~~~
 
+## Thiết lập Wifi cho Pi 
+
+Đầu tiên ta chạy lệnh `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf` để thêm vào cuối file `wpa_supplicant.conf` thông tin của wifi dự định kết nối: 
+
+~~~
+network={
+    ssid="tên_wifi "
+    psk="password_wifi"
+}
+~~~
+
+Tuy nhiên để bảo mật hơn ta nên sử dụng lệnh : ` wpa_passphrase tên_wifi password_wifi `. Lệnh này sẽ mã hóa password của wifi để bảo mật hơn. Ta được kết quả: 
+
+~~~
+network={
+	ssid="tên_wifi"
+	#psk="password_wifi"
+	psk=78c597cdabe6262dfca88ddd0977c6df1906126af588b1a2362bfca290992892
+}
+~~~
+
+Ta thêm kết quả trên vào file  `/etc/wpa_supplicant/wpa_supplicant.conf`. Chú ý xóa dòng ` #psk="password_wifi" `
+
+Khởi động lại Pi bằng `sudo reboot` ta đã có thể kết nối tới wifi. Nhưng lúc này Pi đang sử dụng một định chỉ IP động dẫn đến nhiều trường hợp bất tiện (ví dụ khi muốn ssh). Nên ta sẽ đặt một địa chỉ IP tĩnh cho Pi khi sử dụng wifi. 
+
+Sử dụng lệnh `sudo nano /etc/dhcpcd.conf` và thêm vào cuối file: 
+
+~~~
+
+# Custom static IP address for wlan0.
+interface wlan0
+    static ip_address=192.168.0.188/24
+    static routers=192.168.0.1
+    static domain_name_servers=192.168.0.1
+
+~~~
+
+Các thông số Subnet, routers, DNS xem tại `Connection Information` tương ứng với wifi. Sau đó ta khởi động lại Pi. Giờ ta có thể SSH tới Pi qua Wifi tại địa chỉ 192.160.0.188. 
 
 ## Cài đặt Sensor nhiệt độ DS18B20
 
@@ -93,7 +145,7 @@ Hiện tại ta chú ý đến 3 loại:
 
 ![](./image/ds18b20.png)
 
-Hình trên thể hiện thứ tự các chân của sensor. `GND` là chân nối đất, `DQ` là chân dữ liệu, còn `Vdd` là chân cấp nguồn. 
+Hình trên thể hiện thứ tự các chân của sensor. `GND` là chân nối đất, `DQ` là chân dữ liệu, còn `Vdd` là chân cấp nguồn. Datasheet của DS18B20 [tại đây](https://datasheets.maximintegrated.com/en/ds/DS18B20.pdf) 
 
 Mọi người có thể tham khảo hình:
 
@@ -117,17 +169,36 @@ dtoverlay=w1-gpio
 
 Sau đó ta chạy `sudo reboot` để khởi động lại Pi. Sau đó ssh lại và chạy `lsmod` nếu ra kết quả có đoạn sau thì tức là đã load được driver: 
 
-![](./image/lsmod.png)
 
-Để chắc ăn thì ta có thể vào đường dẫn 
-image
-![](./image/lsSensor.png)
+~~~
+Module                  Size  Used by
 
-Nếu thấy thư mục nào có địa chỉ 28-xxxxxxxx (28 kia là cái mã của thằng sensor DS18B20 còn cái xxxxxxx kia kiểu như id để xác định các sensor khi có nhiều sensor DS18B20 khác nhau) như trên hình tức là Pi đã nhận được dữ liệu từ sensor. Nếu vẫn không tin thì xem tiếp hình dưới: 
+w1_therm                6401  0 
+w1_gpio                 4818  0 
+wire                   32619  2 w1_gpio,w1_therm
+~~~
 
-![](./image/catSensor.png)
 
-`t=33562` thể hiện nhiệt độ đang là 33562/1000 = 33.562 (nóng khiếp)
+Để chắc chắn thì ta có thể vào đường dẫn 
+
+~~~
+
+pi@raspberrypi:~ $ ls /sys/bus/w1/devices
+28-0516a1383dff  w1_bus_master1
+
+~~~
+
+Nếu thấy thư mục nào có địa chỉ 28-xxxxxxxx (28 kia là cái mã của thằng sensor DS18B20 còn cái xxxxxxx kia kiểu như id để xác định các sensor khi có nhiều sensor DS18B20 khác nhau) như trên hình tức là Pi đã nhận được sensor. Tiếp tục sử dụng câu lệnh sau để có thể xem được dữ liệu: 
+
+~~~
+
+pi@raspberrypi:~ $ cat /sys/bus/w1/devices/28-0516a1383dff/w1_slave 
+0b 02 4b 46 7f ff 0c 10 5d : crc=5d YES
+0b 02 4b 46 7f ff 0c 10 5d t=32687
+
+~~~
+
+`t=32687` thể hiện nhiệt độ đang là 32687/1000 = 32.687 độ C
 
 Sử dụng đoạn code Python sau để hiển thị dữ liệu: 
 
@@ -172,7 +243,15 @@ Cài đặt Docker lên Raspberry Pi: `curl -sSL https://get.docker.com | sh` n�
 
 **Chú ý:** : Các image mà mình thường cài trên máy thông thường sẽ không cài được trên Raspberry vì nó sử dụng kiến trúc ARM chứ không phải như x86_64 như các máy tính thông thường ( kinh nghiệm sau khi thấy các container lăn ra chết khi vừa run). Vì vậy khi tìm image mọi người nên tìm các image build trên arm hoặc nó chỉ rõ là cho Pi3. Sau đây là một số image đã chạy được: 
 
-![](./image/dockerimage.png)
+~~~
+REPOSITORY                                 TAG                 IMAGE ID            CREATED             SIZE
+homeassistant/raspberrypi3-homeassistant   latest              bf6886e10fe3        3 days ago          869MB
+easypi/influxdb-arm                        latest              aa6415ff32b7        5 weeks ago         177MB
+easypi/grafana-arm                         latest              d97a4fd1503c        5 weeks ago         247MB
+easypi/mosquitto-arm                       latest              eee1bd81433d        2 months ago        6.7MB
+
+
+~~~
 
 Ta run các container Grafana, Influxdb, Mosquitto. Để đơn giản các container ta đều publish một cổng cho dễ cài đặt:
 
@@ -254,7 +333,7 @@ homeassistant:
 # Show links to resources in log and frontend
 introduction:
 
-# Enables the frontend
+# Enables the frontendhttps://datasheets.maximintegrated.com/en/ds/DS18B20.pdf
 frontend:
 
 # Enables configuration UI
@@ -362,7 +441,22 @@ docker run --name home -dit -v /home/pi/haiquan5396/custom-ha:/config homeassist
 
 ~~~
 
-Bây giờ ta có thể vào `10.42.0.11:3000` để có thể cấu hình Grafana lấy dữ liệu từ Influxdb. Kết quả sẽ được như sau: 
+Bây giờ ta có thể vào `10.42.0.11:3000`để có thể cấu hình Grafana lấy dữ liệu từ Influxdb. Kết quả sẽ được như sau: 
 
 
 ![](./image/result.png)
+
+
+## Tài liệu tham khảo 
+
+- https://www.raspberrypi.org/documentation/installation/installing-images/linux.md
+
+- https://www.lifewire.com/tour-of-the-raspberry-pi-gpio-4063016
+
+- http://www.jumpnowtek.com/rpi/Using-DS18B20-1-wire-Temp-Sensors-with-the-Raspberry-Pi.html
+
+- http://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/
+
+- https://datasheets.maximintegrated.com/en/ds/DS18B20.pdf
+
+
