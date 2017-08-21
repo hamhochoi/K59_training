@@ -9,7 +9,8 @@
 ## Tiêu chuẩn chấp nhận một giải pháp 
 - Gọi trạng thái hiện tại là s, trạng thái tiếp theo là s'; e = E(s), e' = E(s') lần lượt làm mức năng lượng của từng trạng thái.
 T là nhiệt độ của trạng thái s.
-- Xác suất để thuật toán SA chọn đi từ trạng thái s tới s' có năng lượng e'>e (tức là đạt trạng thái **tồi hơn** trạng thái hiện tại) là **P = exp( (e-e')/kT)** với k là hằng số Bolzmann. Để ý thấy xác suất P luôn nằm trong [0,1].
+- Xác suất để thuật toán SA chọn đi từ trạng thái s tới s' có năng lượng e'>e (tức là đạt trạng thái **tồi hơn** trạng thái hiện tại) là **P = exp( (e-e')/kT)** với k là hằng số Bolzmann.(
+    k = 1,38(24).10-23 J/K = 8,617(15).10-5 eV/K ) Để ý thấy xác suất P luôn nằm trong [0,1].
 - Nếu năng lượng giảm, thuật toán luôn luôn đi tới trạng thái mới; nếu năng lượng tăng, thuật toán đi tới trạng thái mới với xác suất như trên. Đặt r là một số ngẫu nhiên trong [0,1]. Nếu P > r, thuật toán sẽ đi tới trạng thái mới có mức năng lượng cao hơn.
 ## Thay đổi nhiệt độ T như thế nào? (Cooling Schedule)
 - Cooling Schedule bao gồm 4 thành phần:
