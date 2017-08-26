@@ -55,7 +55,8 @@
 
 - Nhờ LSTM, GRU mà RNN được sử dụng phổ biến trong những năm gấn đây, cụ thể là trong xử lý ngôn ngữ tự nhiên NLP.
   
-
+# Về phần NLP và bài tập củng cố các kiến thức trên xem trong [1]  
+  
 # Tài liệu tham khảo:
 1. [Hands on Machine Learning with scikit learn and tensorflow concepts, tools and techniques to build intelligient](http://gen.lib.rus.ec/search.php?req=Hands+on+Machine+Learning+with+scikit+learn+and+tensorflow&open=0&res=25&view=simple&phrase=0&column=def) - Aurelien Geron - Chương 14
 2. 
