@@ -43,17 +43,18 @@
           - output gate: Điều khiển xem phần nào của long term state nên được đọc và output ra tại thời điểm hiện tại cho h(t) và y(t).
 - Tóm lại, LSTM học cách phát hiện xem phần nào là thông tin quan trọng (input state), lưu nó vào long term memory, lưu trữ nó đến khi nào vẫn còn cần thiết(forget state) và trích xuất nó khi nào cần.
 
-## Peephole Connection
-- 
+## Peephole Connections
+- Là một biến thể của LSTM được tạo thêm các kết nối gọi là peephole connections. Previous long term state c(t-1) được thêm vào như input của controller của forget state và input state; current long term state c(t) được thêm vào như input của controller của output state.
 
+## GRU ( Gated Recurrent Unit)
+- Là một biến thể khác của LSTM. Nó là một phiên bản được đơn giản hóa của LSTM cell, và có hiệu quả tương đương.
+- Các phần chính được đơn giản hóa:
+  - Cả 2 vector trạng thái được gộp vào h(t).
+  - Một gate controller điều khiển cả forget gate và input gate. Nếu gate controller output ra 1 thì input gate được mở và forget gate bị đóng. Nếu gate controller output ra 0 thì ngược lại. Hay nói cách khác, khi nào memory phải được lưu trữ thì vị trí nó sẽ được lưu vào phải được xóa đi trước.
+  - Không có output gate, vector trạng thái đầy đủ sẽ được output tại mỗi time step. Tuy nhiên, có một gate controller mới điều khiển thành phần nào của previous state sẽ được hiển thị lên main layer.
 
-
-
-
-
-
-
-
+- Nhờ LSTM, GRU mà RNN được sử dụng phổ biến trong những năm gấn đây, cụ thể là trong xử lý ngôn ngữ tự nhiên NLP.
+  
 
 # Tài liệu tham khảo:
 1. [Hands on Machine Learning with scikit learn and tensorflow concepts, tools and techniques to build intelligient](http://gen.lib.rus.ec/search.php?req=Hands+on+Machine+Learning+with+scikit+learn+and+tensorflow&open=0&res=25&view=simple&phrase=0&column=def) - Aurelien Geron - Chương 14
