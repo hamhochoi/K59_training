@@ -14,10 +14,12 @@
 - Các thuật ngữ, đặc điểm của RNN: (có thể tham khảo tại [1] để có hình minh họa cụ thể hơn)
   - Time step: Một thời điểm t nào đó
   - Tại mỗi time step, ta có một recurrent layer
-  - Cell: Một hidden layer trong một recurrent layer 
+  - Cell (Memory cell): Một hidden layer trong một recurrent layer 
   - n_neurals: số neural trong hidden layer tại mỗi cell
   - Tại mỗi neural có 2 tập weight: một cho x(t) là Wx, một cho y(t-1) là Wy
   - Số neural trong hidden layer phải bằng số neural trong output.
+  - Không giống mạng neural cơ bản sử dụng các tham số khác nhau tại mỗi hidden layer, trong RNN, mỗi recurrent layer có các tham số giống nhau, tức là thực hiện các task như nhau tại mỗi time step, chỉ khác nhau input. Điều này giảm đáng kể số lượng tham số cần phải học.
+  - Không nhất thiết tại mỗi recurrent layer phải có các output tương ứng. (xem các kiểu RNN).
 - Các kiểu RNN: 
   - Sequence to sequence: input là một chuỗi giá trị theo thời gian, output là một chuỗi giá trị ở đầu ra tương ứng
   - Sequence to vector: input là một chuỗi giá trị theo thời gian, output là một giá trị tại thời điểm t cuối cùng, các giá trị output tại các thời điểm khác bị bỏ qua.
@@ -42,6 +44,8 @@
           - input gate: Điều khiển thêm một số phần (của output của lớp chính) vào long term state.
           - output gate: Điều khiển xem phần nào của long term state nên được đọc và output ra tại thời điểm hiện tại cho h(t) và y(t).
 - Tóm lại, LSTM học cách phát hiện xem phần nào là thông tin quan trọng (input state), lưu nó vào long term memory, lưu trữ nó đến khi nào vẫn còn cần thiết(forget state) và trích xuất nó khi nào cần.
+- **Giải thích chi tiết cách hoạt động LSTM: [2]**
+
 
 ## Peephole Connections
 - Là một biến thể của LSTM được tạo thêm các kết nối gọi là peephole connections. Previous long term state c(t-1) được thêm vào như input của controller của forget state và input state; current long term state c(t) được thêm vào như input của controller của output state.
@@ -59,4 +63,4 @@
   
 # Tài liệu tham khảo:
 1. [Hands on Machine Learning with scikit learn and tensorflow concepts, tools and techniques to build intelligient](http://gen.lib.rus.ec/search.php?req=Hands+on+Machine+Learning+with+scikit+learn+and+tensorflow&open=0&res=25&view=simple&phrase=0&column=def) - Aurelien Geron - Chương 14
-2. 
+2. http://colah.github.io/posts/2015-08-Understanding-LSTMs/
