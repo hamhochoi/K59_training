@@ -246,6 +246,7 @@ Cài đặt Docker lên Raspberry Pi: `curl -sSL https://get.docker.com | sh` n�
 ~~~
 REPOSITORY                                 TAG                 IMAGE ID            CREATED             SIZE
 homeassistant/raspberrypi3-homeassistant   latest              bf6886e10fe3        3 days ago          869MB
+homeassistant/raspberrypi-homeassistant   latest              bcc34890ce9a        5 days ago          869MB
 easypi/influxdb-arm                        latest              aa6415ff32b7        5 weeks ago         177MB
 easypi/grafana-arm                         latest              d97a4fd1503c        5 weeks ago         247MB
 easypi/mosquitto-arm                       latest              eee1bd81433d        2 months ago        6.7MB
