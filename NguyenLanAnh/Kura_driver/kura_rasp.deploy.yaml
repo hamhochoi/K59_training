@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1 
+kind: Deployment
+metadata:
+  name: kura-rasp-deploy
+spec:
+  replicas: 1 
+  selector:
+    matchLabels:
+      app: kura-rasp
+  template:
+    metadata:
+      labels:
+        app: kura-rasp
+    spec:
+      containers:
+      - name: kura-rasp
+        image: "https://hub.docker.com/r/rhiot/kura-raspberry-pi" 
+        ports:
+        - containerPort: 80
+
+
+ 
