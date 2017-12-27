@@ -18,7 +18,7 @@
   - Khi một Link được thiết lập, một Thing sẽ phản ứng lại các sự kiện gửi tới một Item được liên kết với Channel tương ứng. Ngược lại, nó (Thing) cũng chủ động gửi các sự kiện cho các Items mà Link với các Channels của nó.
   - Một Channel có thể được Link vào nhiều Items; một Item có thể được Link vào nhiều Channels.
 ## Nhận xét
-  - Có thể coi Things là một vật (vd: ô tô, điện thoại, hay một cái hộp trên trung tâm HPCC); Các Items là các cảm biến, bóng đèn, ...; Các Channels là các cổng giao tiếp; Links là các liên kết giữa Things và các Items.
+  - Có thể coi Things là một vật (vd: ô tô, điện thoại, hay một cái hộp trên trung tâm HPCC); Các Items là các cảm biến, bóng đèn, ...; Các Channels là các chức năng của Thing đó; Links là các liên kết giữa Things và các Items.
   - OpenHAB sẽ quản lý các Things, mỗi Thing sẽ có một địa chỉ IP và cần setup và configure trước khi sử dụng.
 ![alt text](https://docs.openhab.org/concepts/images/thing-devices-1.png)
 
@@ -56,11 +56,22 @@ for (Thing thing : things) {
   - Item types: 
 ![](https://github.com/hamhochoi/K59_training/blob/master/Item%20types.png?raw=true)
 
-
-
-
-
-
+## Binding
+  - Trước khi kết nối 1 Thing tới OpenHAB, ta phải xác định loại của Thing đó. Việc xác định này được gọi là binding.
+  - Có thể hiểu Binding là xác định kiểu điều khiển Items.
+  - Danh sách các kiểu Items: https://docs.openhab.org/configuration/items.html#type
+## Installation 
+  - Nên cài đặt sử dụng Docker
+  
+## Configure   
+  - vào localhost:8080
+  - Chọn cài đặt Standard
+  - Chọn Paper UI (cho admin)
+  - Làm theo hướng dẫn (sử dụng giao diện để định nghĩa một Thing): https://docs.openhab.org/tutorials/beginner/configuration.html
+  - Khi sử dụng giao diện Paper UI/discovery để định nghĩa 1 Thing, dữ liệu sẽ được lưu trong một internal database nhưng không được lưu trong file configure.
+  - Cũng có thể định nghĩa một Thing sử dụng file text congigure. Khi thực hiện định nghĩa sử dụng file text, các cấu hình sẽ được lưu vào file configure, có thể được backup, restore.
+  - Định nghĩa một Thing theo file text: https://docs.openhab.org/configuration/things.html
+  
 
 ## Reference
   - https://docs.openhab.org/concepts/things.html#thing-status
