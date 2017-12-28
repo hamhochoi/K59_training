@@ -72,6 +72,9 @@ for (Thing thing : things) {
   - Cũng có thể định nghĩa một Thing sử dụng file text congigure. Khi thực hiện định nghĩa sử dụng file text, các cấu hình sẽ được lưu vào file configure, có thể được backup, restore.
   - Định nghĩa một Thing theo file text: https://docs.openhab.org/configuration/things.html
   
+## RestAPI
+  - http://python-openhab.readthedocs.io/en/latest/api.html
+  
 
 ## Reference
   - https://docs.openhab.org/concepts/things.html#thing-status
