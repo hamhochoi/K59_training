@@ -78,14 +78,11 @@ for (Thing thing : things) {
 ## Define Things using Files
   - Tạo .things coonfig file text; file này được lưu trong thư mục "thing" của openhab:  /etc/openhab2/things/ hoặc openhab2/conf/things.
   - Cú pháp cho .things file:
-     - Thing <binding_id>:<type_id>:<thing_id> "Label" @ "Location" [ <parameters> ]
-     - Ví dụ: 
-              Thing network:device:webcam "Webcam" @ "Living Room" [ hostname="192.168.0.2", timeout="5000", ... ]
-              Thing astro:moon:home [ geolocation="50.12345,10.98765", interval=300 ]
-              Thing ntp:ntp:local [ hostname="de.pool.ntp.org" ]  
-
-
-
+  - Thing <binding_id>:<type_id>:<thing_id> "Label" @ "Location" {<parameters>}
+  
+## Linking Items
+  - Một Item có thể được liên kết với Channel thông qua Paper UI hoặc bằng file cấu hình
+  - ** Chú ý ** : Các Channel được cấu hình bằng Paper UI có thể được liên kết với các Item được cấu hình bằng file cấu hình.
 
 
 ## Reference
