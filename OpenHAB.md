@@ -85,5 +85,9 @@ for (Thing thing : things) {
   - ** Chú ý ** : Các Channel được cấu hình bằng Paper UI có thể được liên kết với các Item được cấu hình bằng file cấu hình.
 
 
+
+## Some Notes
+  - Gửi file json trong MQTT: trong file ".items" trong thư mục items, send message theo cú pháp:{\"a\"\\:\"b\"} gs (ứng với json : {"a":"b"})
+
 ## Reference
   - https://docs.openhab.org/concepts/things.html#thing-status
