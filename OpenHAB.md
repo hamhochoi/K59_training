@@ -84,20 +84,21 @@ for (Thing thing : things) {
   - Một Item có thể được liên kết với Channel thông qua Paper UI hoặc bằng file cấu hình
   - ** Chú ý ** : Các Channel được cấu hình bằng Paper UI có thể được liên kết với các Item được cấu hình bằng file cấu hình.
 
-## Steps to setup a Things
-  - Xác định Binding cần thiết
-  - Cài đặt binding
-  - Định nghĩa và confige Thing
-  - Xác định Channel mà Thing cung cấp
-  - Thêm Items và Link chúng tới các Channel tương ứng.
-  - Có thể add Things vào Sitemap, tạo các Rules.
+## Steps to setup a Things 
+  - Các bước thêm 1 Thing vào OpenHAB (đối với phiên bản 2.x, với phiên bản 1.x, không có khái niệm Thing):
+    - Xác định Binding cần thiết
+    - Cài đặt binding
+    - Định nghĩa và confige Thing
+    - Xác định Channel mà Thing cung cấp
+    - Thêm Items và Link chúng tới các Channel tương ứng.
+    - Có thể add Things vào Sitemap, tạo các Rules.
   
   ### Định nghĩa Thing và confige
-    - Một Thing có thể được định nghĩa bằng 2 cách: 
-      - Sử dụng chế độ Discovery để tự động dò tìm Thing nếu Binding tương ứng đã được cài đặt và config
-      - Confige bằng tay bằng cách thêm 1 file *.things vào thư mục con /etc/openhab2/things
+  - Một Thing có thể được định nghĩa bằng 2 cách: 
+    - Sử dụng chế độ Discovery để tự động dò tìm Thing nếu Binding tương ứng đã được cài đặt và config
+    - Confige bằng tay bằng cách thêm 1 file *.things vào thư mục con /etc/openhab2/things
       
-    - Sau đây sẽ trình bày confige Thing bằng file.
+  - Sau đây sẽ trình bày confige Thing bằng file.
     
     - Cú pháp: Thing <binding_id>:<type_id>:<thing_id> "Label" @ "Location" [ <parameters> ]
     - Ví dụ: Thing ntp:ntp:local [ hostname="de.pool.ntp.org" ]
