@@ -72,7 +72,7 @@ for (Thing thing : things) {
   - Cũng có thể định nghĩa một Thing sử dụng file text congigure. Khi thực hiện định nghĩa sử dụng file text, các cấu hình sẽ được lưu vào file configure, có thể được backup, restore.
   - Định nghĩa một Thing theo file text: https://docs.openhab.org/configuration/things.html
   
-## RestAPI
+## RestAPIDiscovery
   - http://python-openhab.readthedocs.io/en/latest/api.html
   
 ## Define Things using Files
@@ -91,6 +91,19 @@ for (Thing thing : things) {
   - Xác định Channel mà Thing cung cấp
   - Thêm Items và Link chúng tới các Channel tương ứng.
   - Có thể add Things vào Sitemap, tạo các Rules.
+  
+  ### Định nghĩa Thing và confige
+    - Một Thing có thể được định nghĩa bằng 2 cách: 
+      - Sử dụng chế độ Discovery để tự động dò tìm Thing nếu Binding tương ứng đã được cài đặt và config
+      - Confige bằng tay bằng cách thêm 1 file *.things vào thư mục con /etc/openhab2/things
+      
+    - Sau đây sẽ trình bày confige Thing bằng file.
+    
+    - Cú pháp: Thing <binding_id>:<type_id>:<thing_id> "Label" @ "Location" [ <parameters> ]
+    - Ví dụ: Thing ntp:ntp:local [ hostname="de.pool.ntp.org" ]
+  
+  
+
 
 ## Some Notes
   - Gửi file json trong MQTT: trong file ".items" trong thư mục items, send message theo cú pháp:{\"a\"\\:\"b\"} gs (ứng với json : {"a":"b"})
