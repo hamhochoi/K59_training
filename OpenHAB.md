@@ -84,7 +84,13 @@ for (Thing thing : things) {
   - Một Item có thể được liên kết với Channel thông qua Paper UI hoặc bằng file cấu hình
   - ** Chú ý ** : Các Channel được cấu hình bằng Paper UI có thể được liên kết với các Item được cấu hình bằng file cấu hình.
 
-
+## Steps to setup a Things
+  - Xác định Binding cần thiết
+  - Cài đặt binding
+  - Định nghĩa và confige Thing
+  - Xác định Channel mà Thing cung cấp
+  - Thêm Items và Link chúng tới các Channel tương ứng.
+  - Có thể add Things vào Sitemap, tạo các Rules.
 
 ## Some Notes
   - Gửi file json trong MQTT: trong file ".items" trong thư mục items, send message theo cú pháp:{\"a\"\\:\"b\"} gs (ứng với json : {"a":"b"})
