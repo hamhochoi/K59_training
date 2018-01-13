@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>ParentMaven</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+   <properties>
+       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+       <!-- 0.22.0 : Target location type: Directory is not supported -->
+       <tycho-version>0.22.0</tycho-version>
+   </properties>
+ 
+ 
+   <repositories>
+       <!-- Select the P2 repository to be used when resolving dependencies -->
+ 
+       <repository>
+           <id>eclipse-luna</id>
+           <layout>p2</layout>
+           <url>http://download.eclipse.org/releases/luna</url>
+       </repository>
+ 
+   </repositories>
+ 
+   <pluginRepositories>
+       <pluginRepository>
+           <id>tycho-snapshots</id>
+           <url>https://oss.sonatype.org/content/groups/public/</url>
+       </pluginRepository>
+   </pluginRepositories>
+    
+   <build>
+       <plugins>
+           <plugin>
+               <!-- enable tycho build extension -->
+               <groupId>org.eclipse.tycho</groupId>
+               <artifactId>tycho-maven-plugin</artifactId>
+               <version>${tycho-version}</version>
+               <extensions>true</extensions>
+               <configuration>
+                   <dependency-resolution>
+                       <optionalDependencies>ignore</optionalDependencies>
+                   </dependency-resolution>
+               </configuration>
+           </plugin>
+ 
+           <plugin>
+               <groupId>org.eclipse.tycho</groupId>
+               <artifactId>tycho-versions-plugin</artifactId>
+               <version>${tycho-version}</version>
+               <configuration>
+                   <dependency-resolution>
+                       <optionalDependencies>ignore</optionalDependencies>
+                   </dependency-resolution>
+               </configuration>
+           </plugin>
+<!--
+           <plugin>
+               <groupId>org.eclipse.tycho</groupId>
+               <artifactId>target-platform-configuration</artifactId>
+               <version>${tycho-version}</version>
+               <configuration>
+                   <target>
+                       <artifact>
+                           <groupId>org.o7planning</groupId>
+                           <artifactId>TargetPlatform</artifactId>
+                           <version>1.0.0</version>
+                       </artifact>
+                   </target>
+               </configuration>
+           </plugin>
+-->
+            
+       </plugins>
+   </build>
+ 
+   <modules>  
+       <module>../SimpleMavenLatest</module>
+       <module>../SimpleOSGi</module>
+       <module>../kura.driver.SimpleOSGi</module>
+   </modules>
+   <groupId>kura.driver</groupId>
+</project>
