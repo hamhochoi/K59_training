@@ -22,7 +22,7 @@
     * Quality of Service: Đảm bảo chất lượng dịch vụ dựa trên 4 tiêu chí: 
         * Tính kết nối
         * Tính sẵn dùng
-        * Khả năng
+        * Dung lượng: Network và Storage
         * Độ trễ
     * Interfacing and programming model: Thống nhất mô hình liên kết và lập trình
     * Computation offloading: Giảm tải công việc tính toán cho fog node: Do Fog Node là các thiết bị có khả năng hạn chế về mặt tính toán, xử lý dữ liệu, do đó, một phần công việc tính toán nặng nhọc phải được gửi lên cloud để thực hiện. Vấn đề là phải xác định được khi nào thì gửi yêu cầu lên cloud.
