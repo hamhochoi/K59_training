@@ -17,6 +17,11 @@
     - Khi cảm biến chuyển động phát hiện có chuyển động, chương trình điều khiển sẽ thực hiện bật một trong 3 đèn: đèn xanh khi cường độ sáng lớn (tương ứng giá trị của cảm biến ánh sáng >= 600); đèn đỏ khi cường độ sáng trung bình (giá trị >=500, <600); đèn vàng khi cường độ sáng yếu (giá trị <500)
     
 ## Cài đặt hệ thống
+
+### Sơ đồ cài đặt
+![Image of OpenHAB system](https://github.com/haiquan5396/K59_training/raw/master/HaiQuan/Homeassistant/image/serverRoom.jpg)
+
+
 ### Arduino
     - Arduino được sử dụng để nhận các giá trị từ cảm biến và đẩy dữ liệu cho ESP 8266 thông qua các chân RX, TX. 
 ### ESP 8266
@@ -140,4 +145,5 @@ client.loop_forever()
 
 ### NOTE:
     - Cách lắp mạch, mã nguồn của Arduino và ESP 8266 có trong file đính kèm.
+    - OpenHAB API xem trong file OpenHAB_API 
     
