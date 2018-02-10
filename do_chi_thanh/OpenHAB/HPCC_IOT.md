@@ -14,7 +14,7 @@
     - Chương trình điều khiển thực hiện kịch bản bật tắt đèn khi có chuyển động đi qua.
     
   - Kịch bản sử dụng
-    - Khi cảm biến chuyển động phát hiện có chuyển động, chương trình điều khiển sẽ thực hiện bật một trong 3 đèn: đèn xanh khi cường độ sáng lớn (tương ứng giá trị của cảm biến ánh sáng >= 600); đèn đỏ khi cường độ sáng trung bình (giá trị >=500, <600); đèn vàng khi cường độ sáng yếu (giá trị <500)
+    - Khi cảm biến chuyển động phát hiện có chuyển động, chương trình điều khiển sẽ thực hiện bật một trong 3 đèn: đèn xanh khi cường độ sáng lớn (tương ứng giá trị của cảm biến ánh sáng >= 900); đèn đỏ khi cường độ sáng trung bình (giá trị >=500, <900); đèn vàng khi cường độ sáng yếu (giá trị <500)
     
 ## Cài đặt hệ thống
 
@@ -42,6 +42,12 @@
         - Cảm biến chuyển động (topic subscribe: zone_3/box_1/motion/id_1).
         - Cảm biến ánh sáng (topic subscribe: zone_3/box_1/light/id_1
         - Cảm biến nhiệt độ, độ ẩm (topic subscribe: zone_3/box_1/temp/id_1).
+	
+    - Data format:
+   	- Của OpenHAB gửi cho đèn: {"name": "Tên đèn", "value": "giá trị"}
+   	- Của esp 8266 gắn với arduino cảm biến chuyển động gửi cho broker: {"motion": "giá trị"}
+ 	- Của esp 8266 gắn với arduino cảm biến nhiệt độ, độ ẩm gửi cho broker: {"humidity":"độ ẩm", "temperature":"nhiệt độ"}
+        - Của esp 8266 gắn với arduino cảm biến ánh sáng gửi cho broker: {"light": "giá trị"} (giá trị thuộc tập: {0, 1, 2} với 0 ứng với giá trị analog <500; 1 ứng với gíá trị analog >=500 và <900; 2 ứng với giá trị analog >=900)
 ```
 Switch Switch1 <light> {mqtt=">[mybroker:zone_3/box_1/led:command:ON:{\"vang\"\\:\"ON\"}],>[mybroker:zone_3/box_1                                                                                                               /led:command:OFF:{\"vang\"\\:\"OFF\"}]"}
 
@@ -107,14 +113,14 @@ def on_message(client, userdata, msg):
 			time.sleep(0.5)
 			item3.off()
 			print ("Vang: ON, Do: OFF, Xanh: OFF")
-		elif (light_state == 1):			# LDRReading >= 500 <600
+		elif (light_state == 1):			# LDRReading >= 500 và <900
 			item1.off()
 			time.sleep(0.5)
 			item2.on()						# Bat den do
 			time.sleep(0.5)
 			item3.off()
 			print ("Vang: OFF, Do: ON, Xanh: OFF")	
-		elif (light_state == 2):			# LDRReading >= 600
+		elif (light_state == 2):			# LDRReading >= 900
 			item1.off()
 			time.sleep(0.5)
 			item2.off()
