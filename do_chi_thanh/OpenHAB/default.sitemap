@@ -1,0 +1,11 @@
+sitemap default label="My first sitemap" 
+{
+	Switch item=Laptop_Thanh label="Thanh's Laptop"
+	Switch item=Switch1 label="Led vang"
+	Switch item=Switch2 label="Led do"
+	Switch item=Switch3 label="Led xanh"
+	Text item=Temperature label="Temperature"    
+	Text item=Humidity  label="Humidity"
+	Text item=Motion label="Motion"    
+	Text item=Light label="Light"
+}
