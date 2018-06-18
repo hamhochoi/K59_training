@@ -68,8 +68,8 @@ def monitor():
                     send_alert(item_global_id, item_state=None, past_state=None)
 
 
-def get_past_state_by_global_id(thing_global_id, timer):
-    query_statement = 'select item_state from \"' + thing_global_id + '\" where time > now() - ' + timer
+def get_past_state_by_global_id(item_global_id, timer):
+    query_statement = 'select item_state from \"' + item_global_id + '\" where time > now() - ' + timer
     query_result = clientDB.query(query_statement)
 
     past_state = []
@@ -134,7 +134,7 @@ def check_thing_condition(thing):
     if (len(thing) == 0):
         return True
 
-    # timer = thing['timer']
+    timer = thing['timer']
     item_global_id = thing['item_global_id']
     item_type = thing['item_type']
     operator = thing['operator']
@@ -143,22 +143,35 @@ def check_thing_condition(thing):
     result = True
 
     for item in list_current_items:
-        item_state = item['item_state']
+        # item_state = item['item_state']
 
         if (item_global_id == item['item_global_id']):
+            past_state = get_past_state_by_global_id(item_global_id, timer)
+
             if (item_type == "Number"):
                 try:
                     value = float(value)
                 except:
                     print ("Error: Cannot convert value to float")
 
-                result = check_condition(operator, item_state, value)
-            elif (item_type == "Switch"):
-                if (operator == "EQ"):
-                    if (value == item_state):
-                        result = True
-                    else:
+                boo = True
+                result = True
+                for item_state in past_state:
+                    boo = check_condition(operator, item_state, value)
+                    if (boo == False):
                         result = False
+                        break
+
+            elif (item_type == "binary_sensor"):
+                if (operator == "EQ"):
+                    boo = True
+                    result = True
+
+                    for item_state in past_state:
+                        if (item_state != value):
+                            boo = False
+                            result = False
+                            break
                 else:
                     print ("Error: operator is not valid!")
                     return -1
