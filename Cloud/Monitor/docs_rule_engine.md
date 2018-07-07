@@ -1,6 +1,7 @@
 # Sơ đồ hệ thống Rule Engine
 
 ![Sơ đồ hệ thống Rule engine](https://raw.githubusercontent.com/hamhochoi/K59_training/master/Cloud/Monitor/diagram_rule_new.png "rule engine")
+- Lưu ý: Monitor trong hình không có ý nghĩa gì.
 
 # Luồng hoạt
 - Driver đọc dữ liệu từ IOT platform rồi chuyển dữ liệu cho Filter.
