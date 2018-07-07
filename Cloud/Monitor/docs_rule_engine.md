@@ -20,7 +20,14 @@
   - Địa chỉ: http://127.0.0.1:5000/rule
   - Mỗi rule được định dạng theo một json format (xem trong file [rule_example.json](https://github.com/hamhochoi/K59_training/blob/master/Cloud/Monitor/rule_example.json)
 - Khi nhận được message từ Collector, tạo một **subprocess** để giám sát các item trong hệ thống
-  - monitor: lấy list các rule, với mỗi rule, kiểm tra điều kiện bằng cách duyệt qua tất cả các item trong hệ thống và so sánh với điều kiện của rule đó.  
-  - 
+  - Hàm **monitor** : lấy list các rule, với mỗi rule, kiểm tra điều kiện bằng cách duyệt qua tất cả các item trong hệ thống và so sánh với điều kiện của rule đó.  
+  - Trong khi check điều kiện của các rule, do chương trình cần biết trạng thái của các item trong hệ thống trước đó một khoảng thời gian (ứng với trường rule_condition -> "timer" trong json format), một request sé được gửi tới DBreader để lấy dữ liệu trong quá khứ được lưu trong CSDL. 
+  - Thực hiện các action Alert hoặc set state cho các item dưới tầng IOT platform tùy thuộc vào kiểu action mà người dùng lựa chọn (tương ứng với trường action_name trong json format)
+  
+## Rule API
+
+- Có các chức năng thêm, sửa, xóa, lưu trữ các rule mà người dùng định nghĩa ra.
+- Với các trường được thêm mới/sửa, các rule được lưu trong CSDL với trường rule_status là "enable".
+- Với các rule được xóa đi, các rule đó vẫn được lưu trong CSDL nhưng với trường rule_status là "disable". 
 
 
