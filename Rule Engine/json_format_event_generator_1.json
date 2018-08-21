@@ -1,0 +1,7 @@
+{
+  "event_name" : "condition_name_1",
+  "event_id" : "condition_id_1",
+  "item_type" : "temperature",
+  "condition_type" : ">",
+  "value" : 30
+}

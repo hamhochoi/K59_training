@@ -1,0 +1,39 @@
+// A sample condition json
+{
+        "condition_id" : "condition_id_1",
+        "condition_type" : "item_has_given_state",
+        "description" : "Sample Condition description",
+        "config" : {
+            "bitwise" : {
+                "constraint" : {
+                    "time": "60s",
+                    "item" : { 
+                        "thing_global_id": "10ac216a-6f51-43bb-86fa-8d7a5a8947ff",
+                        "item_global_id": "940347de-8cd8-417f-b0b3-0d63d1d47278",
+                        "item_name": "temperature",
+                        "item_type" : "int",
+                        "platform_id": "a3f6e492-5e20-47a4-ace9-5011316974ad"
+                    },
+                    "comparation": "LE",
+                    "value" : "100"
+                },
+                "bitwise_operator" : "AND",
+                "bitwise" : {
+                    "constraint" : {
+                        "time": "10s",
+                        "item" : {
+                            "thing_global_id": "4152ecef-1458-4427-af61-431f525b6cb8",
+                            "item_global_id": "0f3ecd50-c870-464c-a4cf-76b5e8b34874",
+                            "item_name": "Humidity",
+                            "item_type" : "int",
+                            "platform_id": "ee3b4536-be4d-4539-881a-54bf69958a03"
+                        },
+                        "comparation": "LE",
+                        "value" : "100"
+                    },
+                    "bitwise_operator" : "None",
+                    "bitwise" : []
+                }
+            }
+        }
+}

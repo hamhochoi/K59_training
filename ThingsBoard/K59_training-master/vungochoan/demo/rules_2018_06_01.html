@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rules management</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect. -->
+    <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+
+    <style>
+
+
+    </style>
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+
+        <!-- Main Header -->
+        <header class="main-header">
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>M</b>XG</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>MAXGAUGE</b> Realtime monitor</span>
+            </a>
+
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+
+                <!-- Navbar Right Menu -->
+
+                <!-- search form (Optional) -->
+
+                <!-- Sidebar toggle button-->
+                <div class="pull-left">
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+                </div>
+
+                <div class="navbar-custom-menu pull-right">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <li>
+                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-2 pull-right">
+                    <form action="#" method="get" class="sidebar-form">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                  <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                  </button>
+                </span>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.search form -->
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+
+
+                <!-- Sidebar Menu -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">
+                        <form>
+                            <label class="radio-inline"><input type="radio" class="with-gap" name="optradio">Instance name</label>
+                            <label class="radio-inline"><input type="radio" class="with-gap" name="optradio">Business name</label>
+                        </form>
+                    </li>
+                    <!-- Optionally, you can add icons to the links -->
+                    <li class="inactive"><a href="realtime_diag.html"><i class="fa fa-link"></i> <span>Realtime Diagram</span></a></li>
+                    <li class="active"><a href="rules.html"><i class="fa fa-link"></i> <span>Rules</span></a></li>
+                    <!-- <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li> -->
+                    <li class="treeview">
+                        <a href="#"><i class="fa fa-link"></i> <span>More</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#">Nothing</a></li>
+                            <li><a href="#">Maybe later</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- /.sidebar-menu -->
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    Rules management
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+                    <li class="active">Here</li>
+                </ol>
+            </section>
+
+            <!-- Main content -->
+            <section class="content container-fluid">
+
+                <!--------------------------
+        | Your Page Content Here |
+        -------------------------->
+                <!-- active rules -->
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Active rules</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <ul class="list-group" id="rule-list">
+                            </ul>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+
+                <!-- dic containing modals created -->
+                <div id="modal-div"></div>
+
+                <!-- add rules -->
+                <div class="col-md-8">
+                    <div class="box">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Create your rule</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <!-- as we do not use php, we need to redo the form in javascript -->
+                        <div class="box-body" id="rule-form">
+
+                            <!-- when the form is submitted it will trigger add_new_rule(), and not refresh the page thank to the return false -->
+                            <div class="row" style="padding-left:15px">
+                                <form name="frm" onsubmit="add_new_rule();return false" method="post">
+                                    <div class="row" id="general-field">
+                                        <div class="row col-xs-12 col-md-6">
+                                            <label class="col-xs-4">Rule's name</label>
+                                            <input id="rule-name-input" class="col-xs-7" type="text" name="rule_name" required="true" placeholder="A name">
+                                        </div>
+                                    </div>
+                                    <!-- setting the conditions -->
+                                    <label>IF</label> <br>
+                                    <fieldset id="condition-field" class="col-xs-12">
+                                    </fieldset>
+
+                                    <div class="col-md-12 text-center">
+                                        <span class="glyphicon glyphicon-plus" id="add-plus-condition" onclick='add_rule_condition_form()'></span> <br>
+                                    </div>
+
+                                    <!-- setting the action to take -->
+                                    <label>THEN</label> <br>
+
+                                    <fieldset id="action-field" class="col-xs-12">
+                                    </fieldset>
+
+                                    <div class="col-md-12 text-center">
+                                        <span class="glyphicon glyphicon-plus" onclick="add_rule_action_form()"></span> <br>
+                                    </div>
+
+                                    <input class='btn' type="submit" value="add rule" />
+                                    <button class='btn' onclick="reset_form()">cancel</button>
+                                </form>
+                            </div>
+
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <!-- To the right -->
+            <div class="pull-right hidden-xs">
+                Anything you want
+            </div>
+            <!-- Default to the left -->
+            <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Create the tabs -->
+            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+                <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+                <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <!-- Home tab content -->
+                <div class="tab-pane active" id="control-sidebar-home-tab">
+
+
+                </div>
+
+                <!-- Stats tab content -->
+                <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+                <!-- /.tab-pane -->
+                <!-- Settings tab content -->
+                <div class="tab-pane" id="control-sidebar-settings-tab">
+
+                </div>
+                <!-- /.tab-pane -->
+            </div>
+        </aside>
+        <!-- /.control-sidebar -->
+        <!-- Add the sidebar's background. This div must be placed
+  immediately after the control sidebar -->
+        <div class="control-sidebar-bg"></div>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- REQUIRED JS SCRIPTS -->
+
+    <!-- jQuery 3 -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+    <!-- FastClick -->
+    <script src="bower_components/fastclick/lib/fastclick.js"></script>
+
+    <!-- toogle button -->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <!-- AJAX needed file -->
+    <script src="test/ajax.js"></script>
+
+
+    <!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
+
+
+    <script>
+        //the classes corresponding with the server
+        class Rule {
+            constructor(name, status) {
+                this.name = name;
+                this.status = status;
+                this.id = "" + Math.random().toString(36).substr(2, 9);
+                this.bitwise = [];
+                this.actions = [];
+            }
+
+            add_bitwise(gbitwise) {
+                this.bitwise.push(gbitwise);
+            }
+
+            add_action(gtimer, gaction) {
+                this.actions.push({
+                    timer: gtimer,
+                    action: gaction
+                });
+            }
+
+            toString() {
+                let res = this.name + "\n";
+
+                for (let i = 0; i < this.bitwise.length; i++) {
+                    res += this.bitwise[i].toString();
+                    res += "\n";
+                }
+                res += "THEN\n"
+
+                for (let i = 0; i < this.actions.length; i++) {
+                    res += this.actions[i].timer + "  ";
+                    res += this.actions[i].action + "\n";
+                }
+                return res;
+            }
+        }
+
+        class Bitwise {
+            constructor(gtimer, gthing, goperator) {
+                this.timer = gtimer;
+                this.things = [];
+                this.things.push(gthing);
+                this.operator = goperator;
+                this.bitwise_operator = "None";
+                this.bitwise = [];
+            }
+
+            add_bitwise(gbitwise, gbitwise_operator) {
+                this.bitwise.push(gbitwise);
+                this.bitwise_operator = gbitwise_operator;
+            }
+
+            toString() {
+                let res = this.timer + "\n";
+
+                for (let j = 0; j < this.things.length; j++) {
+                    res += this.things[j].toString();
+                    res += "\n";
+                }
+
+                res += this.operator + "\n";
+                res += this.bitwise_operator + "\n";
+
+
+                for (let j = 0; j < this.bitwise.length; j++) {
+                    res += this.bitwise[j].toString();
+                    res += "\n";
+                }
+                return res;
+            }
+        }
+
+        class Thing {
+            constructor(gitem, gplatform_id, gthing_global_d, gthing_local_id, gthing_name, gthing_type) {
+                this.items = [];
+                this.items.push(gitem);
+                this.platform_id = gplatform_id;
+                this.thing_global_d = gthing_global_id;
+                this.thing_local_id = gthing_local_id;
+                this.thing_name = gthing_name;
+                this.thing_type = gthing_type;
+            }
+
+            toString() {
+                let res = "";
+
+                for (let k = 0; k < this.items.length; k++) {
+                    res += this.items[k].toString();
+                    res += "\n";
+                }
+                res += this.thing_global_d + "\n";
+                res += this.thing_local_id + "\n";
+                res += this.thing_name + "\n";
+                res += this.thing_type + "\n";
+                return res;
+            }
+        }
+
+        class Item {
+            constructor(gcan_set_state, gitem_global_d, gitem_local_id, gitem_name, gitem_type) {
+                this.can_set_state = gcan_set_state;
+                this.item_global_d = gitem_global_d;
+                this.item_local_id = gitem_local_id;
+                this.item_name = gitem_name;
+                this.item_type = gitem_type;
+            }
+
+            toString() {
+                let res = this.can_set_state + "\n";
+                res += this.item_global_d + "\n";
+                res += this.item_local_id + "\n";
+                res += this.item_name + "\n";
+                res += this.item_type + "\n";
+                return res;
+            }
+        }
+
+        //local classes (because it started like this and then was to late to modify)
+        class LocalRule {
+            constructor(name, status, id) {
+                this.name = name;
+                this.status = status;
+                this.id = id;
+                this.bitwise = [];
+                this.actions = [];
+            }
+            add_action(gtimer, gaction) {
+                this.actions.push({
+                    timer: gtimer,
+                    action: gaction
+                });
+            }
+        }
+
+
+
+        //we load data we need from the api
+        var platform_list = get_data_from_api("http://0b6a636b.ngrok.io/api/platforms/all");
+        for (let i = 0; i < platform_list.length; i++) {
+            platform_list[i].things = get_data_from_api("http://0b6a636b.ngrok.io/api/things/platform_id/" + platform_list[i].platform_id + "/all/all");
+
+            for (let j = 0; j < platform_list[i].things.length; j++) {
+                if (platform_list[i].things[j].thing_type.localeCompare("updater") == 0) {
+                    platform_list[i].things.splice(j, 1)
+                }
+            }
+        }
+
+        //add form to create a rule (we need to initialize these var as global)
+        var condition_number = 0;
+        var action_number = 0;
+        reset_form();
+
+
+        //example data, rules will be conserved while there isn't other way to store rules
+        var rules = [];
+        rules.push(new Rule("Motion light off"));
+
+        let oneItem = new Item("no", "d7fefe33-2f39-47f8-a229-18cf4376a3c9-binary_sensor.motion_detection-binary_sensor.motion_detection", "binary_sensor.motion_detection", "Motion Detection", "binary_sensor");
+
+        let oneThing = new Thing(oneItem, "d7fefe33-2f39-47f8-a229-18cf4376a3c9", "d7fefe33-2f39-47f8-a229-18cf4376a3c9-binary_sensor.motion_detection", "binary_sensor.motion_detection", "Motion Detection", "binary_sensor");
+
+        let oneBitwise = new Bitwise("00:00:60", oneThing, "EQ('off')")
+
+        oneItem = new Item("no", "d7fefe33-2f39-47f8-a229-18cf4376a3c9-sensor.light-sensor.light", "sensor.light", "Light", "sensor");
+
+        oneThing = new Thing("d7fefe33-2f39-47f8-a229-18cf4376a3c9", "d7fefe33-2f39-47f8-a229-18cf4376a3c9-sensor.light", "sensor.light", "Light", "sensor");
+
+        oneBitwise.add_bitwise(new Bitwise("00:00:60", oneThing, "EQ('off')"), "AND");
+
+        rules[0].add_bitwise(oneBitwise);
+
+
+        list_existing_rule();
+
+
+        //download data from the API
+        function get_data_from_api(url) {
+            var request = new XMLHttpRequest();
+            request.open('GET', url, false); // `false` makes the request synchronous
+            request.send(null);
+
+            if (request.readyState == 4) {
+                if (request.status == 200 || request.status == 201) {
+                    return JSON.parse(request.responseText);
+                }
+            }
+        }
+
+
+        function generate_timer(parent_id) {
+            let content = document.getElementById(parent_id);
+
+            content.appendChild(document.createElement("select"));
+            content.lastChild.setAttribute("class", "col-xs-4");
+            for (let i = 0; i < 24; i++) {
+                content.lastChild.appendChild(document.createElement("option"));
+                content.lastChild.lastChild.setAttribute("value", i);
+                content.lastChild.lastChild.innerHTML = i;
+            }
+
+            content.appendChild(document.createElement("select"));
+            content.lastChild.setAttribute("class", "col-xs-4");
+            for (let i = 0; i < 60; i++) {
+                content.lastChild.appendChild(document.createElement("option"));
+                content.lastChild.lastChild.setAttribute("value", i);
+                content.lastChild.lastChild.innerHTML = i;
+            }
+
+            content.appendChild(document.createElement("select"));
+            content.lastChild.setAttribute("class", "col-xs-4");
+            for (let i = 0; i < 60; i++) {
+                content.lastChild.appendChild(document.createElement("option"));
+                content.lastChild.lastChild.setAttribute("value", i);
+                content.lastChild.lastChild.innerHTML = i;
+            }
+        }
+
+        //function called when the cancel button is pressed at the end of the add rule form, it remove all added field a well as cleaning the form
+        //it is also called at the 
+        function reset_form() {
+            document.getElementById("rule-name-input").value = '';
+
+            while (document.getElementById("condition-field").firstChild) {
+                document.getElementById("condition-field").removeChild(document.getElementById("condition-field").firstChild)
+            }
+
+            while (document.getElementById("action-field").firstChild) {
+                document.getElementById("action-field").removeChild(document.getElementById("action-field").firstChild)
+            }
+
+            condition_number = 0;
+            action_number = 0;
+            add_rule_condition_form();
+            add_rule_action_form();
+        }
+
+
+        //function called when the + button is pressed in the condition field
+        function add_rule_condition_form() {
+            add_condition_field("condition-field", "add", condition_number);
+            condition_number++;
+        }
+
+        //generate condition field both in the add rule form and on edit
+        function add_condition_field(parent_id, tpye, suffix_id) {
+            //we set the container
+            let content = document.createElement("div");
+            document.getElementById(parent_id).appendChild(content);
+            content.className = "row col-xs-12";
+            content.setAttribute("id", tpye + "-condition-" + suffix_id);
+            content.setAttribute("style", "margin-bottom: 7px")
+
+            //we first choose a timer
+            content.appendChild(document.createElement("input"));
+            content.lastChild.setAttribute("type", "time");
+            content.lastChild.setAttribute("class", "col-xs-2");
+            content.lastChild.style.paddingRight = "0px";
+            content.lastChild.setAttribute("id", tpye + "-condition-timer-" + suffix_id);
+            content.lastChild.setAttribute("value", "00:00:00");
+            content.lastChild.setAttribute("step", "1");
+            content.lastChild.setAttribute("title", "The minimum time the condition has to stay active");
+
+
+            //then a plateform
+            var selection = document.createElement("select");
+            content.appendChild(selection);
+            selection.setAttribute("name", tpye + "-plateform-" + suffix_id);
+            selection.className += " col-xs-3";
+
+
+            for (let i = 0; i < platform_list.length; i++) {
+                selection.appendChild(document.createElement("option"));
+                selection.lastChild.setAttribute("value", i);
+                selection.lastChild.innerHTML = platform_list[i].platform_name;
+            }
+
+            selection.firstChild.setAttribute("selected", "selected");
+
+
+            //then a sensor from this plateform
+            content.appendChild(document.createElement("select"));
+            content.lastChild.setAttribute("name", tpye + "-item-" + suffix_id);
+            content.lastChild.setAttribute("id", tpye + "-field-item-" + suffix_id);
+            content.lastChild.className += " col-xs-2";
+
+
+            sensor_of_plateform_option(0, tpye + "-field-item-" + suffix_id, tpye);
+
+
+
+            //when we select a platform it changes the item we can choose
+            selection.onchange = function() {
+                sensor_of_plateform_option(selection.selectedIndex, tpye + "-field-item-" + suffix_id, tpye);
+            }
+
+            //the button to remove this line
+            content.appendChild(document.createElement("button"));
+            content.lastChild.setAttribute("type", "button");
+            content.lastChild.setAttribute("class", "btn btn-default btn-xs pull-right col-xs-1");
+            content.lastChild.setAttribute("style", "width: 24px");
+            content.lastChild.onclick = function() {
+                remove_field(tpye + "-condition-" + suffix_id);
+            }
+            content.lastChild.appendChild(document.createElement("i"));
+            content.lastChild.lastChild.setAttribute("class", "fa fa-remove");
+
+            return content;
+        }
+
+        //called whent the 'x' button next to the field is clicked
+        function remove_field(field_id) {
+            let elem = document.getElementById(field_id);
+            elem.parentElement.removeChild(elem);
+
+        }
+
+        /* 
+        put the things from the plateform given in the parameters in the select which id is given, the tpye define if it's add or edit for the value field id
+        also call the function that take care of the operator and the value
+        */
+        function sensor_of_plateform_option(platform_index, select_id, tpye) {
+            let things = platform_list[platform_index].things;
+            let selec = document.getElementById(select_id);
+
+            //first we get rid of existing option
+            while (selec.firstChild) {
+                selec.removeChild(selec.firstChild);
+            }
+
+            //then we add the new one
+            for (let i = 0; i < things.length; i++) {
+                for (let j = 0; j < things[i].items.length; j++) {
+                    selec.appendChild(document.createElement("option"));
+
+                    // the value is the global id minus the plateform id
+                    selec.lastChild.setAttribute("value", i + "-" + j);
+                    selec.lastChild.innerHTML = things[i].items[j].item_name;
+                }
+            }
+
+            //when we click on one the option it change the value input
+            selec.onchange = function() {
+                //we get the item type
+                let thing_item = selec.options[selec.selectedIndex].value.split("-");
+                let line_id = selec.getAttribute("id").slice(tpye.length + "-field-item-".length, selec.getAttribute("id").length);
+                adaptative_value_input(things[thing_item[0]].items[thing_item[1]].item_type, selec.parentElement, line_id, tpye);
+            }
+
+            //we modify the value input so it match the first sensor displayed
+            adaptative_value_input(things[0].items[0].item_type, selec.parentElement, condition_number, tpye);
+        }
+
+        /* change the value input according to the sensor :
+            - humidity/temprature input with type="number"
+            - binary_sensor/light dropdown
+            - humidity between 0 and 100
+            
+            line_id is the line number (at the end of the name)
+            tpye is to know if it's add or edit fo the name
+        */
+        function adaptative_value_input(item_type, parent, line_id, tpye) {
+            let operator_field, value_field;
+
+            switch (item_type) {
+                case "binary_sensor":
+                case "light":
+                case "Switch":
+                    operator_field = document.createElement("p");
+                    operator_field.setAttribute("name", "comparison-type-" + line_id)
+                    operator_field.setAttribute("style", "text-align: center");
+                    operator_field.className += " col-xs-2";
+                    operator_field.innerHTML += "==";
+
+                    if (parent.childNodes[3]) {
+                        parent.replaceChild(operator_field, parent.childNodes[3]);;
+                    } else {
+                        parent.appendChild(operator_field);
+                    }
+
+                    new_input = document.createElement("select");
+                    new_input.setAttribute("name", tpye + "-value-" + line_id)
+                    new_input.className += " col-xs-2";
+
+                    new_input.appendChild(document.createElement("option"));
+                    new_input.lastChild.setAttribute("value", "0");
+                    new_input.lastChild.innerHTML = "off";
+                    new_input.appendChild(document.createElement("option"));
+                    new_input.lastChild.setAttribute("value", "1");
+                    new_input.lastChild.innerHTML = "on";
+
+                    if (parent.childNodes[4]) {
+                        parent.replaceChild(new_input, parent.childNodes[4]);;
+                    } else {
+                        parent.appendChild(new_input);
+                    }
+                    break;
+                case "sensor":
+                    //we set the dropdown of operator
+                    operator_field = document.createElement("select");
+                    operator_field.setAttribute("name", "comparison-type-" + line_id)
+                    operator_field.className += " col-xs-2";
+
+                    operator_field.appendChild(document.createElement("option"));
+                    operator_field.lastChild.setAttribute("value", "GT");
+                    operator_field.lastChild.innerHTML = ">";
+                    operator_field.appendChild(document.createElement("option"));
+                    operator_field.lastChild.setAttribute("value", "LT");
+                    operator_field.lastChild.innerHTML = "<";
+                    operator_field.appendChild(document.createElement("option"));
+                    operator_field.lastChild.setAttribute("value", "GE");
+                    operator_field.lastChild.innerHTML = ">=";
+                    operator_field.appendChild(document.createElement("option"));
+                    operator_field.lastChild.setAttribute("value", "LE");
+                    operator_field.lastChild.innerHTML = "<=";
+                    operator_field.appendChild(document.createElement("option"));
+                    operator_field.lastChild.setAttribute("value", "EQ");
+                    operator_field.lastChild.innerHTML = "==";
+                    operator_field.appendChild(document.createElement("option"));
+                    operator_field.lastChild.setAttribute("value", "NE");
+                    operator_field.lastChild.innerHTML = "<>";
+
+
+
+                    if (parent.childNodes[3]) {
+                        parent.replaceChild(operator_field, parent.childNodes[3]);;
+                    } else {
+                        parent.appendChild(operator_field);
+                    }
+
+                    //we set the value field
+                    new_input = document.createElement("input");
+                    new_input.setAttribute("type", "number");
+                    new_input.setAttribute("name", "value-" + line_id);
+                    new_input.setAttribute("required", "true");
+                    new_input.setAttribute("step", "1");
+                    new_input.value = 0;
+                    new_input.className += " col-xs-2";
+
+                    if (parent.childNodes[4]) {
+                        parent.replaceChild(new_input, parent.childNodes[4]);;
+                    } else {
+                        parent.appendChild(new_input);
+                    }
+                    break;
+                default:
+                    console.error("this sensor wasn't managed yet : " + item_type);
+            }
+        }
+
+        //function called when the + button is pressed in the action field
+        function add_rule_action_form() {
+            add_action_field("action-field", "add", action_number);
+            action_number++;
+        }
+
+        //generate action field both in the add rule form and on edit
+        function add_action_field(parent_id, tpye, suffix_id) {
+            //we first set the container
+            let content = document.createElement("div");
+            document.getElementById(parent_id).appendChild(content);
+
+            content.className = "row col-xs-12";
+            content.setAttribute("id", tpye + "-action-" + suffix_id);
+            content.setAttribute("style", "margin-bottom: 7px");
+
+            //we first choose a timer
+            content.appendChild(document.createElement("input"));
+            content.lastChild.setAttribute("type", "time");
+            content.lastChild.setAttribute("class", "col-xs-2");
+            content.lastChild.style.paddingRight = "0px";
+            content.lastChild.setAttribute("id", tpye + "-action-timer-" + suffix_id);
+            content.lastChild.setAttribute("value", "00:00:00");
+            content.lastChild.setAttribute("step", "1");
+            content.lastChild.setAttribute("title", "The time the action will activate after the condtions are met");
+
+            //we set the dropdown
+            let selection = document.createElement("select");
+            content.appendChild(selection);
+            selection.setAttribute("name", tpye + "-action-type-" + suffix_id);
+
+
+            selection.appendChild(document.createElement("option"));
+            selection.lastChild.setAttribute("value", "alarm");
+            selection.lastChild.innerHTML = "alarm";
+
+            selection.appendChild(document.createElement("option"));
+            selection.lastChild.setAttribute("value", "alert");
+            selection.lastChild.innerHTML = "alert";
+
+            selection.appendChild(document.createElement("option"));
+            selection.lastChild.setAttribute("value", "light_on");
+            selection.lastChild.innerHTML = "turn on the light";
+
+            selection.appendChild(document.createElement("option"));
+            selection.lastChild.setAttribute("value", "light_off");
+            selection.lastChild.innerHTML = "turn off the light";
+
+
+            content.appendChild(document.createElement("button"));
+            content.lastChild.setAttribute("type", "button");
+            content.lastChild.setAttribute("class", "btn btn-default btn-xs pull-right col-xs-1");
+            content.lastChild.setAttribute("id", "dismiss-action-field-" + action_number);
+            content.lastChild.setAttribute("style", "width: 24px");
+            content.lastChild.onclick = function() {
+                remove_field(content.getAttribute("id"));
+            }
+            content.lastChild.appendChild(document.createElement("i"));
+            content.lastChild.lastChild.setAttribute("class", "fa fa-remove");
+
+            return content;
+        }
+
+        //called when the add button is clicked
+        function add_new_rule() {
+
+            let myRule = new Rule(document.getElementById("rule-name-input").value, "add");
+
+            //Here we add the condition to do in the rule we create
+            for (let i = 0; i < document.getElementById("condition-field").childNodes.length; i++) {
+                //first we get the timer element
+                let timer = document.getElementById("condition-field").childNodes[i].firstChild;
+
+                //first we get the platform element
+                let platform = timer.nextSibling;
+
+                //then the thing-item element
+                let thing_item = platform.nextSibling;
+
+                //then the operator element
+                let operator = thing_item.nextSibling;
+
+                //finally the value element to compare
+                let value = operator.nextSibling;
+
+                //then we extract the intermediate data
+                platform = platform.value;
+
+                thing_item = thing_item.value.split("-");
+
+                if (operator.tagName == "P") {
+                    operator = "EQ";
+                } else if (operator.tagName.localeCompare("SELECT") == 0) {
+                    operator = operator.options[operator.selectedIndex].value;
+                }
+
+                if (value.tagName == "INPUT") {
+                    value = value.value;
+                } else if (value.tagName.localeCompare("SELECT") == 0) {
+                    value = value.options[value.selectedIndex].value;
+                }
+
+                //then we had the correct data
+                let theItem = platform_list[platform].things[thing_item[0]].items[thing_item[1]];
+                let aItem = new Item(theItem.can_set_state, theItem.item_global_id, theItem.item_local_id, theItem.item_name, theItem.item_type);
+
+                let theThing = platform_list[platform].things[thing_item[0]];
+                let aThing = new Thing(aItem, theThing.platform_id, theThing.thing_global_id, theThing.thing_local_id, theThing.thing_name, theThing.thing_type);
+
+                if (myRule.bitwise.length == 0) {
+                    myRule.add_bitwise(new Bitwise(timer.value, aThing, operator + "('" + value + "')"));
+                } else {
+                    add_a_bitwise(myRule.bitwise[0], new Bitwise(timer.value, aThing, operator + "('" + value + "')"));
+                }
+            }
+
+
+            //Here we add the action to do in the rule we create
+            for (let i = 0; i < document.getElementById("action-field").childNodes.length; i++) {
+                let timer = document.getElementById("action-field").childNodes[i].firstChild;
+
+                let select = timer.nextElementSibling;
+                myRule.add_action(timer.value, select.options[select.selectedIndex].value);
+            }
+
+            rules.push(myRule);
+            console.log(JSON.stringify(myRule));
+            //push_rule(myRule);
+            list_existing_rule();
+            reset_form();
+        }
+
+        function add_a_bitwise(bitwise_parent, bitwise_child) {
+            if (bitwise_parent.bitwise_operator.localeCompare("None") == 0) {
+                bitwise_parent.add_bitwise(bitwise_child, "AND");
+            } else {
+                add_a_bitwise(bitwise_parent.bitwise[0], bitwise_child)
+            }
+        }
+
+        // list and display existing rules in left panel
+        function list_existing_rule() {
+            var ruleList = document.getElementById("rule-list");
+            //first we remove the old list of rules (if it exist)
+            while (ruleList.firstChild) {
+                ruleList.removeChild(ruleList.firstChild)
+            }
+
+            for (let ruleNumber = 0; ruleNumber < rules.length; ruleNumber++) {
+                //name of the rule
+                let elem = document.createElement("li");
+                elem.setAttribute("class", "list-group-item");
+                elem.innerHTML = rules[ruleNumber].name;
+
+                //button for detail modal
+                elem.appendChild(document.createElement("button"));
+                elem.lastChild.setAttribute("type", "button");
+                elem.lastChild.setAttribute("class", "btn btn-default btn-xs pull-right");
+                elem.lastChild.setAttribute("data-toggle", "modal");
+                elem.lastChild.setAttribute("data-target", "#modal-details-rule-" + ruleNumber);
+                elem.lastChild.setAttribute("style", "width:24px");
+                elem.lastChild.appendChild(document.createElement("i"));
+                elem.lastChild.lastChild.setAttribute("class", "fa fa-info");
+
+                //button for edit modal                
+                elem.appendChild(document.createElement("button"));
+                elem.lastChild.setAttribute("type", "button");
+                elem.lastChild.setAttribute("class", "btn btn-default btn-xs pull-right");
+                elem.lastChild.setAttribute("data-toggle", "modal");
+                elem.lastChild.setAttribute("data-target", "#modal-edit-rule-" + ruleNumber);
+                elem.lastChild.setAttribute("style", "margin-right: 7px; width:24px");
+                elem.lastChild.appendChild(document.createElement("i"));
+                elem.lastChild.lastChild.setAttribute("class", "fa fa-edit");
+                elem.lastChild.onclick = function() {
+                    rule_edit_display(ruleNumber)
+                };
+
+                //the modal window corresponding (first div into div)
+                rule_details(ruleNumber);
+                //rule_edit_display(ruleNumber);
+
+                ruleList.appendChild(elem);
+            }
+        }
+
+        // function which manage the display when the "i" button is clicked
+        function rule_details(ruleNumber) {
+            //first we look if this modal window already exist
+            if (document.getElementById("modal-details-rule-" + ruleNumber)) {
+                document.getElementById("modal-details-rule-" + ruleNumber).parentNode.removeChild(document.getElementById("modal-details-rule-" + ruleNumber));
+            }
+
+            let modalDiv = document.getElementById("modal-div");
+            modalDiv.appendChild(document.createElement("div"));
+            modalDiv.lastChild.setAttribute("class", "modal fade");
+            modalDiv.lastChild.setAttribute("id", "modal-details-rule-" + ruleNumber);
+
+            modalDiv.lastChild.appendChild(document.createElement("div"));
+            modalDiv.lastChild.lastChild.setAttribute("class", "modal-dialog");
+
+            //the content of the modal window
+            modalDiv.lastChild.lastChild.appendChild(document.createElement("div"));
+            let modalContent = modalDiv.lastChild.lastChild.lastChild;
+            modalContent.setAttribute("class", "modal-content");
+
+            //content of the header
+            modalContent.appendChild(document.createElement("div"));
+            modalContent.lastChild.setAttribute("class", "modal-header");
+
+            modalContent.lastChild.appendChild(document.createElement("button"));
+            modalContent.lastChild.lastChild.setAttribute("type", "button");
+            modalContent.lastChild.lastChild.setAttribute("class", "close");
+            modalContent.lastChild.lastChild.setAttribute("data-dismiss", "modal");
+            modalContent.lastChild.lastChild.setAttribute("aria-label", "Close");
+            modalContent.lastChild.lastChild.appendChild(document.createElement("span"));
+            modalContent.lastChild.lastChild.lastChild.setAttribute("aria-hidden", "true");
+            modalContent.lastChild.lastChild.lastChild.innerHTML = '&times;';
+
+            modalContent.lastChild.appendChild(document.createElement("h4"));
+            modalContent.lastChild.lastChild.setAttribute("class", "modal-title");
+            modalContent.lastChild.lastChild.innerHTML = rules[ruleNumber].name;
+
+            //content of the body
+            modalContent.appendChild(document.createElement("div"));
+            let modalBody = modalContent.lastChild;
+            modalBody.setAttribute("class", "modal-body");
+
+
+            modalBody.appendChild(document.createElement("p"));
+            modalBody.lastChild.innerHTML = "> " + rules[ruleNumber].id;
+            modalBody.lastChild.style.color = "#777777";
+            modalBody.lastChild.style.marginTop = "-12px";
+            modalBody.lastChild.style.fontSize = "7";
+
+
+            modalBody.appendChild(document.createElement("h5"));
+            modalBody.lastChild.innerHTML = "IF";
+
+            // We go through the bitwise
+            for (let i = 0; i < rules[ruleNumber].bitwise.length; i++) {
+                modalBody.appendChild(document.createElement("p"));
+                modalBody.lastChild.innerHTML = "";
+
+                bitwise_detail(modalBody.lastChild, rules[ruleNumber].bitwise[i])
+
+
+            }
+
+            modalBody.appendChild(document.createElement("h5"));
+            modalBody.lastChild.innerHTML = "THEN";
+            for (let i = 0; i < rules[ruleNumber].actions.length; i++) {
+                let acti = rules[ruleNumber].actions[i];
+                modalBody.appendChild(document.createElement("p"));
+                modalBody.lastChild.innerHTML = acti.timer.split(":")[0] + "h" + acti.timer.split(":")[1] + "m" + acti.timer.split(":")[2] + "s ";
+
+                modalBody.lastChild.innerHTML += acti.action;
+
+            }
+
+
+            //content of the modal footer
+            modalContent.appendChild(document.createElement("div"));
+            modalContent.lastChild.setAttribute("class", "modal-footer");
+            modalContent.lastChild.appendChild(document.createElement("button"));
+            modalContent.lastChild.lastChild.setAttribute("type", "button");
+            modalContent.lastChild.lastChild.setAttribute("class", "btn btn-default pull-right");
+            modalContent.lastChild.lastChild.setAttribute("data-dismiss", "modal");
+            modalContent.lastChild.lastChild.innerHTML = "Close";
+        }
+
+        function bitwise_detail(parent_element, bitwise) {
+            parent_element.innerHTML += "(\n";
+            parent_element.innerHTML += bitwise.timer + "   ";
+
+            parent_element.innerHTML += bitwise.things[0].items[0].item_global_id + "\n";
+
+            if (bitwise.operator.localeCompare("None") != 0) {
+                parent_element.innerHTML += "\n" + bitwise.operator + "\n";
+
+                for (let k = 0; k < bitwise.bitwise.length; k++) {
+                    bitwise_detail(parent_element, bitwise.bitwise[k])
+                }
+            }
+
+
+            parent_element.innerHTML += ")\n";
+        }
+
+        // function which manage the display when the edit (the pen) button is clicked
+        function rule_edit_display(ruleNumber) {
+            //first we look if this modal window already exist
+            if (document.getElementById("modal-edit-rule-" + ruleNumber)) {
+                document.getElementById("modal-edit-rule-" + ruleNumber).parentNode.removeChild(document.getElementById("modal-edit-rule-" + ruleNumber));
+            }
+
+            //here we got the rule
+            var aRule = rule_to_localRule(rules[ruleNumber]);
+            console.log(aRule);
+
+            //the declaration of the modal window
+            let modalDiv = document.getElementById("modal-div");
+            modalDiv.appendChild(document.createElement("div"));
+            modalDiv.lastChild.setAttribute("class", "modal fade");
+            modalDiv.lastChild.setAttribute("id", "modal-edit-rule-" + ruleNumber);
+
+            modalDiv.lastChild.appendChild(document.createElement("div"));
+            modalDiv.lastChild.lastChild.setAttribute("class", "modal-dialog");
+            modalDiv.lastChild.lastChild.setAttribute("style", "width: 50%");
+
+            modalDiv.lastChild.lastChild.appendChild(document.createElement("div"));
+            let modalContent = modalDiv.lastChild.lastChild.lastChild;
+            modalContent.setAttribute("class", "modal-content");
+
+            //content of the header
+            modalContent.appendChild(document.createElement("div"));
+            modalContent.lastChild.setAttribute("class", "modal-header");
+
+            modalContent.lastChild.appendChild(document.createElement("button"));
+            modalContent.lastChild.lastChild.setAttribute("type", "button");
+            modalContent.lastChild.lastChild.setAttribute("class", "close");
+            modalContent.lastChild.lastChild.setAttribute("data-dismiss", "modal");
+            modalContent.lastChild.lastChild.setAttribute("aria-label", "Close");
+            modalContent.lastChild.lastChild.appendChild(document.createElement("span"));
+            modalContent.lastChild.lastChild.lastChild.setAttribute("aria-hidden", "true");
+            modalContent.lastChild.lastChild.lastChild.innerHTML = '&times;';
+
+            //the rule name
+            modalContent.lastChild.appendChild(document.createElement("input"));
+            modalContent.lastChild.lastChild.setAttribute("type", "text");
+            modalContent.lastChild.lastChild.setAttribute("name", "rule-" + ruleNumber);
+            modalContent.lastChild.lastChild.setAttribute("required", "true");
+            modalContent.lastChild.lastChild.value = aRule.name;
+
+            //content of the body
+            modalContent.appendChild(document.createElement("div"));
+            let modalBody = modalContent.lastChild;
+            modalBody.setAttribute("class", "modal-body");
+
+
+
+            modalBody.appendChild(document.createElement("h5"));
+            modalBody.lastChild.innerHTML = "IF";
+
+            modalBody.appendChild(document.createElement("fieldset"));
+            modalBody.lastChild.setAttribute("id", "edit-condition-field-" + ruleNumber);
+
+            //here we do the conditions field
+            for (let i = 0; i < rules[ruleNumber].conditions.length; i++) {
+                let condi = aRule.conditions[i];
+
+                let content = add_condition_field("edit-condition-field-" + ruleNumber, "edit", ruleNumber + "-" + i);
+
+                //initialize timer
+                content.firstChild.setAttribute("value", condi.timer);
+
+                //initialize platform
+                let selection = content.firstChild.nextSibling;
+                selection.childNodes[condi.platform].setAttribute("selected", "selected");
+
+                sensor_of_plateform_option(condi.platform, "edit-field-item-" + ruleNumber + "-" + i, "edit");
+
+                //initialize item value
+                content.childNodes[2].childNodes[condi.thing].setAttribute("selected", "selected");
+
+
+                //when we select a platform it changes the item we can choose (and the operator and value)
+                selection.onchange = function() {
+                    sensor_of_plateform_option(selection.selectedIndex, selection.nextElementSibling.getAttribute("id"), "edit");
+                }
+
+                //then we re-load operator and value field because most of the time it doesn't correspond
+                adaptative_value_input(platform_list[condi.platform].things[condi.thing].items[condi.item].item_type, content, ruleNumber + "-" + i, "edit")
+
+                //initialize operator
+                //for the operator we need to check what's type is it
+                switch (content.childNodes[2].tagName) {
+                    case "SELECT":
+                        for (let elem of content.childNodes[2]) {
+                            if (elem.value.localeCompare(condi.operator) == 0) {
+                                elem.setAttribute("selected", "selected");
+                            }
+                        }
+                        break;
+                }
+
+                //initialize value
+                switch (content.childNodes[4].tagName) {
+                    case "SELECT":
+                        content.childNodes[4].childNodes[condi.value].setAttribute("selected", "selected");
+                }
+
+
+            }
+
+            //the button to add a field
+            modalBody.appendChild(document.createElement("div"));
+            modalBody.lastChild.setAttribute("class", "col-md-12 text-center");
+            modalBody.lastChild.appendChild(document.createElement("span"));
+            modalBody.lastChild.lastChild.setAttribute("class", "glyphicon glyphicon-plus");
+            modalBody.lastChild.lastChild.setAttribute("id", "edit-plus-condition");
+            modalBody.lastChild.lastChild.onclick = function() {
+                // we give the function elements to create an id, so a common base-rulenumber-something different for every condition of this rule : the highest one + 1, or 0 if there isn't any condition yet
+                let identifiant;
+                if (document.getElementById("edit-condition-field-" + ruleNumber).lastChild) {
+                    identifiant = document.getElementById("edit-condition-field-" + ruleNumber).lastChild.getAttribute("id");
+                    identifiant = identifiant.split("-")[3];
+                    identifiant = parseInt(identifiant) + 1;
+                } else {
+                    identifiant = 0;
+                }
+                add_condition_field("edit-condition-field-" + ruleNumber, "edit", ruleNumber + "-" + identifiant);
+            };
+
+            modalBody.appendChild(document.createElement("h5"));
+            modalBody.lastChild.innerHTML = "THEN";
+
+            modalBody.appendChild(document.createElement("fieldset"));
+            modalBody.lastChild.setAttribute("id", "edit-action-field-" + ruleNumber);
+
+            //here we do the actions field
+            for (let i = 0; i < rules[ruleNumber].actions.length; i++) {
+
+                let content = add_action_field("edit-action-field-" + ruleNumber, "edit", ruleNumber + "-" + i);
+
+
+                //initialize timer
+                content.firstChild.setAttribute("value", rules[ruleNumber].actions[i].timer);
+
+                let selection = content.firstChild.nextSibling;
+
+                for (let s, j = 0; s = selection.options[j]; j++) {
+                    if (s.value == rules[ruleNumber].actions[i].action) {
+                        selection.childNodes[j].setAttribute("selected", "selected");
+
+                        break;
+                    }
+                }
+
+            }
+
+            //the button to add a field
+            modalBody.appendChild(document.createElement("div"));
+            modalBody.lastChild.setAttribute("class", "col-md-12 text-center");
+            modalBody.lastChild.appendChild(document.createElement("span"));
+            modalBody.lastChild.lastChild.setAttribute("class", "glyphicon glyphicon-plus");
+            modalBody.lastChild.lastChild.setAttribute("id", "edit-plus-action");
+            modalBody.lastChild.lastChild.onclick = function() {
+                // we give the function elements to create an id, so a common base-rulenumber-something different for every condition of this rule : the highest one + 1, or 0 if there isn't any condition yet
+                let identifiant;
+                if (document.getElementById("edit-action-field-" + ruleNumber).lastChild) {
+                    identifiant = document.getElementById("edit-action-field-" + ruleNumber).lastChild.getAttribute("id");
+                    identifiant = identifiant.split("-")[3];
+                    identifiant = parseInt(identifiant) + 1;
+                } else {
+                    identifiant = 0;
+                }
+                add_action_field("edit-action-field-" + ruleNumber, "edit", ruleNumber + "-" + identifiant);
+            };
+
+
+            //content of the modal footer
+            modalContent.appendChild(document.createElement("div"));
+            modalContent.lastChild.setAttribute("class", "modal-footer");
+            modalContent.lastChild.appendChild(document.createElement("button"));
+            modalContent.lastChild.lastChild.setAttribute("type", "button");
+            modalContent.lastChild.lastChild.setAttribute("class", "btn btn-default pull-right");
+            modalContent.lastChild.lastChild.setAttribute("data-dismiss", "modal");
+            modalContent.lastChild.lastChild.setAttribute("style", "margin-left: 7px");
+            modalContent.lastChild.lastChild.innerHTML = "Close";
+
+            modalContent.lastChild.appendChild(document.createElement("button"));
+            modalContent.lastChild.lastChild.setAttribute("type", "button");
+            modalContent.lastChild.lastChild.setAttribute("class", "btn btn-default btn-primary pull-right");
+            modalContent.lastChild.lastChild.setAttribute("style", "color:white");
+            modalContent.lastChild.lastChild.setAttribute("data-dismiss", "modal");
+            modalContent.lastChild.lastChild.setAttribute("data-toggle", "modal");
+            modalContent.lastChild.lastChild.setAttribute("data-target", "#modal-details-rule-" + ruleNumber);
+            modalContent.lastChild.lastChild.onclick = function() {
+                rule_edit(ruleNumber);
+            }
+            modalContent.lastChild.lastChild.innerHTML = "Edit";
+
+            modalContent.lastChild.appendChild(document.createElement("button"));
+            modalContent.lastChild.lastChild.setAttribute("type", "button");
+            modalContent.lastChild.lastChild.setAttribute("class", "btn btn-default btn-danger pull-right");
+            modalContent.lastChild.lastChild.setAttribute("data-dismiss", "modal");
+            modalContent.lastChild.lastChild.onclick = function() {
+                rule_remove(ruleNumber)
+            };
+            modalContent.lastChild.lastChild.setAttribute("style", "margin-left: 7px; color:white");
+            modalContent.lastChild.lastChild.innerHTML = "Remove";
+
+
+        }
+        
+        /*
+        function rule_to_localRule(sRule) {
+            let lRule = new LocalRule(sRule.name, sRule.status, sRule.id);
+            
+            for (let i = 0; i<LocalRule)
+            
+            return lRule;
+        }
+
+        function bitwise_to_localBitwise(bitwise) {
+            if (bitwise.bitwise_operator)
+        }
+        */
+        //called whent the edit button button is clicked
+        function rule_edit(ruleNumber) {
+            
+            
+
+            let edit_rule = new Rule(document.getElementById("modal-edit-rule-" + ruleNumber).firstChild.firstChild.firstChild.lastChild.value);
+
+
+            //Here we edit the conditions to do in the rule we create
+            for (let i = 0; i < document.getElementById("edit-condition-field-" + ruleNumber).childNodes.length; i++) {
+                //first we get the platform element
+                let timer = document.getElementById("edit-condition-field-" + ruleNumber).childNodes[i].firstChild;
+
+                //then the platform element
+                let platform = timer.nextSibling;
+
+                //then the thing-item element
+                let thing_item = platform.nextSibling;
+
+                //then the operator element
+                let operator = thing_item.nextSibling;
+
+                //finally the value element to compare
+                let value = operator.nextSibling;
+
+                //then we extract the correct data
+                timer = timer.value
+
+                platform = platform.value;
+
+                thing_item = thing_item.options[thing_item.selectedIndex].value.split("-");
+
+                if (operator.tagName == "P") {
+                    operator = operator.innerHTML;
+                } else if (operator.tagName.localeCompare("SELECT") == 0) {
+                    operator = operator.options[operator.selectedIndex].value;
+                }
+
+                if (value.tagName == "INPUT") {
+                    value = value.value;
+                } else if (value.tagName.localeCompare("SELECT") == 0) {
+                    value = value.options[value.selectedIndex].value;
+                }
+
+
+
+                edit_rule.add_condition(timer, platform, thing_item[0], thing_item[1], operator, value);
+            }
+
+
+            //Here we edit the actions to do in the rule we create
+            for (let i = 0; i < document.getElementById("edit-action-field-" + ruleNumber).childElementCount; i++) {
+                //first we get the timer element
+                let timer = document.getElementById("edit-action-field-" + ruleNumber).childNodes[i].firstChild;
+
+                let select = timer.nextSibling;
+                edit_rule.add_action(timer.value, select.options[select.selectedIndex].value);
+            }
+            rules.splice(ruleNumber, 1, edit_rule);
+            list_existing_rule();
+
+            rule_edit_display(ruleNumber);
+            rule_details(ruleNumber);
+        }
+
+        //called whent the remove button button is clicked
+        function rule_remove(ruleNumber) {
+            if (confirm("Are you sure you want to remove the rule " + rules[ruleNumber].name + " ?"))
+                rules.splice(ruleNumber, 1);
+            list_existing_rule();
+        }
+
+        //the function that push a rule on the server
+        function push_rule(rule) {
+            var xhr = new XMLHttpRequest();
+            var url = "https://f1727769.ngrok.io/rule";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var json = JSON.parse(xhr.responseText);
+                    console.log(json);
+                }
+            };
+            var data = JSON.stringify(rule);
+            xhr.send(data);
+        }
+
+    </script>

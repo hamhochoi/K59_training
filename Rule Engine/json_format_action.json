@@ -1,0 +1,140 @@
+// A sample action's json format
+
+[
+  {
+    "time": "10s",
+    "action_type": "update",    // call_cross_platform_api
+    "action_id" : "action_id_1",
+    "description" : "this is a action sample",
+    "config" : {
+      "platform_id": "ee3b4536-be4d-4539-881a-54bf69958a03",
+      "item_name" : "Temperature",
+      "item_global_id": "93c67f78-2d89-48fa-b016-6969db4cfcd8",
+      "thing_global_id" : "5155ed62-5a23-4aa1-94b1-aef53eee25fb",
+      "new_state" : "50"
+    }
+  },
+  {
+    "time": "20s",
+    "action_type": "send_a_command",
+    "action_id" : "action_id_2",
+    "description" : "send a mqqt message (command) to a host at a specific port",
+    "config" : {
+      "command": "{\"vang\"\\:\"ON\"}",
+      "topic" : "test",
+      "host" : "25.96.39.226",
+      "port" : "1883"
+    }
+  },
+  {
+    "time": "30s",
+    "action_type": "enable_or_disable_rule",
+    "action_id" : "action_id_3",
+    "description" : "this is a action sample",
+    "config" : {
+      "rule_id": "rule_id_1",
+      "action" : "enable"
+    }
+  },
+  {
+    "time": "40s",
+    "action_type": "run_rule",
+    "action_id" : "action_id_4",
+    "description" : "this is a action sample",
+    "config" : {
+      "rule_id": "rule_id_1"
+    }
+  },
+  {
+    "time": "50s",
+    "action_type": "exec_given_script",
+    "action_id" : "action_id_5",
+    "description" : "this is a action sample",
+    "config" : {
+      "script": "ls -la",
+      "format" : "linux"
+    }
+  },
+  {
+    "time": "60s",
+    "action_type": "write_log",
+    "action_id" : "action_id_6",
+    "description" : "this is a action sample",
+    "config" : {
+      "file_name": "test_log",
+      "format" : ".txt"
+    }
+  }
+]
+//[
+//  {
+//    "action_name" : "action_name_1",
+//    "action_id"   : "action_id_1",
+//    "action_type" : "send_a_command",
+//    "description" : "this is a action sample",
+//    "configDescription" : [
+//      {
+//        "id" : "command",
+//        "description" : "some description",
+//        "required" : true
+//      }
+//    ]
+//  },
+//  {
+//    "action_name" : "action_name_2",
+//    "action_id"   : "action_id_2",
+//    "action_type" : "set_state",
+//    "description" : "this is a another action sample",
+//    "configDescription" : [
+//      {
+//        "id" : "item_id_to_set_state",
+//        "description" : "item chosen to set state",
+//        "required" : true
+//      },
+//      {
+//        "id" : "state_to_set",
+//        "description" : "this action will set state for some items",
+//        "required" : true
+//      }
+//    ],
+//    "input" : [
+//      {
+//        "id" : "input_id",
+//        "description" : "this is a config for input has id will apply set_state",
+//        "required" : true
+//      }
+//    ]
+//  }
+//]
+//
+//
+//
+//
+//[
+//        {
+//            "time": "20s",
+//            "action_type": "call_cross_platform_api",
+//            "action_id" : "action_id_1",
+//            "description" : "this is a action sample",
+//            "config" : {
+//                "platform_id": "ee3b4536-be4d-4539-881a-54bf69958a03",
+//                "item_name" : "Temperature",
+//                "item_global_id": "93c67f78-2d89-48fa-b016-6969db4cfcd8",
+//                "thing_global_id" : "5155ed62-5a23-4aa1-94b1-aef53eee25fb",
+//                "value" : "50"
+//            }
+//        },
+//        {
+//            "time": "30s",
+//            "action_type": "call_cross_platform_api",
+//            "action_id" : "action_id_2",
+//            "description" : "this is a action sample",
+//            "config" : {
+//                "platform_id": "ee3b4536-be4d-4539-881a-54bf69958a03",
+//                "thing_global_id" : "607e994f-6bcc-4c0f-9be0-e11e103712c0",
+//                "item_name" : "Red Light",
+//                "item_global_id": "607e994f-6bcc-4c0f-9be0-e11e103712c0",
+//                "value" : "OFF"
+//            }
+//        }
+]

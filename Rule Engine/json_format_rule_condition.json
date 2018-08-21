@@ -1,0 +1,21 @@
+{
+	"rule_condition" : [
+		{
+			"things" : [	// things 1
+				{
+
+				}
+			], 
+			"operator" : "AND"
+		}, 
+		{
+			"things" : [
+				{
+
+				}
+			], 
+			"operator" : "None"
+		}
+
+	]
+}

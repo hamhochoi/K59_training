@@ -1,0 +1,58 @@
+{
+    "rule_id": "21351c35dfdsf",
+    "rule_name": "Motion light off",
+    "rule_status" : "active", 
+    "rule_condition" : {
+        "bitwise" : {
+            "things" : [
+                {
+                    "timer": "60",
+                    "thing_global_id": "d7fefe33-2f39-47f8-a229-18cf4376a3c9.light",
+                    "item_global_id": "d7fefe33-2f39-47f8-a229-18cf4376a3c9-binary_sensor.motion_detection-binary_sensor.motion_detection",
+                    "item_name": "Motion Detection",
+                    "item_type" : "Switch",
+                    "platform_id": "d7fefe33-2f39-47f8-a229-18cf4376a3c9",
+                    "operator": "EQ", 
+                    "value" : "off"
+                }
+            ],
+            
+            "bitwise_operator" : "AND", 
+
+            "bitwise" : [
+                {
+                    "things" : [
+                        {
+                            "timer": "60",
+                            "thing_global_id": "d7fefe33-2f39-47f8-a229-18cf4376a3c9-sensor.light",
+                            "item_global_id": "d7fefe33-2f39-47f8-a229-18cf4376a3c9-binary_sensor.motion_detection-binary_sensor.motion_detection",
+                            "item_name": "Motion Detection",
+                            "item_type" : "Switch",
+                            "platform_id": "d7fefe33-2f39-47f8-a229-18cf4376a3c9",
+                            "operator": "EQ", 
+                            "value" : "off"
+                        }
+                    ],
+                    "bitwise_operator" : "None", 
+                    "bitwise" : []
+                } 
+            ]
+        }
+    },
+    "action": [
+        {
+            "timer": 0,
+            "action_name": "light_off",
+            "thing_global_id": "d7fefe33-2f39-47f8-a229-18cf4376a3c9-sensor.light",
+            "item_global_id": "d7fefe33-2f39-47f8-a229-18cf4376a3c9-sensor.light-sensor.light",
+            "new_state" : "off"
+        }, 
+        {
+            "timer": 0,
+            "action_name": "light_off",
+            "thing_global_id": "d7fefe33-2f39-47f8-a229-18cf4376a3c9-sensor.light",
+            "item_global_id": "d7fefe33-2f39-47f8-a229-18cf4376a3c9-sensor.light-sensor.light",
+            "new_state" : "off"
+        }
+    ]
+}
