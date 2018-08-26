@@ -15,67 +15,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Rule_Engine_1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rule_Engine_1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4212">
-              <caret line="277" column="0" lean-forward="false" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#83#0" expanded="true" />
-                <element signature="e#7115#7119#0" expanded="false" />
-                <element signature="e#7230#7234#0" expanded="false" />
-                <element signature="e#8016#8083#0" expanded="false" />
-                <element signature="e#8911#8915#0" expanded="false" />
-                <element signature="e#8966#8970#0" expanded="false" />
-                <element signature="e#9030#9034#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo_1.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo_1.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo_2.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo_2.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Event_Generator_1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Event_Generator_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="165" column="38" lean-forward="false" selection-start-line="165" selection-start-column="38" selection-end-line="165" selection-end-column="38" />
+            <state relative-caret-position="486">
+              <caret line="54" column="49" lean-forward="true" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
               <folding>
                 <element signature="e#142#225#0" expanded="true" />
                 <element signature="e#2260#2325#0" expanded="false" />
                 <element signature="e#3236#3240#0" expanded="false" />
                 <element signature="e#3321#3325#0" expanded="false" />
-                <element signature="e#8437#9216#0" expanded="false" />
-                <element signature="e#9223#9269#0" expanded="false" />
+                <element signature="e#9293#9339#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -83,7 +34,7 @@
       <file leaf-file-name="Data_Source_2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data_Source_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state relative-caret-position="828">
               <caret line="51" column="64" lean-forward="false" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -95,10 +46,53 @@
       <file leaf-file-name="Event_Generator_2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Event_Generator_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
+            <state relative-caret-position="486">
               <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="e#142#225#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rule_Engine_1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Rule_Engine_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="321" column="0" lean-forward="true" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#83#0" expanded="true" />
+                <element signature="e#1439#2298#0" expanded="false" />
+                <element signature="e#2529#3213#0" expanded="false" />
+                <element signature="e#3325#7938#0" expanded="false" />
+                <element signature="e#8050#8054#0" expanded="false" />
+                <element signature="e#8165#8169#0" expanded="false" />
+                <element signature="e#8176#8243#0" expanded="false" />
+                <element signature="e#9138#10294#0" expanded="false" />
+                <element signature="e#9291#10271#0" expanded="false" />
+                <element signature="e#10351#10355#0" expanded="false" />
+                <element signature="e#10419#10423#0" expanded="false" />
+                <element signature="e#10474#10478#0" expanded="false" />
+                <element signature="e#10538#10542#0" expanded="false" />
+                <element signature="e#10594#11081#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rule_Engine_1_with_process.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rule_Engine_1_with_process.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4662">
+              <caret line="281" column="20" lean-forward="false" selection-start-line="281" selection-start-column="20" selection-end-line="281" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#83#0" expanded="true" />
+                <element signature="e#7164#7168#0" expanded="false" />
+                <element signature="e#7279#7283#0" expanded="false" />
+                <element signature="e#8065#8132#0" expanded="false" />
+                <element signature="e#8960#8964#0" expanded="false" />
+                <element signature="e#9015#9019#0" expanded="false" />
+                <element signature="e#9079#9083#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -119,7 +113,7 @@
       <file leaf-file-name="create_database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/create_database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
+            <state relative-caret-position="1476">
               <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
                 <element signature="e#131#145#0" expanded="true" />
@@ -142,9 +136,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ItemState</find>
       <find>result</find>
-      <find>check_trigger_item_has_given_state</find>
       <find>operator is not valid</find>
       <find>elect condition_id, condition_content, action_id</find>
       <find>event_generator_1</find>
@@ -172,6 +164,8 @@
       <find>ItemTable</find>
       <find>item_state_list</find>
       <find>call_cross_platform_api</find>
+      <find>check_trigger_condition</find>
+      <find>check_trigger_item_has_given_state</find>
     </findStrings>
     <replaceStrings>
       <replace>event_generator_2</replace>
@@ -192,7 +186,6 @@
         <option value="$PROJECT_DIR$/json_format.json" />
         <option value="$PROJECT_DIR$/Event.py" />
         <option value="$PROJECT_DIR$/item_schema.txt" />
-        <option value="$PROJECT_DIR$/modules_type.md" />
         <option value="$PROJECT_DIR$/Action_Base.py" />
         <option value="$PROJECT_DIR$/Actor_Base.py" />
         <option value="$PROJECT_DIR$/Actor_1.py" />
@@ -210,9 +203,13 @@
         <option value="$PROJECT_DIR$/Event_Generator_2.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/Data_Source_2.py" />
-        <option value="$PROJECT_DIR$/Event_Generator_1.py" />
-        <option value="$PROJECT_DIR$/Rule_Engine_1.py" />
+        <option value="$PROJECT_DIR$/Rule_Engine_2_with_process.py" />
         <option value="$PROJECT_DIR$/demo_1.json" />
+        <option value="$PROJECT_DIR$/demo_2.json" />
+        <option value="$PROJECT_DIR$/Event_Generator_1.py" />
+        <option value="$PROJECT_DIR$/Rule_Engine_1_with_process.py" />
+        <option value="$PROJECT_DIR$/modules_type.md" />
+        <option value="$PROJECT_DIR$/Rule_Engine_1.py" />
       </list>
     </option>
   </component>
@@ -237,6 +234,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,14 +247,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo_2.json" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo_1.json" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -272,7 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Event_Generator_1">
+  <component name="RunManager" selected="Python.Rule_Engine_1">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -365,7 +362,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Rule_Engine_1_with_process" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -377,7 +374,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Rule Engine" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Rule_Engine_1_with_process.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -407,18 +404,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.Event_Generator_1" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Rule_Engine_1" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Event_Generator_2" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Data_Source_2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Rule_Engine_1" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Event_Generator_2" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Data_Source_2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Rule_Engine_1_with_process" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.Rule_Engine_1" />
         <item index="1" class="java.lang.String" itemvalue="Python.Event_Generator_1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Data_Source_2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Event_Generator_2" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Rule_Engine_1_with_process" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Data_Source_2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Event_Generator_2" />
       </list>
     </recent_temporary>
   </component>
@@ -426,15 +423,14 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
-    <editor active="true" />
+    <frame x="365" y="-4" width="1368" height="780" extended-state="6" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1816828" sideWeight="0.48453608" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30542636" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4744186" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -457,25 +453,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Rule_Engine_Base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Actor_Base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Event_Generator_Base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -665,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,16 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules_type.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="306">
-            <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="25" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python3.5/dist-packages/amqp/transport.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -742,6 +713,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stdlib/3/datetime.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="107" column="8" lean-forward="false" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo_1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="67" column="9" lean-forward="true" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo_2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/json_format_action.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
@@ -754,7 +753,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/create_database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
+        <state relative-caret-position="1476">
           <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
             <element signature="e#131#145#0" expanded="true" />
@@ -765,17 +764,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file:///usr/lib/python3.5/multiprocessing/process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="125">
+          <caret line="248" column="0" lean-forward="false" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rule_Engine_1_with_process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4662">
+          <caret line="281" column="20" lean-forward="false" selection-start-line="281" selection-start-column="20" selection-end-line="281" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#83#0" expanded="true" />
+            <element signature="e#7164#7168#0" expanded="false" />
+            <element signature="e#7279#7283#0" expanded="false" />
+            <element signature="e#8065#8132#0" expanded="false" />
+            <element signature="e#8960#8964#0" expanded="false" />
+            <element signature="e#9015#9019#0" expanded="false" />
+            <element signature="e#9079#9083#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules_type.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data_Source_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="828">
           <caret line="51" column="64" lean-forward="false" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
@@ -785,7 +810,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Event_Generator_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
+        <state relative-caret-position="486">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="e#142#225#0" expanded="true" />
@@ -793,58 +818,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stdlib/3/datetime.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="107" column="8" lean-forward="false" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Event_Generator_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="165" column="38" lean-forward="false" selection-start-line="165" selection-start-column="38" selection-end-line="165" selection-end-column="38" />
+        <state relative-caret-position="486">
+          <caret line="54" column="49" lean-forward="true" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
           <folding>
             <element signature="e#142#225#0" expanded="true" />
             <element signature="e#2260#2325#0" expanded="false" />
             <element signature="e#3236#3240#0" expanded="false" />
             <element signature="e#3321#3325#0" expanded="false" />
-            <element signature="e#8437#9216#0" expanded="false" />
-            <element signature="e#9223#9269#0" expanded="false" />
+            <element signature="e#9293#9339#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo_2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rule_Engine_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4212">
-          <caret line="277" column="0" lean-forward="false" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="321" column="0" lean-forward="true" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
           <folding>
             <element signature="e#0#83#0" expanded="true" />
-            <element signature="e#7115#7119#0" expanded="false" />
-            <element signature="e#7230#7234#0" expanded="false" />
-            <element signature="e#8016#8083#0" expanded="false" />
-            <element signature="e#8911#8915#0" expanded="false" />
-            <element signature="e#8966#8970#0" expanded="false" />
-            <element signature="e#9030#9034#0" expanded="false" />
+            <element signature="e#1439#2298#0" expanded="false" />
+            <element signature="e#2529#3213#0" expanded="false" />
+            <element signature="e#3325#7938#0" expanded="false" />
+            <element signature="e#8050#8054#0" expanded="false" />
+            <element signature="e#8165#8169#0" expanded="false" />
+            <element signature="e#8176#8243#0" expanded="false" />
+            <element signature="e#9138#10294#0" expanded="false" />
+            <element signature="e#9291#10271#0" expanded="false" />
+            <element signature="e#10351#10355#0" expanded="false" />
+            <element signature="e#10419#10423#0" expanded="false" />
+            <element signature="e#10474#10478#0" expanded="false" />
+            <element signature="e#10538#10542#0" expanded="false" />
+            <element signature="e#10594#11081#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo_1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>

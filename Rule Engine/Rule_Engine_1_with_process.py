@@ -6,11 +6,14 @@ from Rule_Engine_Base import Rule_Engine_Base
 from Action import Action
 from datetime import timedelta, datetime
 import os
+from multiprocessing import Process
 import time
+
+
 
 class Rule_Engine_1(Rule_Engine_Base):
     def __init__(self, rule_engine_name, rule_engine_id,
-                  description, input_topic, output_topic):
+                 description, input_topic, output_topic):
 
         Rule_Engine_Base.__init__(self, rule_engine_name, rule_engine_id,
                                   description, input_topic, output_topic)
@@ -52,27 +55,6 @@ class Rule_Engine_1(Rule_Engine_Base):
             print ("error mapping trigger_id")
             self.db.rollback()
             return None
-
-
-####################################################################
-#################### CONDITION #####################################
-
-
-    def check_condition(self, condition_id, condition_type, condition_content):
-        print ("checking condition ...")
-        print (condition_type)
-        result = False
-        if (condition_type == "item_has_given_state"):
-            result = self.check_condition_item_has_given_state(condition_id, condition_type, condition_content)
-        elif (condition_type == "given_script_is_true"):
-            result = self.check_condition_given_script_is_true(condition_id, condition_type, condition_content)
-        elif (condition_type == "certain_day_of_week"):
-            result = self.check_condition_certain_day_of_week(condition_id, condition_type, condition_content)
-        else:
-            print ("condition_type is not pre-defined!")
-
-
-        return result
 
 
     def check_condition_item_has_given_state(self, condition_id, condition_type, condition_content):
@@ -136,10 +118,10 @@ class Rule_Engine_1(Rule_Engine_Base):
                 for item_state in item_state_list:
                     if (item_state.isdigit() == True):
                         item_state = float(item_state)
-                    # elif (item_state == "on"):
-                    #     item_state = 1
-                    # elif (item_state == "off"):
-                    #     item_state = 0
+                    elif (item_state == "on"):
+                        item_state = 1
+                    elif (item_state == "off"):
+                        item_state = 0
 
                     result = True
 
@@ -206,6 +188,23 @@ class Rule_Engine_1(Rule_Engine_Base):
         pass
 
 
+    def check_condition(self, condition_id, condition_type, condition_content):
+        print ("checking condition ...")
+        print (condition_type)
+        result = False
+        if (condition_type == "item_has_given_state"):
+            result = self.check_condition_item_has_given_state(condition_id, condition_type, condition_content)
+        elif (condition_type == "given_script_is_true"):
+            result = self.check_condition_given_script_is_true(condition_id, condition_type, condition_content)
+        elif (condition_type == "certain_day_of_week"):
+            result = self.check_condition_certain_day_of_week(condition_id, condition_type, condition_content)
+        else:
+            print ("condition_type is not pre-defined!")
+
+
+        return result
+
+
     # def call_to_action(self, action_type, action_id, action_content):
     #     message = {
     #         'rule_engine_name' : self.rule_engine_name,
@@ -226,44 +225,9 @@ class Rule_Engine_1(Rule_Engine_Base):
     #     print ("Send event to Actor: ", self.output_topic)
 
 
-
-############################################################
-############### ACTION #####################################
-
-
-    def call_to_action(self, action_id, action_content):
-        print ("call to action")
-        print (action_content['action_id'])
-        result = False
-
-        for action in action_content['action']:
-            action_type = action['action_type']
-
-            if (action_type == "send_a_command"):
-                result = self.send_a_command(action_content)
-            elif (action_type == "enable_or_disable_rule"):
-                result = self.enable_or_disable_rule(action_content)
-            elif (action_type == "run_rule"):
-                result = self.run_rule(action_content)
-            elif (action_type == "exec_given_script"):
-                result = self.exec_given_script(action_content)
-            elif (action_type == "write_log"):
-                result = self.write_log(action_content)
-            elif (action_type == "call_cross_platform_api" or action_type == "update"):
-                result = self.call_cross_platform_api(action_content)
-            else:
-                print ("action_type is not pre-defined")
-                result = False      # error
-
-            if (result == False):
-                print ("Error execute action")
-                break
-
-        return result
-
-
     def send_a_command(self, action_content):
         pass
+
 
     def enable_or_disable_rule(self, action_content):
         pass
@@ -298,10 +262,8 @@ class Rule_Engine_1(Rule_Engine_Base):
 
     def call_cross_platform_api(self, action_content):
         print("call_cross_platform_api ...")
-        # print (action_content["action"][1])
 
         for action in action_content['action']:
-            print ("action: ", action)
             thing_global_id = action['config']['item']['thing_global_id']
             item_global_id  = action['config']['item']['item_global_id']
             value           = action['config']['value']
@@ -316,31 +278,47 @@ class Rule_Engine_1(Rule_Engine_Base):
 
             # print (request)
             os.system(request)
-            time.sleep(1)
 
-        # time.sleep(1)
-
-
-###############################################################
-###############################################################
+        time.sleep(3)
 
 
-###############################################################
-############## RECEIVE EVENT ##################################
+
+
+    def call_to_action(self, action_id, action_content):
+        print ("call to action")
+        print (action_content['action_id'])
+        result = False
+
+        for action in action_content['action']:
+            action_type = action['action_type']
+
+            if (action_type == "send_a_command"):
+                result = self.send_a_command(action_content)
+            elif (action_type == "enable_or_disable_rule"):
+                result = self.enable_or_disable_rule(action_content)
+            elif (action_type == "run_rule"):
+                result = self.run_rule(action_content)
+            elif (action_type == "exec_given_script"):
+                result = self.exec_given_script(action_content)
+            elif (action_type == "write_log"):
+                result = self.write_log(action_content)
+            elif (action_type == "call_cross_platform_api" or action_type == "update"):
+                result = self.call_cross_platform_api(action_content)
+            else:
+                print ("action_type is not pre-defined")
+                result = False      # error
+
+            if (result == False):
+                print ("Error execute action")
+                break
+
+        return result
+
+
+
 
     def receive_event(self):
-        def handle_notification(body, message):
-            print ("Receive Event!")
-
-            # print (json.loads(body))
-
-            # event_name = json.loads(body)["event_name"]
-            event_id  = json.loads(body)["event_id"]
-            event_source = json.loads(body)["event_source"]
-            trigger_id = json.loads(body)["trigger_id"]
-            # event_generator_id = json.loads(body)["event_generator_id"]
-            time = json.loads(body)["time"]
-
+        def process_handle_notification(event_id, event_source, trigger_id):
             # mapping trigger_id to condition_id and action_id
             condition_id, condition_type, condition_content, action_id, action_content = self.mapping(trigger_id)
 
@@ -350,8 +328,27 @@ class Rule_Engine_1(Rule_Engine_Base):
             print ("check condition result: ", is_condition_satisfice)
 
             if (is_condition_satisfice == True):
-                    # Execute an action
-                    self.call_to_action(action_id, action_content)
+                # Execute an action
+                self.call_to_action(action_id, action_content)
+
+
+        def handle_notification(body, message):
+            print ("Receive Event!")
+
+            event_id  = json.loads(body)["event_id"]
+            event_source = json.loads(body)["event_source"]
+            trigger_id = json.loads(body)["trigger_id"]
+
+
+            try:
+                p = Process(target=process_handle_notification, args=(event_id, event_source, trigger_id))
+                p.start()
+                p.join()
+                time.sleep(1)
+
+            except:
+                print ("Error: unable to start the new process")
+
             # End handle_notification
 
 
@@ -366,8 +363,7 @@ class Rule_Engine_1(Rule_Engine_Base):
             print('Connection lost')
         except self.consumer_connection.connection_errors:
             print('Connection error')
-        except:
-            print ("some error")
+
 
     def run(self):
         while 1:
@@ -378,14 +374,9 @@ class Rule_Engine_1(Rule_Engine_Base):
                 print('Connection lost')
             except self.consumer_connection.connection_errors:
                 print('Connection error')
-            except:
-                print ("some error")
+            # except:
+            #     print ("some error")
 
-
-
-
-###########################################################
-####################### MAIN ##############################
 
 rule_engine_1 = Rule_Engine_1("rule_engine_1", "rule_engine_id_1", "", "rule_engine_1", "")
 print (rule_engine_1.rule_engine_name)

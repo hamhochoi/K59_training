@@ -121,6 +121,7 @@ class Event_Generator_1(Event_Generator_Base):
                 value = float(value)
 
             request = "select time from ItemTable where item_id = '%s' order by time asc limit 1" % (trigger_item_id)
+            print ("time request: ", request)
             last_insert_time = str(datetime.max)
 
             try:
@@ -142,8 +143,6 @@ class Event_Generator_1(Event_Generator_Base):
 
             request = "select item_state from ItemTable where item_id = '%s' and time >= '%s' order by time desc" % (trigger_item_id, check_time)
 
-            print (request)
-
 
             try:
                 # Execute the SQL command
@@ -156,14 +155,15 @@ class Event_Generator_1(Event_Generator_Base):
 
                 for item_state in item_state_list:
                     print ("item_state: ", item_state)
+                    print ("value: ", value)
                     result = True
 
                     if (item_state.isdigit() == True):
                         item_state = float(item_state)
-                    elif (item_state == "on"):
-                        item_state = 1
-                    elif (item_state == "off"):
-                        item_state = 0
+                    # elif (item_state == "on"):
+                    #     item_state = 1
+                    # elif (item_state == "off"):
+                    #     item_state = 0
 
                     if (operator == "GT"):
                         if (item_state <= value):
@@ -395,6 +395,8 @@ class Event_Generator_1(Event_Generator_Base):
 
                         # Check the item with each trigger condition
                         result = self.check_trigger_condition(trigger_id, trigger_type, trigger_content, item_id)
+
+                        print ("check trigger : ", result)
 
                         if (result == None):
                             return None

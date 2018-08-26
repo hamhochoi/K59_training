@@ -3,6 +3,7 @@
 - item_state_update
 - item_receive_command
 - fix_time_of_day
+- item_has_given_state
 
 ## Condition_type
 - item_has_given_state

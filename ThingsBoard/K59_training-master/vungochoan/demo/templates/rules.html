@@ -17,7 +17,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Ionicons -->
     <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="dist/css/AdminLTE.css">
     <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect. -->
@@ -31,7 +31,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <![endif]-->
 
     <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="/media/hamhochoi/Beo/OneDrive for Business 1/OneDrive - student.hust.edu.vn/OD/HPCC/ThingsBoard/K59_training-master/vungochoan/demo/bower_components/font-awesome/css/fonts.googleapis.css">
 
 
     <style>
@@ -82,23 +82,19 @@ desired effect
                 <!-- search form (Optional) -->
 
                 <!-- Sidebar toggle button-->
-                <div class="pull-left">
-                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-                        <span class="sr-only">Toggle navigation</span>
-                    </a>
-                </div>
+                
 
                 <div class="navbar-custom-menu pull-right">
                     <ul class="nav navbar-nav">
                         <!-- Control Sidebar Toggle Button -->
                         <li>
-                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                            <!-- <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a> -->
                         </li>
                     </ul>
                 </div>
 
 
-                <div class="col-md-2 pull-right">
+                <!-- <div class="col-md-2 pull-right">
                     <form action="#" method="get" class="sidebar-form">
                         <div class="input-group">
                             <input type="text" name="q" class="form-control" placeholder="Search...">
@@ -109,6 +105,7 @@ desired effect
                         </div>
                     </form>
                 </div>
+                 -->
                 <!-- /.search form -->
             </nav>
         </header>
@@ -121,17 +118,19 @@ desired effect
 
                 <!-- Sidebar Menu -->
                 <ul class="sidebar-menu" data-widget="tree">
-                    <li class="header">
+                    <!-- <li class="header">
                         <form>
                             <label class="radio-inline"><input type="radio" class="with-gap" name="optradio">Instance name</label>
                             <label class="radio-inline"><input type="radio" class="with-gap" name="optradio">Business name</label>
                         </form>
                     </li>
+                     -->
                     <!-- Optionally, you can add icons to the links -->
-                    <li class="inactive"><a href="realtime_diag.html"><i class="fa fa-link"></i> <span>Realtime Diagram</span></a></li>
-                    <li class="active"><a href="rules.html"><i class="fa fa-link"></i> <span>Rules</span></a></li>
+                    <li class="inactive"><a href="realtime_diag.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+                    <li class="inactive"><a href="realtime_diag.html"><i class="fa fa-line-chart"></i> <span>Realtime Diagram</span></a></li>
+                    <li class="active"><a href="rules.html"><i class="fa fa-cog"></i> <span>Rules</span></a></li>
                     <!-- <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li> -->
-                    <li class="treeview">
+                    <!-- <li class="treeview">
                         <a href="#"><i class="fa fa-link"></i> <span>More</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
@@ -141,7 +140,7 @@ desired effect
                             <li><a href="#">Nosource</a></li>
                             <li><a href="#">Maybe later</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
                 <!-- /.sidebar-menu -->
             </section>
@@ -155,10 +154,10 @@ desired effect
                 <h1>
                     Rules management
                 </h1>
-                <ol class="breadcrumb">
+                <!-- <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
                     <li class="active">Here</li>
-                </ol>
+                </ol> -->
             </section>
 
             <!-- Main content -->
@@ -252,10 +251,10 @@ desired effect
         <footer class="main-footer">
             <!-- To the right -->
             <div class="pull-right hidden-xs">
-                Anysource you want
+                HPCC IoT Team
             </div>
             <!-- Default to the left -->
-            <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
+            <strong>Copyright &copy; 2018 <a href="#">HPPC</a>.</strong> All rights reserved.
         </footer>
 
         <!-- Control Sidebar -->
@@ -302,8 +301,8 @@ desired effect
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
 
     <!-- toogle button -->
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <link href="/media/hamhochoi/Beo/OneDrive for Business 1/OneDrive - student.hust.edu.vn/OD/HPCC/ThingsBoard/K59_training-master/vungochoan/demo/plugins/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="/media/hamhochoi/Beo/OneDrive for Business 1/OneDrive - student.hust.edu.vn/OD/HPCC/ThingsBoard/K59_training-master/vungochoan/demo/plugins/bootstrap-toggle.min.js"></script>
 
     <!-- AJAX needed file -->
     <script src="test/ajax.js"></script>
@@ -479,18 +478,18 @@ desired effect
             // trigger_config_id = 0;
             //first we clear the name
             document.getElementById("rule-name-input").value = '';
-            console.log("generate_add_form")
+            // console.log("generate_add_form")
 
 
             // we remove the condition/action/button
             while (document.getElementById("trigger_field").firstChild) {
-                console.log(document.getElementById("trigger_field").firstChild)
+                // console.log(document.getElementById("trigger_field").firstChild)
                 document.getElementById("trigger_field").removeChild(document.getElementById("trigger_field").firstChild);
             }
 
 
             while (document.getElementById("condition_field").firstChild) {
-                console.log(document.getElementById("condition_field").firstChild)
+                // console.log(document.getElementById("condition_field").firstChild)
                 document.getElementById("condition_field").removeChild(document.getElementById("condition_field").firstChild);
 
             }
@@ -634,9 +633,9 @@ desired effect
         function add_trigger_field(parent_id, tpye, suffix_id, oper) {
             //we set the container (it so that every condition is in a different container, with a different id)
             let content = document.createElement("div");
-            console.log("add_trigger_field")
-            console.log(parent_id)
-            console.log(content)
+            // console.log("add_trigger_field")
+            // console.log(parent_id)
+            // console.log(content)
 
             document.getElementById(parent_id).appendChild(content);
             // console.log(document.getElementById(parent_id).firstChild);
@@ -808,8 +807,8 @@ desired effect
             let sources = platform_list[platform_index].sources;
             let selec = document.getElementById(select_id);
 
-            // console.log("sources")
-            // console.log(sources)
+            console.log("sources")
+            console.log(sources)
 
             //first we get rid of existing options in this select
             while (selec.firstChild) {
@@ -827,7 +826,23 @@ desired effect
                 }
             }
 
-            // selec.firstChild.nextSibling.setAttribute("selected", "selected");
+            selec.firstChild.setAttribute("selected", "selected");
+
+            let select = selec.firstChild;
+
+
+            for (let i=0; i<sources.length; i++){
+                if (sources[i].metrics[0].DataPoint.DataType.localeCompare("int") == 0){
+                    adaptative_value_input(sources[i].metrics[0].MetricType, sources[i].metrics[0].DataPoint.DataType, selec.parentElement, line_id, tpye);
+                    break;
+                }
+                select = select.nextSibling;
+            }
+
+            select.setAttribute("selected", "selected");
+
+
+
 
             var line_id;
 
@@ -838,12 +853,20 @@ desired effect
                 line_id = selec.getAttribute("id").slice(tpye.length + "-condition-field-metric-".length, selec.getAttribute("id").length);
             }
 
+            console.log("sources[0]")
+            console.log(sources[0].metrics)
+
+
+            
+
+           
+
             // when we click on one the option it change the operator and value input
             selec.onchange = function() {
                 // we get the metric type
-                let source_metric = selec.options[selec.selectedIndex].value.split("-"); // this is the source and metric index from platform_list #A
-                // console.log("source_metric")
-                // console.log(source_metric[0])
+                let source_metric = selec.options[selec.selectedIndex].value.split("-"); // this is the source and let metric index from platform_list #A
+                console.log("source_metric")
+                console.log(source_metric)
                 let MetricType = sources[source_metric[0]].metrics[source_metric[1]].MetricType;
                 
                 
@@ -858,7 +881,7 @@ desired effect
             }
             //we modify the value input so it match the first sensor displayed
 
-            adaptative_value_input(sources[0].metrics[0].MetricType, sources[0].metrics[0].DataPoint.DataType, selec.parentElement, line_id, tpye);
+            
         }
         
         /* change the operator value input according to the sensor :
@@ -922,6 +945,7 @@ desired effect
                 case "Gauge":
                     switch (DataType){
                         case "string":
+                            console.log("string")
                             // as the chocie is limited, the operator is '=='
                             operator_field = document.createElement("p");
                             operator_field.setAttribute("name", "comparison-type-" + line_id);
@@ -953,6 +977,7 @@ desired effect
                             }
                             break;
                         case "int":
+                            console.log("int")
                             //we set the dropdown of operator
                             operator_field = document.createElement("select");
                             operator_field.setAttribute("name", "comparison-type-" + line_id);
@@ -1241,7 +1266,7 @@ desired effect
                 // console.log(the_source);
 
 
-                config = {bitwise_operator:bitwise_operator, constraint:{comparation:operator, item:{platform_id:platform_list[platform].PlatformId, thing_global_id:the_source.information.SourceId, item_global_id:the_metric.MetricId, item_type:the_metric.MetricType, item_name:the_metric.MetricName}, time:timer.value, value:value}, trigger_config_id:trigger_config_id}
+                config = {bitwise_operator:bitwise_operator, constraint:{comparation:operator, item:{platform_id:platform_list[platform].PlatformId, thing_global_id:the_source.information.SourceId, item_global_id:the_metric.MetricId, item_type:the_metric.DataPoint.DataType, item_name:the_metric.MetricName}, time:timer.value, value:value}, trigger_config_id:trigger_config_id}
 
                 trigger_config_id = trigger_config_id + 1
 
@@ -1439,7 +1464,7 @@ desired effect
                 // console.log(the_source);
 
 
-                config = {bitwise_operator:bitwise_operator, constraint:{comparation:operator, item:{platform_id:platform_list[platform].PlatformId, thing_global_id:the_source.information.SourceId, item_global_id:the_metric.MetricId, item_type:the_metric.MetricType, item_name:the_metric.MetricName}, time:timer.value, value:value}}
+                config = {bitwise_operator:bitwise_operator, constraint:{comparation:operator, item:{platform_id:platform_list[platform].PlatformId, thing_global_id:the_source.information.SourceId, item_global_id:the_metric.MetricId, item_type:the_metric.DataPoint.DataType, item_name:the_metric.MetricName}, time:timer.value, value:value}}
 
 
                 myRule.add_condition("item_has_given_state", "fix item_type for now", config);
@@ -1639,8 +1664,8 @@ desired effect
         // #E
         function rule_edit_display(ruleNumber) {
             
-            console.log("rule_edit_display")
-            console.log(ruleNumber)
+            // console.log("rule_edit_display")
+            // console.log(ruleNumber)
             //first we look if this modal window already exist
             if (document.getElementById("modal-edit-rule-" + ruleNumber)) {
                 document.getElementById("modal-edit-rule-" + ruleNumber).parentNode.removeChild(document.getElementById("modal-edit-rule-" + ruleNumber));
@@ -1782,18 +1807,20 @@ desired effect
 
                 document.getElementById("edit-trigger-field-metric-" + ruleNumber + '-' + trigger_count).value = metric_index;
 
-                // console.log(metric_index)
 
-                let comparision_index = "";
+                console.log("metric")
+                console.log(document.getElementById("edit-trigger-field-metric-" + ruleNumber + '-' + trigger_count).nextSibling)
+
+                let comparision_index = 0;
                 let compareElement = document.getElementById("edit-trigger-field-metric-" + ruleNumber + '-' + trigger_count).nextSibling;
 
-                // console.log("compareElement");
-                // console.log(compareElement);
-                // console.log(sources)
-                // console.log(sources.comparation)
+                console.log("compareElement");
+                console.log(compareElement);
+                // console.log(compareElement[i].value)
+                console.log(sources.comparation)
 
                 for (let i=0; i<compareElement.length; i++){
-                    // console.log(compareElement[i].value)
+                    console.log(compareElement[i].value)
                     if (compareElement[i].value.localeCompare(sources.comparation) == 0){
                         comparision_index = compareElement[i].value;
                         // console.log(comparision_index)
@@ -1803,13 +1830,22 @@ desired effect
                 // console.log("comparision_index");
                 // console.log(comparision_index)
                 compareElement.value = comparision_index;
+                // compareElement.setAttribute("disabled", "disabled")
+
+                console.log("after comparation")
+                console.log(document.getElementById("edit-trigger-field-metric-" + ruleNumber + '-' + trigger_count).nextSibling.nextSibling)
 
 
                 let valueElement = document.getElementById("edit-trigger-field-metric-" + ruleNumber + '-' + trigger_count).nextSibling.nextSibling;
                 // valueElement.value = parseInt(sources[0].value)
                 valueElement.value = sources.value
-                // console.log("valueElement");
-                // console.log(valueElement.value)
+                // valueElement.setAttribute("disabled", "disabled")
+
+
+
+                console.log("valueElement");
+                console.log(sources.value)
+                console.log(valueElement.value)
 
 
                 PlatformId = sources.item.platform_id
@@ -2041,7 +2077,7 @@ desired effect
 
                 console.log(metric_index)
 
-                let comparision_index = "";
+                let comparision_index = 0;
                 let compareElement = document.getElementById("edit-condition-field-metric-" + ruleNumber + '-' + condition_count).nextSibling;
 
                 // console.log("compareElement");
