@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HPCC-IoT hackathon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Weather Report Widget template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/monitor_style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+
+</script>
+<!-- //Custom Theme files -->
+<!-- js -->
+<script type="text/javascript" src="node_modules/lodash/lodash.js"></script>
+<script type="text/javascript" src="node_modules/ring/ring.js"></script>
+
+<script src="library/jquery-2.2.3.min.js"></script>
+<script src="library/owl.carousel.js"></script>
+<link rel="stylesheet" href="css/toastr.min.css">
+<script src="library/toastr.min.js"></script>
+<script>
+
+</script>
+<!-- sky icons -->
+<script src="library/skycons.js"></script>
+<!-- //sky icons -->
+<!-- //js -->
+<!-- web font -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'><!--web font-->
+<!-- //web font -->
+</head>
+<body>
+  <audio id="xyz" src="warning.mp3" preload="auto"></audio>
+	<!-- main -->
+	<div class="row main-agileits">
+		<div class="main-wthree-row ccol-lg-3 col-md-3 col-xs-3">
+			<div class="agileinfo-text">
+				<div class="date">
+					<!-- Date-JavaScript -->
+					<script type="text/javascript">
+            function checkTime(i) {
+              if (i < 10) {
+                i = "0" + i;
+              }
+              return i;
+            }
+
+						var mydate=new Date()
+						var year=mydate.getYear()
+						if(year<1000)
+						year+=1900
+            var hour=mydate.getHours()
+            var minute=mydate.getMinutes()
+            var second=mydate.getSeconds()
+            minute = checkTime(minute);
+            second = checkTime(second);
+            console.log(hour);
+						var day=mydate.getDay()
+						var month=mydate.getMonth()
+						var daym=mydate.getDate()
+						if(daym<10)
+						daym="0"+daym
+						var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+						var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+						document.write(""+hour+":"+minute+" <br> "+daym+"  "+montharray[month]+"  "+year+"")
+					</script>
+					<!-- //Date-JavaScript -->
+				</div>
+        <h2 id="temperature">24<span>°</span></h2>
+				<h4>Temperature HomeAssistant</h4>
+        <!-- <img src="images/sunny.png" width="90" height="90"> -->
+				<!-- <h6>Rain Falling</h6> -->
+			</div>
+
+		</div>
+
+    <div class="main-wthree-row ccol-lg-3 col-md-3 col-xs-3">
+			<div class="agileinfo-text">
+				<div class="date">
+					<!-- Date-JavaScript -->
+					<script type="text/javascript">
+						var mydate=new Date()
+						var year=mydate.getYear()
+						if(year<1000)
+						year+=1900
+						var day=mydate.getDay()
+						var month=mydate.getMonth()
+						var daym=mydate.getDate()
+						if(daym<10)
+						daym="0"+daym
+						var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+						var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+            document.write(""+hour+":"+minute+" <br> "+daym+"  "+montharray[month]+"  "+year+"")
+					</script>
+					<!-- //Date-JavaScript -->
+				</div>
+				<h2 id="humidity">80<span>%</span></h2>
+				<h4>Humidity OpenHAB</h4>
+				<!-- <h6>Rain Falling</h6> -->
+			</div>
+
+		</div>
+
+    <div class="main-wthree-row ccol-lg-3 col-md-3 col-xs-3">
+			<div class="agileinfo-text">
+				<div class="date">
+					<!-- Date-JavaScript -->
+					<script type="text/javascript">
+						var mydate=new Date()
+						var year=mydate.getYear()
+						if(year<1000)
+						year+=1900
+						var day=mydate.getDay()
+						var month=mydate.getMonth()
+						var daym=mydate.getDate()
+						if(daym<10)
+						daym="0"+daym
+						var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+						var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+            document.write(""+hour+":"+minute+" <br> "+daym+"  "+montharray[month]+"  "+year+"")
+					</script>
+					<!-- //Date-JavaScript -->
+				</div>
+				<h2 id="motion">1</h2>
+				<h4>Motion HomeAssistant</h4>
+				<!-- <h6>Rain Falling</h6> -->
+			</div>
+
+		</div>
+	</div>
+	<!-- //main -->
+	<!-- copyrights -->
+	<div class="copy-rights wthree">
+		<p>© 2018 HPCC-IOT </p>
+	</div>
+  <script>
+  toastr.options = {
+    "closeButton": true,
+    "debug": false,
+    "newestOnTop": false,
+    "progressBar": true,
+    "positionClass": "toast-top-right",
+    "preventDuplicates": false,
+    "onclick": null,
+    "showDuration": "300",
+    "hideDuration": "10000000",
+    "timeOut": "5000000",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut"
+  }
+    $(document).ready(function () {
+      flag=true;
+      setInterval(function(){
+        console.log("get Source");
+        $.getJSON('http://192.168.1.101:5000/api/sources', function(data) {
+          // humidiy=data[0].metrics[0].DataPoint.Value;
+          // console.log(data);
+          for(var i=0;i<data.length;++i){
+            if(data[i].information.SourceId=="c9e2ee38-50c1-4e6e-907d-1a70f63719fe"){
+              temperature=data[i].metrics[0].DataPoint.Value;
+            }
+            if(data[i].information.SourceId=="795565a7-e2e2-4c71-9e22-c551ad24aadf"){
+              humidity=data[i].metrics[0].DataPoint.Value;
+            }
+            motion=1;
+            if(data[i].information.ThingName=="795565a7-e2e2-4c71-9e22-c551ad24aadf"){
+
+            }
+          }
+          console.log(humidity);
+          // motion=data[4].metrics[0].DataPoint.Value
+          $("#temperature").html(temperature+"<span>°</span>");
+          $("#motion").html(motion);
+          $("#humidity").html(humidity+"<span>%</span>");
+
+          handleRules(temperature,humidity,motion,35,50,1);
+        });
+      }, 2000);
+
+      setInterval(function(){
+        flag=true;
+      }, 60000);
+    })
+
+    function handleRules(temperature,humidity,motion,threshold_temp,threshold_humi,threshold_motion) {
+      if(temperature>threshold_temp && humidity < threshold_humi ){
+        message="Warning:"+ temperature +"<br> Humidiy: " + humidity +"<br> Have a human!";
+        toastr.remove();
+        // $('#xyz').play();
+    //
+        toastr.warning(message);
+        data={
+          "temp":temperature,
+          "humi":humidity
+        }
+        $.ajax({
+          type: 'post',
+          dataType:'json',
+          data: JSON.stringify(data),
+          contentType: 'application/json',
+          url: 'http://localhost:3000/handleRule',
+          success: function(data) {
+              console.log('success');
+              console.log(JSON.stringify(data));
+          },
+          error: function(xhr, status, error) {
+            console.log(error);
+         },
+        });
+        if(flag==true){
+          flag=false;
+          console.log("send Message!");
+          $.ajax({
+        		type: 'post',
+            dataType:'json',
+        		data: JSON.stringify(data),
+            contentType: 'application/json',
+            url: 'http://192.168.1.101:5000/api/alert_sms',
+            success: function(data) {
+                console.log('success');
+                console.log(JSON.stringify(data));
+            },
+            error: function(xhr, status, error) {
+              console.log(error);
+           },
+          });
+        }
+
+
+      }
+
+    }
+  </script>
+</body>
+</html>

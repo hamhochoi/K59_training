@@ -2,10 +2,12 @@
 
 //the base URL to get the platform, things, items, history
 //var sensor_API = "http://7938ee0f.ngrok.io";
-var sensor_API = "http://192.168.60.248:5000";
+var sensor_API = "http://192.168.0.102:5000";
 
 // var api_namea = "http://7938ee0f.ngrok.io";
 //the base URL to post and get the rules
+
+// var rule_API = "http://25.14.206.65:5001";
 var rule_API = "http://localhost:5000";
 
 

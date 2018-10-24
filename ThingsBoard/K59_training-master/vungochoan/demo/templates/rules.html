@@ -9,6 +9,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rules management</title>
+
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -17,7 +18,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Ionicons -->
     <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect. -->
@@ -201,7 +202,7 @@ desired effect
                                     <div class="row" id="general-field">
                                         <div class="row col-xs-12 col-md-6">
                                             <label class="col-xs-4">Rule's name</label>
-                                            <input id="rule-name-input" class="col-xs-7" type="text" name="rule_name" required="true" placeholder="A name">
+                                            <input id="rule-name-input" class="col-xs-7 " type="text" name="rule_name" required="true" placeholder="A name">
                                         </div>
                                     </div>
                                     <!-- setting the trigger -->
@@ -853,8 +854,7 @@ desired effect
                 line_id = selec.getAttribute("id").slice(tpye.length + "-condition-field-metric-".length, selec.getAttribute("id").length);
             }
 
-            console.log("sources[0]")
-            console.log(sources[0].metrics)
+
 
 
             
@@ -1092,6 +1092,7 @@ desired effect
             content.lastChild.setAttribute("value", "00s");
             content.lastChild.setAttribute("step", "1");
             content.lastChild.setAttribute("title", "The time the action will activate after the condtions are met");
+
 
             //we set the dropdown to chose an action
             var selection1 = document.createElement("select");
@@ -1517,21 +1518,25 @@ desired effect
             }
 
             let modalDiv = document.getElementById("modal-div");
+
             modalDiv.appendChild(document.createElement("div"));
             modalDiv.lastChild.setAttribute("class", "modal fade");
             modalDiv.lastChild.setAttribute("id", "modal-details-rule-" + ruleNumber);
-
             modalDiv.lastChild.appendChild(document.createElement("div"));
             modalDiv.lastChild.lastChild.setAttribute("class", "modal-dialog");
+            modalDiv.lastChild.lastChild.setAttribute("style", "width : 750px");
+            
 
             //the content of the modal window
             modalDiv.lastChild.lastChild.appendChild(document.createElement("div"));
             let modalContent = modalDiv.lastChild.lastChild.lastChild;
             modalContent.setAttribute("class", "modal-content");
+            modalContent.setAttribute("style", "white-space: pre; font-family: monospace")
 
             //content of the header
             modalContent.appendChild(document.createElement("div"));
             modalContent.lastChild.setAttribute("class", "modal-header");
+            
 
             modalContent.lastChild.appendChild(document.createElement("button"));
             modalContent.lastChild.lastChild.setAttribute("type", "button");
@@ -1550,6 +1555,7 @@ desired effect
             modalContent.appendChild(document.createElement("div"));
             let modalBody = modalContent.lastChild;
             modalBody.setAttribute("class", "modal-body");
+            modalBody.setAttribute("style", "white-space: pre; font-family: monospace; width: 750px")
 
 
             modalBody.appendChild(document.createElement("p"));
@@ -1558,8 +1564,8 @@ desired effect
             modalBody.lastChild.style.marginTop = "-12px";
             modalBody.lastChild.style.fontSize = "7";
 
-            
-
+            modalBody.appendChild(document.createElement("p"));
+            modalBody.lastChild.innerHTML = JSON.stringify(rules[ruleNumber], null, 4)
 
             // modalBody.appendChild(document.createElement("h5"));
             // modalBody.lastChild.innerHTML = "IF";
@@ -1871,7 +1877,7 @@ desired effect
             //the button to add a field
             edit_operator_button_generator(ruleNumber, "edit-trigger-field-" + ruleNumber);
             modalBody.appendChild(document.createElement("div"));
-            modalBody.lastChild.setAttribute("class", "col-md-12 text-center");
+            modalBody.lastChild.setAttribute("class", "col-md-12 text-center ");
             modalBody.lastChild.appendChild(document.createElement("span"));
             modalBody.lastChild.lastChild.setAttribute("id", "edit-plus-condition");
             modalBody.lastChild.lastChild.onclick = function() {

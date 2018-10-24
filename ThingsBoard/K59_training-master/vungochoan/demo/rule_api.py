@@ -316,9 +316,9 @@ if __name__ == "__main__":
     cursor.execute("""USE rule""")
 
     cursor.execute("""CREATE TABLE IF NOT EXISTS Rule(
-        rule_id VARCHAR(100) PRIMARY KEY,
-        rule_name TEXT(100) ,
-        rule_status VARCHAR(10),
+        rule_id VARCHAR(10000) PRIMARY KEY,
+        rule_name TEXT(10000) ,
+        rule_status VARCHAR(10000),
         rule_condition VARCHAR(10000),
         rule_action VARCHAR(10000),
         insert_time INT)  """)
