@@ -16,9 +16,9 @@ class Rule_Engine_1(Rule_Engine_Base):
                                   description, input_topic, output_topic)
 
         BROKER_CLOUD = "localhost"
-        self.host_api_set_state = "http://192.168.60.248:5000/api/metric"
-        self.producer_connection = Connection("192.168.60.248")
-        self.consumer_connection = Connection("localhost")
+        self.host_api_set_state = "http://25.14.206.65:5000/api/metric"
+        self.producer_connection = Connection("25.14.206.65")
+        self.consumer_connection = Connection("25.14.206.65")
         self.exchange = Exchange("IoT", type="direct")
         self.queue_get_states = Queue(name='event_generator.to.' + str(self.input_topic), exchange=self.exchange,
                                       routing_key='event_generator.to.' + str(self.input_topic))#, message_ttl=20)
@@ -316,7 +316,7 @@ class Rule_Engine_1(Rule_Engine_Base):
 
             # print (request)
             os.system(request)
-            time.sleep(1)
+            time.sleep(3)
 
         # time.sleep(1)
 

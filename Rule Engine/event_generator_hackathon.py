@@ -24,9 +24,9 @@ class Event_Generator_1(Event_Generator_Base):
         Event_Generator_Base.__init__(self, event_generator_name, event_generator_id,
                                       description, event_dest_topic)
 
-        BROKER_CLOUD = "25.14.206.65"
-        self.producer_connection = Connection("25.14.206.65")
-        self.consumer_connection = Connection("25.14.206.65")
+        BROKER_CLOUD = "192.168.43.30"
+        self.producer_connection = Connection("localhost")
+        self.consumer_connection = Connection("192.168.43.30")
         self.exchange = Exchange("IoT", type="direct")
         # self.queue_get_states = Queue(name='data_source.to.' + str(self.event_generator_name), exchange=self.exchange,
         #                          routing_key='data_source.to.' + str(self.event_generator_name))#, message_ttl=20)
@@ -34,94 +34,91 @@ class Event_Generator_1(Event_Generator_Base):
                                       routing_key='rule.request.states', message_ttl=20)
 
 
-        self.db = MySQLdb.connect(host="0.0.0.0", user="root", passwd="root", db="Trigger_DB")
+        self.db = MySQLdb.connect(host="0.0.0.0", user="root", passwd="root", db="rule")
         self.cursor = self.db.cursor()
 
 
     def read_event_condition(self):
-        # print ("reading event condition ...")
-        request = "Select trigger_id, trigger_type, trigger_content from TriggerTable"
+        print ("reading event condition ...")
+        request = "Select rule_id, rule_content from Rule"
 
         try:
             # Execute the SQL command
             self.cursor.execute(request)
-            result = self.cursor.fetchall()
-            self.list_event_condition = result
-            # Commit your changes in the database
-            self.db.commit()
+            results = self.cursor.fetchall()
+            # self.list_event_condition = result
+            # print ("results: ", results)
 
-            return self.list_event_condition
+            for result in results:
+                print ("result: ", result)
+                # (rule_id, rule_content) = result
+
+                rule_id = result[0]
+                print ("rule_id: ", rule_id)
+
+                # rule_content = json.dumps(rule_content)
+                rule_content = json.loads(rule_content)
+
+
+
+                print ("\nrule content: ", rule_content)
+
+                trigger_type = rule_content['trigger_type']
+                trigger_content = rule_content['trigger_content']
+
+                print ("\n\ntrigger_type: ", trigger_type)
+                print ("\n\ntrigger_content: ", trigger_content)
+
+
+                # Commit your changes in the database
+                self.db.commit()
+
+
+            return rule_id, trigger_type, trigger_content
         except:
             # Rollback in case there is any error
+            print ("error read_event_condition")
             self.db.rollback()
             return None
 
 
-    # def check_trigger_item_state_change(self, trigger_id, item_id):
-    #     print ("checking trigger item state change ...")
-    #     request = "Select item_state from ItemTable where item_id='" + str(item_id) + "' order by time desc limit 2"
-    #     print (request)
-    #     try:
-    #         # Execute the SQL command
-    #         self.cursor.execute(request)
-    #         result = self.cursor.fetchall()
-    #         print (result)
-    #         current_state = result[0]
-    #         previous_state = result[1]
-    #
-    #         self.db.commit()
-    #
-    #         if (current_state != previous_state):
-    #             return True
-    #         else:
-    #             return False
-    #
-    #     except:
-    #         # Rollback in case there is any error
-    #         self.db.rollback()
-    #         print ("error checkTriggerItemStateChange")
-    #         return None
-
-
-    def check_trigger_item_state_update(self, trigger_content, item_id):
-        pass
-
-
-    def check_triger_fix_time_of_day(self, trigger_content, item_id):
-        pass
-
-
     def check_trigger_item_has_given_state(self, trigger_content):
-        # print ("checking trigger item_has_given_state ...")
-        # print (trigger_content)
+        print ("checking trigger item_has_given_state ...")
+        print (trigger_content)
 
-        trigger_content = json.loads(trigger_content)
-        # print ("trigger_id: ", trigger_content['trigger_id'])
+        trigger_content_list = json.loads(trigger_content)
 
-        config = trigger_content['config']
-        # print ("config: ", config)
 
         pre_result = False
         total_result = False
 
-        for sub_config in config:
+
+        bitwise_operator = trigger_content['trigger_bitwise']
+        print ("bitwise_operator: ", bitwise_operator)
+
+
+        for trigger_content in trigger_content_list:
             result = False
-            # print ("sub config : ", sub_config)
-            timer = sub_config['constraint']['time']
-            # print ("time: ", timer)
-            trigger_item_id = sub_config['constraint']['item']['item_global_id']
+            timer = 0
+
+            trigger_item_id = trigger_content['id']
             print ("trigger_item_id: ", trigger_item_id)
-            operator = sub_config['constraint']['comparation']
-            # print ("operator: ", operator)
-            value = sub_config['constraint']['value']
-            # print ("value: ", value)
-            bitwise_operator = sub_config['bitwise_operator']
+
+
+            operator = trigger_content['operator']
+            print ("operator: ", operator)
+
+            value = trigger_content['value']
+            print ("value: ", value)
 
             if (value.isdigit() == True):
                 value = float(value)
 
+
+
+
             request = "select time from ItemTable where item_id = '%s' order by time asc limit 1" % (trigger_item_id)
-            # print ("time request: ", request)
+            print ("time request: ", request)
             last_insert_time = str(datetime.max)
 
             try:
@@ -137,9 +134,11 @@ class Event_Generator_1(Event_Generator_Base):
                 pre_result = result
                 self.db.rollback()
 
-
             last_insert_time = datetime.strptime(last_insert_time, '%Y-%m-%d %H:%M:%S.%f')
             check_time = last_insert_time - timedelta(seconds=float(timer.split('s')[0]))
+
+
+
 
             request = "select item_state from ItemTable where item_id = '%s' and time >= '%s' order by time desc" % (trigger_item_id, check_time)
 
@@ -149,7 +148,7 @@ class Event_Generator_1(Event_Generator_Base):
                 self.cursor.execute(request)
                 request_result = self.cursor.fetchall()
                 item_state_list = request_result[0]
-                # print ("item_state_list: ", item_state_list)
+                print ("item_state_list: ", item_state_list)
                 # Commit your changes in the database
                 self.db.commit()
 
@@ -194,7 +193,7 @@ class Event_Generator_1(Event_Generator_Base):
                         result = False
                         break
 
-                # print ("result: ", result)
+                print ("result: ", result)
 
 
                 if (bitwise_operator.upper() == "NONE"):
@@ -222,19 +221,12 @@ class Event_Generator_1(Event_Generator_Base):
         return total_result
 
 
-    def check_trigger_condition(self, trigger_id, trigger_type, trigger_content, item_id):
-        # print ("checking trigger condition ...")
+    def check_trigger_condition(self, trigger_type, trigger_content, item_id):
+        print ("checking trigger condition ...")
         result = False
-        if (trigger_type == "item_state_change"):
-            # result = self.check_trigger_item_state_change(trigger_content, item_id)
-            pass
-        elif (trigger_type == "item_state_update"):
-            result = self.check_trigger_item_state_update(trigger_content, item_id)
-        elif (trigger_type == "item_receive_command"):
-            pass
-        elif (trigger_type == "fix_time_of_day"):
-            result = self.check_triger_fix_time_of_day(trigger_content, item_id)
-        elif (trigger_type == "item_has_given_state"):
+
+
+        if (trigger_type == "item_has_given_state"):
             result = self.check_trigger_item_has_given_state(trigger_content)
         else:
             print ("trigger_type is not pre-defined")
@@ -242,10 +234,10 @@ class Event_Generator_1(Event_Generator_Base):
         return result
 
 
-    def create_event(self, trigger_id):
+    def create_event(self, rule_id):
         print ("creating Event ...")
 
-        request = "select trigger_content from TriggerTable where trigger_id = '%s'" % (trigger_id)
+        request = "select trigger_content from RuleTable where trigger_id = '%s'" % (rule_id)
         # print (request)
 
         try:
@@ -255,6 +247,18 @@ class Event_Generator_1(Event_Generator_Base):
             print (request_result[0][0])
             trigger_content = request_result[0][0]
             trigger_content = json.loads(trigger_content)
+
+
+
+            message = {
+                'event_id' : event_id,
+                'event_source' : event_source,
+                'trigger_id' : trigger_id,
+                'time' : str(datetime.now())
+            }
+
+
+
             # print (trigger_content)
             output_field = trigger_content['outputs']
             print (output_field)
@@ -295,8 +299,8 @@ class Event_Generator_1(Event_Generator_Base):
     def write_item_to_database(self, item_id, item_name, item_type, item_state, time):
         print ("writting item to database ...")
         request = """INSERT INTO ItemTable(item_id, item_name, item_type, item_state, time)
-                    VALUES ("%s", "%s", "%s", "%s", "%s")"""\
-                    % (item_id, item_name, item_type, item_state, time)
+                    VALUES ("%s", "%s", "%s", "%s", "%s")""" \
+                  % (item_id, item_name, item_type, item_state, time)
 
         print (request)
 
@@ -338,13 +342,14 @@ class Event_Generator_1(Event_Generator_Base):
                 #if write new item success to the database, consider the trigger with that item
                 if (write_result == 1):
                     list_event_condition = self.read_event_condition()
+                    print ("list event condition: ", list_event_condition)
                     for event_condition in list_event_condition:
-                        trigger_id = event_condition[0]
+                        rule_id = event_condition[0]
                         trigger_type = event_condition[1]
                         trigger_content = event_condition[2]
 
                         # Check the item with each trigger condition
-                        result = self.check_trigger_condition(trigger_id, trigger_type, trigger_content, item_id)
+                        result = self.check_trigger_condition(trigger_type, trigger_content, item_id)
 
                         print ("check trigger : ", result)
 
@@ -357,14 +362,14 @@ class Event_Generator_1(Event_Generator_Base):
                             # event_name = str(item_name) + "_" + str(datetime.now())
                             # event_id   = randint(1, 1000000)
                             # my_event = Event(event_name, event_id, event_source)
-                            self.create_event(trigger_id)
+                            self.create_event(rule_id)
 
             # End handle_notification
 
         try:
             self.consumer_connection.ensure_connection(max_retries=1)
             with nested(Consumer(self.consumer_connection, queues=self.queue_get_states,
-                                    callbacks=[handle_notification], no_ack=True)
+                                 callbacks=[handle_notification], no_ack=True)
                         ):
                 while True:
                     self.consumer_connection.drain_events()

@@ -21,7 +21,7 @@ class Event_Generator_Base():
         self.event_dest_topic = event_dest_topic
         # self.event_types = event_types
 
-    def check_trigger_condition(self, trigger_id, trigger_type, trigger_content, item_id):
+    def check_trigger_condition(self,trigger_id, trigger_type, trigger_content, item_id):
         pass
 
     def receive_states(self):
