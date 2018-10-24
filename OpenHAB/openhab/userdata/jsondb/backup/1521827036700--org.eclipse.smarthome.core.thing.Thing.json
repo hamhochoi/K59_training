@@ -1,0 +1,382 @@
+{
+  "airquality:aqi:bfbe786c": {
+    "class": "org.eclipse.smarthome.core.thing.internal.ThingImpl",
+    "value": {
+      "label": "Air Quality",
+      "channels": [
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "airquality",
+              "aqi",
+              "bfbe786c",
+              "aqiLevel"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "airquality",
+              "aqiLevel"
+            ]
+          },
+          "label": "Air Quality Index",
+          "description": "",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "String",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "airquality",
+              "aqi",
+              "bfbe786c",
+              "aqiDescription"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "airquality",
+              "aqiDescription"
+            ]
+          },
+          "label": "AQI Description",
+          "description": "",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "airquality",
+              "aqi",
+              "bfbe786c",
+              "pm25"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "airquality",
+              "pm25"
+            ]
+          },
+          "label": "PM2.5",
+          "description": "Fine particles pollution level",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "airquality",
+              "aqi",
+              "bfbe786c",
+              "pm10"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "airquality",
+              "pm10"
+            ]
+          },
+          "label": "PM10",
+          "description": "Coarse dust particles pollution level",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "airquality",
+              "aqi",
+              "bfbe786c",
+              "o3"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "airquality",
+              "o3"
+            ]
+          },
+          "label": "O3",
+          "description": "Ozone level",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "airquality",
+              "aqi",
+              "bfbe786c",
+              "no2"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "airquality",
+              "no2"
+            ]
+          },
+          "label": "NO2",
+          "description": "Nitrogen dioxide level",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "airquality",
+              "aqi",
+              "bfbe786c",
+              "co"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "airquality",
+              "co"
+            ]
+          },
+          "label": "CO",
+          "description": "Carbon monoxide level",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "String",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "airquality",
+              "aqi",
+              "bfbe786c",
+              "locationName"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "airquality",
+              "locationName"
+            ]
+          },
+          "label": "Location",
+          "description": "Nearest measuring station location",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Location",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "airquality",
+              "aqi",
+              "bfbe786c",
+              "stationLocation"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "airquality",
+              "stationLocation"
+            ]
+          },
+          "label": "Station Location",
+          "description": "Latitude/Longitude of the measuring station",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "airquality",
+              "aqi",
+              "bfbe786c",
+              "stationId"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "airquality",
+              "stationId"
+            ]
+          },
+          "label": "Station ID",
+          "description": "Unique measuring station ID",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "DateTime",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "airquality",
+              "aqi",
+              "bfbe786c",
+              "observationTime"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "airquality",
+              "observationTime"
+            ]
+          },
+          "label": "Observation time",
+          "description": "Observation date and time",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "airquality",
+              "aqi",
+              "bfbe786c",
+              "temperature"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "airquality",
+              "temperature"
+            ]
+          },
+          "label": "Temperature (°C)",
+          "description": "Temperature in Celsius degrees",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "airquality",
+              "aqi",
+              "bfbe786c",
+              "pressure"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "airquality",
+              "pressure"
+            ]
+          },
+          "label": "Pressure level",
+          "description": "",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        },
+        {
+          "acceptedItemType": "Number",
+          "kind": "STATE",
+          "uid": {
+            "segments": [
+              "airquality",
+              "aqi",
+              "bfbe786c",
+              "humidity"
+            ]
+          },
+          "channelTypeUID": {
+            "segments": [
+              "airquality",
+              "humidity"
+            ]
+          },
+          "label": "Humidity level",
+          "description": "",
+          "configuration": {
+            "properties": {}
+          },
+          "properties": {},
+          "defaultTags": []
+        }
+      ],
+      "configuration": {
+        "properties": {
+          "refresh": 60,
+          "location": "21, 105",
+          "apikey": "7663e21a77913bc65d3656c9218b89f76178cef6"
+        }
+      },
+      "properties": {},
+      "uid": {
+        "segments": [
+          "airquality",
+          "aqi",
+          "bfbe786c"
+        ]
+      },
+      "thingTypeUID": {
+        "segments": [
+          "airquality",
+          "aqi"
+        ]
+      },
+      "location": "Ha Noi"
+    }
+  }
+}

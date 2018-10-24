@@ -1,0 +1,53 @@
+{
+  "airquality_aqi_bfbe786c_temperature -\u003e airquality:aqi:bfbe786c:temperature": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "airquality",
+          "aqi",
+          "bfbe786c",
+          "temperature"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "airquality_aqi_bfbe786c_temperature"
+    }
+  },
+  "airquality_aqi_bfbe786c_humidity -\u003e airquality:aqi:bfbe786c:humidity": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "airquality",
+          "aqi",
+          "bfbe786c",
+          "humidity"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "airquality_aqi_bfbe786c_humidity"
+    }
+  },
+  "airquality_aqi_bfbe786c_pressure -\u003e airquality:aqi:bfbe786c:pressure": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "airquality",
+          "aqi",
+          "bfbe786c",
+          "pressure"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "airquality_aqi_bfbe786c_pressure"
+    }
+  }
+}

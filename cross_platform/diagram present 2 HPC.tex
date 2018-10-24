@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+\usetikzlibrary{shapes,shadows,arrows}
+\begin{document}
+\tikzstyle{decision} = [diamond, draw, fill=blue!50]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{elli} = [draw, ellipse, fill=red!50]
+\tikzstyle{block} = [draw, rectangle, fill=blue!50, minimum height=15mm, node distance = 30mm, 
+text width=15mm, text centered]
+\begin{tikzpicture}
+\node[block](RuleAPI){Rule API};
+\node[elli,  left of = RuleAPI, xshift=-70](RuleDB){Rule DB};
+\node[block, below of = RuleAPI](RuleEngine){Rule Engine};
+\node[block, below of = RuleEngine](Monitor){Monitor};
+\node[block, left of = Monitor, xshift=-50, yshift=-50](Collector){Collector};
+\node[block, below of = Collector, yshift=-80](ForwarderFogToCloud){Forwarder Fog to Cloud};
+\node[block, below of = ForwarderFogToCloud](Filter){Filter};
+\node[block, right of = Filter, xshift=50, yshift=-50](Driver){Driver};
+\node[block, right of = Monitor, xshift=50, yshift=-50](Alert){Alert};
+\node[block, below of = Alert](APIsetState){API set state};
+\node[block, below of = APIsetState](ForwarderCloudToFog){Forwarder Cloud to Fog};
+\node[elli,  right of = Alert, xshift=50](AlertDB){Alert DB};
+%arrows
+\path[line](RuleAPI)--(RuleDB);
+\path[line](RuleAPI)--(RuleEngine);
+\path[line](RuleEngine)--(Monitor);
+\path[line](Collector)--(Monitor);
+\path[line](ForwarderFogToCloud)--(Collector);
+\path[line](Filter)--(ForwarderFogToCloud);
+\path[line](Driver)--(Filter);
+\path[line](Monitor)--(Alert);
+\path[line](Alert)--(AlertDB);
+\path[line](Monitor)--(APIsetState);
+\path[line](APIsetState)--(ForwarderCloudToFog);
+\path[line](ForwarderCloudToFog)--(Driver);
+\end{tikzpicture}
+
+
+\end{document}

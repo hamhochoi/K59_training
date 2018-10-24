@@ -1,0 +1,11 @@
+- Nodemcu esp32-250k: https://iotmaker.vn/nodemcu-esp32-wifi-ble.html
+
+- Màn hình OLED-115k: https://iotmaker.vn/ssd1306-oled-096inch-128x64-i2c.html
+
+- Cảm biến gia tốc-50k: https://iotmaker.vn/cam-bien-gia-toc-mpu-6050-gy-521.html
+
+- Đồng hồ thời gian thực-39k: http://mualinhkien.vn/san-pham/2775/module-thoi-gian-thuc-ds3231.html
+
+- Cảm biến hồng ngoại đã tích hợp sẵn trên esp32 nên không cần mua thêm :https://esp32.vn/idf/RMT.html
+
+Tổng: 454k/bộ

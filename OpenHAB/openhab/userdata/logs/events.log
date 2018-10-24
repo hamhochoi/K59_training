@@ -1,0 +1,10 @@
+2018-03-08 01:07:16.401 [ExtensionEvent            ] - Extension 'package-standard' has been installed.
+2018-03-08 01:07:29.360 [ExtensionEvent            ] - Extension 'ui-basic' has been installed.
+2018-03-08 01:07:29.367 [ExtensionEvent            ] - Extension 'ui-habpanel' has been installed.
+2018-03-08 01:07:29.370 [ExtensionEvent            ] - Extension 'ui-paper' has been installed.
+2018-03-08 01:12:36.109 [ExtensionEvent            ] - Extension 'binding-alarmdecoder1' has been installed.
+2018-03-08 01:13:03.881 [ExtensionEvent            ] - Extension 'binding-mqtt1' has been installed.
+2018-03-08 01:13:06.212 [ExtensionEvent            ] - Extension 'binding-network' has been installed.
+2018-03-08 01:13:10.739 [ExtensionEvent            ] - Extension 'binding-mqttitude1' has been installed.
+2018-03-08 01:15:21.241 [InboxAddedEvent           ] - Discovery Result with UID 'network:device:172_17_0_1' has been added.
+2018-03-08 01:36:07.105 [InboxAddedEvent           ] - Discovery Result with UID 'network:device:172_18_0_1' has been added.

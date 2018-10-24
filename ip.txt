@@ -1,0 +1,47 @@
+laptop : 192.168.60.246
+cam bien nguoi phong ngoai, canh ban: 192.168.60.173
+cam bien nguoi phong ngoai, tren cao: 192.168.60.170
+cam bien nhiet am phong ngoai: 192.168.60.176
+
+cam bien nguoi phong can bo: 192.168.60.172
+cam bien nhiet am phong can bo: 192.168.60.171
+
+cam bien nguoi phong may: 192.168.60.174
+cam bien nhiet am phong may: 192.168.60.175
+
+
+
+
+MAC Adress: 
+
+cam bien nguoi + nhiet do do am phong ngoai canh ban: 2C:3A:E8:0E:BC:D5
+
+
+Qui uoc dat ten topic :
+	zone_1: phong server
+	zone_2: phong can bo
+	zone_3: phong ngoai
+	
+	box_1 : hop tren cao (neu co)
+	box_2 : hop duoi thap
+
+	temperature_humidity: cam bien nhiet do do am
+	motion: cam bien nguoi
+	id_1  : thiet bi so 1 trong hop
+	id_2  : thiet bi so 2 trong hop
+
+Dat ten topic : 	
+	
+	cam bien nguoi trong phong can bo	  : zone_2/box_2/motion/id_1 cong 30004
+	cam bien nhiet do do am, phong can bo     : zone_2/box_1/temperature_humidity/id_1 cong 30004
+	
+	cam bien nguoi trong phong ngoai, tren cao: zone_1/box_2/motion/id_1
+	cam bien nguoi trong phong ngoai, canh ban: zone_1/box_1/motion/id_1
+	cam bien nhiet do, do am phong ngoai	  : zone_1/box_3/temperature_humidity/id_1
+	
+	cam bien nguoi phong server, tren cao	  : zone_3/box_1/motion/id_1, cong 30004
+	cam bien nhiet do, do am phong server	  : zone_3/box_2/temperature_humidity/id_1, cong 30004
+
+
+
+

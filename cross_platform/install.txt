@@ -1,0 +1,14 @@
+'''
+    install MySQLdb python3: 
+        sudo apt install python3-dev libpython3-dev
+        sudo apt install python3-mysqldb
+'''
+
+'''
+    install openhab:
+	   - remove /opt/openhab if exist
+	   - install openhab: docker run         --name openhab        --net=host         --tty         -v /etc/localtime:/etc/localtime:ro         -v /etc/timezone:/etc/timezone:ro         -v /opt/openhab/conf:/openhab/conf         -v /opt/openhab/userdata:/openhab/userdata         -v /opt/openhab/addons:/openhab/addons        -d         -e USER_ID=999         -e GROUP_ID=995         --restart=always         openhab/openhab:2.2.0-armhf-debian
+	
+        - copy /media/hamhochoi/Beo/OneDrive for Business 1/OneDrive - student.hust.edu.vn/OD/HPCC/OpenHAB/openhab --> /opt/openhab on the installing machine
+	   - Done
+'''

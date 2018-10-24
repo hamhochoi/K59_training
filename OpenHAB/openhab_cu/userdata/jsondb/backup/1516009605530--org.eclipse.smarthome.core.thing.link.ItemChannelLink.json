@@ -1,0 +1,223 @@
+{
+  "airquality_aqi_428c4d92_aqiDescription -\u003e airquality:aqi:428c4d92:aqiDescription": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "airquality",
+          "aqi",
+          "428c4d92",
+          "aqiDescription"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "airquality_aqi_428c4d92_aqiDescription"
+    }
+  },
+  "airquality_aqi_428c4d92_o3 -\u003e airquality:aqi:428c4d92:o3": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "airquality",
+          "aqi",
+          "428c4d92",
+          "o3"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "airquality_aqi_428c4d92_o3"
+    }
+  },
+  "airquality_aqi_428c4d92_aqiLevel -\u003e airquality:aqi:428c4d92:aqiLevel": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "airquality",
+          "aqi",
+          "428c4d92",
+          "aqiLevel"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "airquality_aqi_428c4d92_aqiLevel"
+    }
+  },
+  "airquality_aqi_428c4d92_no2 -\u003e airquality:aqi:428c4d92:no2": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "airquality",
+          "aqi",
+          "428c4d92",
+          "no2"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "airquality_aqi_428c4d92_no2"
+    }
+  },
+  "network_pingdevice_192_168_1_79_online -\u003e network:pingdevice:192_168_1_79:online": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "network",
+          "pingdevice",
+          "192_168_1_79",
+          "online"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "network_pingdevice_192_168_1_79_online"
+    }
+  },
+  "network_servicedevice_192_168_60_14_548_latency -\u003e network:servicedevice:192_168_60_14_548:latency": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "network",
+          "servicedevice",
+          "192_168_60_14_548",
+          "latency"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "network_servicedevice_192_168_60_14_548_latency"
+    }
+  },
+  "network_servicedevice_192_168_60_14_548_lastseen -\u003e network:servicedevice:192_168_60_14_548:lastseen": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "network",
+          "servicedevice",
+          "192_168_60_14_548",
+          "lastseen"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "network_servicedevice_192_168_60_14_548_lastseen"
+    }
+  },
+  "network_pingdevice_192_168_1_79_lastseen -\u003e network:pingdevice:192_168_1_79:lastseen": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "network",
+          "pingdevice",
+          "192_168_1_79",
+          "lastseen"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "network_pingdevice_192_168_1_79_lastseen"
+    }
+  },
+  "airquality_aqi_428c4d92_co -\u003e airquality:aqi:428c4d92:co": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "airquality",
+          "aqi",
+          "428c4d92",
+          "co"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "airquality_aqi_428c4d92_co"
+    }
+  },
+  "network_servicedevice_192_168_60_14_548_online -\u003e network:servicedevice:192_168_60_14_548:online": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "network",
+          "servicedevice",
+          "192_168_60_14_548",
+          "online"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "network_servicedevice_192_168_60_14_548_online"
+    }
+  },
+  "airquality_aqi_428c4d92_pm25 -\u003e airquality:aqi:428c4d92:pm25": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "airquality",
+          "aqi",
+          "428c4d92",
+          "pm25"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "airquality_aqi_428c4d92_pm25"
+    }
+  },
+  "airquality_aqi_428c4d92_pm10 -\u003e airquality:aqi:428c4d92:pm10": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "airquality",
+          "aqi",
+          "428c4d92",
+          "pm10"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "airquality_aqi_428c4d92_pm10"
+    }
+  },
+  "network_pingdevice_192_168_1_79_latency -\u003e network:pingdevice:192_168_1_79:latency": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "network",
+          "pingdevice",
+          "192_168_1_79",
+          "latency"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "network_pingdevice_192_168_1_79_latency"
+    }
+  }
+}

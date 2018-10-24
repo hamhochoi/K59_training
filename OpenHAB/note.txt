@@ -1,0 +1,1 @@
+Lỗi python-openhab : Copy file từ máy laptop trong thư mục /usr/local/lib/python3.5/dist-packages/openhab

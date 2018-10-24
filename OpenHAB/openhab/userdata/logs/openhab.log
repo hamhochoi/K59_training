@@ -1,0 +1,135 @@
+2018-03-08 00:56:23.389 [INFO ] [.dashboard.internal.DashboardService] - Started dashboard at /start
+2018-03-08 01:07:29.129 [INFO ] [arthome.ui.paper.internal.PaperUIApp] - Started Paper UI at /paperui
+2018-03-08 01:07:29.169 [INFO ] [panel.internal.HABPanelDashboardTile] - Started HABPanel at /habpanel
+2018-03-08 01:07:29.310 [INFO ] [basic.internal.servlet.WebAppServlet] - Started Basic UI at /basicui/app
+2018-03-08 01:10:37.150 [INFO ] [el.core.internal.ModelRepositoryImpl] - Loading model 'default.items'
+2018-03-08 01:10:37.215 [INFO ] [el.core.internal.ModelRepositoryImpl] - Refreshing model 'default.items'
+2018-03-08 01:11:33.118 [INFO ] [el.core.internal.ModelRepositoryImpl] - Loading model 'default.sitemap'
+2018-03-08 01:11:33.167 [INFO ] [el.core.internal.ModelRepositoryImpl] - Refreshing model 'default.sitemap'
+2018-03-08 01:12:36.103 [ERROR] [org.apache.felix.configadmin        ] - [org.osgi.service.cm.ManagedService, org.osgi.service.event.EventHandler, id=290, bundle=182/mvn:org.openhab.binding/org.openhab.binding.alarmdecoder/1.9.0]: Updating property alarmdecoder:connect of configuration org.openhab.alarmdecoder caused a problem: no config!
+org.osgi.service.cm.ConfigurationException: alarmdecoder:connect : no config!
+	at org.openhab.binding.alarmdecoder.internal.AlarmDecoderBinding.updated(AlarmDecoderBinding.java:217)[182:org.openhab.binding.alarmdecoder:1.9.0]
+	at org.apache.felix.cm.impl.helper.ManagedServiceTracker.updated(ManagedServiceTracker.java:189)[3:org.apache.felix.configadmin:1.8.12]
+	at org.apache.felix.cm.impl.helper.ManagedServiceTracker.updateService(ManagedServiceTracker.java:152)[3:org.apache.felix.configadmin:1.8.12]
+	at org.apache.felix.cm.impl.helper.ManagedServiceTracker.provideConfiguration(ManagedServiceTracker.java:85)[3:org.apache.felix.configadmin:1.8.12]
+	at org.apache.felix.cm.impl.ConfigurationManager$ManagedServiceUpdate.provide(ConfigurationManager.java:1461)[3:org.apache.felix.configadmin:1.8.12]
+	at org.apache.felix.cm.impl.ConfigurationManager$ManagedServiceUpdate.run(ConfigurationManager.java:1417)[3:org.apache.felix.configadmin:1.8.12]
+	at org.apache.felix.cm.impl.UpdateThread.run0(UpdateThread.java:141)[3:org.apache.felix.configadmin:1.8.12]
+	at org.apache.felix.cm.impl.UpdateThread.run(UpdateThread.java:109)[3:org.apache.felix.configadmin:1.8.12]
+	at java.lang.Thread.run(Thread.java:748)[:1.8.0_144]
+2018-03-08 01:13:01.487 [INFO ] [penhab.io.transport.mqtt.MqttService] - MQTT Service initialization completed.
+2018-03-08 01:13:01.488 [INFO ] [t.mqtt.internal.MqttBrokerConnection] - Starting MQTT broker connection 'mybroker'
+2018-03-08 01:13:02.510 [WARN ] [.core.transform.TransformationHelper] - Cannot get service reference for transformation service of type JSONPATH
+2018-03-08 01:13:02.850 [WARN ] [.core.transform.TransformationHelper] - Cannot get service reference for transformation service of type JSONPATH
+2018-03-08 01:13:03.188 [WARN ] [.core.transform.TransformationHelper] - Cannot get service reference for transformation service of type JSONPATH
+2018-03-08 01:13:03.527 [WARN ] [.core.transform.TransformationHelper] - Cannot get service reference for transformation service of type JSONPATH
+2018-03-08 01:15:11.874 [INFO ] [rk.discovery.NetworkDiscoveryService] - Found 172.17.0.1
+2018-03-08 01:15:21.239 [INFO ] [g.discovery.internal.PersistentInbox] - Added new thing 'network:device:172_17_0_1' to inbox.
+2018-03-08 01:21:17.546 [WARN ] [eclipse.jetty.servlet.ServletHandler] - 
+javax.servlet.ServletException: org.glassfish.jersey.server.ContainerException: java.lang.OutOfMemoryError: Java heap space
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	at com.eclipsesource.jaxrs.publisher.internal.ServletContainerBridge.service(ServletContainerBridge.java:76)[10:com.eclipsesource.jaxrs.publisher:5.3.1.201602281253]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)[81:org.eclipse.jetty.servlet:9.2.19.v20160908]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)[81:org.eclipse.jetty.servlet:9.2.19.v20160908]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceServletHandler.doHandle(HttpServiceServletHandler.java:71)[172:org.ops4j.pax.web.pax-web-jetty:4.3.0]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)[79:org.eclipse.jetty.security:9.2.19.v20160908]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceContext.doHandle(HttpServiceContext.java:287)[172:org.ops4j.pax.web.pax-web-jetty:4.3.0]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)[81:org.eclipse.jetty.servlet:9.2.19.v20160908]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerHandlerCollection.handle(JettyServerHandlerCollection.java:80)[172:org.ops4j.pax.web.pax-web-jetty:4.3.0]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)[72:org.eclipse.jetty.io:9.2.19.v20160908]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)[83:org.eclipse.jetty.util:9.2.19.v20160908]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)[83:org.eclipse.jetty.util:9.2.19.v20160908]
+	at java.lang.Thread.run(Thread.java:748)[:1.8.0_144]
+Caused by: org.glassfish.jersey.server.ContainerException: java.lang.OutOfMemoryError: Java heap space
+	at org.glassfish.jersey.servlet.internal.ResponseWriter.rethrow(ResponseWriter.java:278)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	at org.glassfish.jersey.servlet.internal.ResponseWriter.failure(ResponseWriter.java:260)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	at org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:509)[158:org.glassfish.jersey.core.jersey-server:2.22.2]
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:334)[158:org.glassfish.jersey.core.jersey-server:2.22.2]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)[157:org.glassfish.jersey.core.jersey-common:2.22.2]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)[157:org.glassfish.jersey.core.jersey-common:2.22.2]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)[157:org.glassfish.jersey.core.jersey-common:2.22.2]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)[157:org.glassfish.jersey.core.jersey-common:2.22.2]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)[157:org.glassfish.jersey.core.jersey-common:2.22.2]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)[157:org.glassfish.jersey.core.jersey-common:2.22.2]
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)[158:org.glassfish.jersey.core.jersey-server:2.22.2]
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)[158:org.glassfish.jersey.core.jersey-server:2.22.2]
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	... 26 more
+Caused by: java.lang.OutOfMemoryError: Java heap space
+2018-03-08 01:21:17.553 [WARN ] [org.eclipse.jetty.server.HttpChannel] - /rest/discovery/bindings/network/scan
+javax.servlet.ServletException: javax.servlet.ServletException: org.glassfish.jersey.server.ContainerException: java.lang.OutOfMemoryError: Java heap space
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerHandlerCollection.handle(JettyServerHandlerCollection.java:88)[172:org.ops4j.pax.web.pax-web-jetty:4.3.0]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)[72:org.eclipse.jetty.io:9.2.19.v20160908]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)[83:org.eclipse.jetty.util:9.2.19.v20160908]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)[83:org.eclipse.jetty.util:9.2.19.v20160908]
+	at java.lang.Thread.run(Thread.java:748)[:1.8.0_144]
+Caused by: javax.servlet.ServletException: org.glassfish.jersey.server.ContainerException: java.lang.OutOfMemoryError: Java heap space
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:489)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:427)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:388)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:341)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:228)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	at com.eclipsesource.jaxrs.publisher.internal.ServletContainerBridge.service(ServletContainerBridge.java:76)[10:com.eclipsesource.jaxrs.publisher:5.3.1.201602281253]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)[81:org.eclipse.jetty.servlet:9.2.19.v20160908]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)[81:org.eclipse.jetty.servlet:9.2.19.v20160908]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceServletHandler.doHandle(HttpServiceServletHandler.java:71)[172:org.ops4j.pax.web.pax-web-jetty:4.3.0]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)[79:org.eclipse.jetty.security:9.2.19.v20160908]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.ops4j.pax.web.service.jetty.internal.HttpServiceContext.doHandle(HttpServiceContext.java:287)[172:org.ops4j.pax.web.pax-web-jetty:4.3.0]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)[81:org.eclipse.jetty.servlet:9.2.19.v20160908]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)[80:org.eclipse.jetty.server:9.2.19.v20160908]
+	at org.ops4j.pax.web.service.jetty.internal.JettyServerHandlerCollection.handle(JettyServerHandlerCollection.java:80)[172:org.ops4j.pax.web.pax-web-jetty:4.3.0]
+	... 8 more
+Caused by: org.glassfish.jersey.server.ContainerException: java.lang.OutOfMemoryError: Java heap space
+	at org.glassfish.jersey.servlet.internal.ResponseWriter.rethrow(ResponseWriter.java:278)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	at org.glassfish.jersey.servlet.internal.ResponseWriter.failure(ResponseWriter.java:260)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	at org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:509)[158:org.glassfish.jersey.core.jersey-server:2.22.2]
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:334)[158:org.glassfish.jersey.core.jersey-server:2.22.2]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)[157:org.glassfish.jersey.core.jersey-common:2.22.2]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)[157:org.glassfish.jersey.core.jersey-common:2.22.2]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)[157:org.glassfish.jersey.core.jersey-common:2.22.2]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)[157:org.glassfish.jersey.core.jersey-common:2.22.2]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)[157:org.glassfish.jersey.core.jersey-common:2.22.2]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)[157:org.glassfish.jersey.core.jersey-common:2.22.2]
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)[158:org.glassfish.jersey.core.jersey-server:2.22.2]
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)[158:org.glassfish.jersey.core.jersey-server:2.22.2]
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:473)[155:org.glassfish.jersey.containers.jersey-container-servlet-core:2.22.2]
+	... 26 more
+Caused by: java.lang.OutOfMemoryError: Java heap space
+2018-03-08 01:21:17.555 [WARN ] [org.eclipse.jetty.server.HttpChannel] - Could not send response error 500: javax.servlet.ServletException: javax.servlet.ServletException: org.glassfish.jersey.server.ContainerException: java.lang.OutOfMemoryError: Java heap space
+2018-03-08 01:21:17.555 [ERROR] [t.mqtt.internal.MqttBrokerConnection] - MQTT connection to broker was lost
+Connection lost (32109) - java.io.EOFException
+	at org.eclipse.paho.client.mqttv3.internal.CommsReceiver.run(CommsReceiver.java:138)[185:org.openhab.io.transport.mqtt:1.9.0]
+	at java.lang.Thread.run(Thread.java:748)[:1.8.0_144]
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readByte(DataInputStream.java:267)[:1.8.0_144]
+	at org.eclipse.paho.client.mqttv3.internal.wire.MqttInputStream.readMqttWireMessage(MqttInputStream.java:56)[185:org.openhab.io.transport.mqtt:1.9.0]
+	at org.eclipse.paho.client.mqttv3.internal.CommsReceiver.run(CommsReceiver.java:100)[185:org.openhab.io.transport.mqtt:1.9.0]
+	... 1 more
+2018-03-08 01:21:17.586 [ERROR] [t.mqtt.internal.MqttBrokerConnection] - MQTT connection to 'mybroker' was lost: Connection lost : ReasonCode 32109 : Cause : null
+2018-03-08 01:21:17.586 [INFO ] [t.mqtt.internal.MqttBrokerConnection] - Starting connection helper to periodically try restore connection to broker 'mybroker'
+2018-03-08 01:21:27.638 [INFO ] [t.mqtt.internal.MqttBrokerConnection] - Starting MQTT broker connection 'mybroker'
+2018-03-08 01:36:07.102 [INFO ] [rk.discovery.NetworkDiscoveryService] - Found 172.18.0.1
+2018-03-08 01:36:07.103 [INFO ] [g.discovery.internal.PersistentInbox] - Added new thing 'network:device:172_18_0_1' to inbox.

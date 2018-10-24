@@ -1,0 +1,22 @@
+Cu
+	max: 855
+	min: 716
+
+	capacity 1 pin: 2200 mA
+
+
+
+Moi
+	max: 855
+	min: 675
+	capitity 1 pin: 2200 mA
+
+
+- day vang + do: Cuc duong
+- day xanh + den: Cuc am
+- scale tu: 5% - 100%. Neu gia tri analog < min --> bao "critical low"
+
+
+Ket qua:
+	Light: 22:37:00-08/07/2018  ---- 21:57:00-09/07/2018
+

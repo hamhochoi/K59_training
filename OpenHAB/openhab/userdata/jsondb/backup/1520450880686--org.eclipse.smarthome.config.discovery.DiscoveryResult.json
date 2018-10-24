@@ -1,0 +1,54 @@
+{
+  "network:servicedevice:172_17_0_1_80": {
+    "class": "org.eclipse.smarthome.config.discovery.internal.DiscoveryResultImpl",
+    "value": {
+      "thingUID": {
+        "segments": [
+          "network",
+          "servicedevice",
+          "172_17_0_1_80"
+        ]
+      },
+      "thingTypeUID": {
+        "segments": [
+          "network",
+          "servicedevice"
+        ]
+      },
+      "properties": {
+        "port": 80,
+        "hostname": "172.17.0.1"
+      },
+      "flag": "NEW",
+      "label": "Device providing a Webserver (172.17.0.1:80)",
+      "timestamp": 1520450282118,
+      "timeToLive": 600
+    }
+  },
+  "network:servicedevice:172_17_0_1_1025": {
+    "class": "org.eclipse.smarthome.config.discovery.internal.DiscoveryResultImpl",
+    "value": {
+      "thingUID": {
+        "segments": [
+          "network",
+          "servicedevice",
+          "172_17_0_1_1025"
+        ]
+      },
+      "thingTypeUID": {
+        "segments": [
+          "network",
+          "servicedevice"
+        ]
+      },
+      "properties": {
+        "port": 1025,
+        "hostname": "172.17.0.1"
+      },
+      "flag": "NEW",
+      "label": "Device providing Xbox/MS-RPC Capability (172.17.0.1:1025)",
+      "timestamp": 1520450282119,
+      "timeToLive": 600
+    }
+  }
+}

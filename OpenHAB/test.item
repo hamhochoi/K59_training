@@ -1,0 +1,1 @@
+Switch Switch2 {mqtt=">[mybroker:zone_3/box_1/led:command:ON:{\"xanh\"\\:\"OFF\",\"do\"\\:\"ON\",\"vang\"\\:\"OFF\"}],>[mybroker:zone_3/box_1/led:command:OFF:{\"xanh\"\\:\"OFF\",\"do\"\\:\"OFF\",\"vang\"\\:\"OFF\"}]"}

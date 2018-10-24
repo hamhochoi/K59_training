@@ -1,0 +1,234 @@
+[
+  {
+    "information": {
+      "Description": "", 
+      "EndPoint": "http://0.0.0.0:8123/api/states", 
+      "Label": "{'thing_local_type': 'sensor'}", 
+      "LocalId": "thing-sensor.temperature_4", 
+      "PlatformId": "f2845f4c-0d4a-4f6a-a463-359261bc71d0", 
+      "ResourceId": "04ced779-139d-4ec5-b00f-6047c1cc03a8", 
+      "ResourceStatus": "active", 
+      "ResourceType": "Thing", 
+      "ThingName": "Temperature_4"
+    }, 
+    "metrics": [
+      {
+        "DataPoint": {
+          "DataType": "int", 
+          "TimeCollect": "2018-08-04T14:44:14Z", 
+          "Value": 78
+        }, 
+        "MetricDomain": "sensor", 
+        "MetricId": "252b0ab2-48d7-4000-a0a0-6b6ab339778a", 
+        "MetricLocalId": "sensor.temperature_4", 
+        "MetricName": "Temperature_4", 
+        "MetricStatus": "active", 
+        "MetricType": "Gauge", 
+        "Unit": "\u00b0C"
+      }
+    ]
+  }, 
+  {
+    "information": {
+      "Description": "", 
+      "EndPoint": "http://0.0.0.0:8123/api/states", 
+      "Label": "{'thing_local_type': 'sensor'}", 
+      "LocalId": "thing-sensor.temperature_2", 
+      "PlatformId": "f2845f4c-0d4a-4f6a-a463-359261bc71d0", 
+      "ResourceId": "36ffa31f-cd7c-48eb-94f5-b4c174c74b51", 
+      "ResourceStatus": "active", 
+      "ResourceType": "Thing", 
+      "ThingName": "Temperature_2"
+    }, 
+    "metrics": [
+      {
+        "DataPoint": {
+          "DataType": "int", 
+          "TimeCollect": "2018-08-04T14:44:14Z", 
+          "Value": 25
+        }, 
+        "MetricDomain": "sensor", 
+        "MetricId": "454a67d7-f577-47af-9571-5c747e988b31", 
+        "MetricLocalId": "sensor.temperature_2", 
+        "MetricName": "Temperature_2", 
+        "MetricStatus": "active", 
+        "MetricType": "Gauge", 
+        "Unit": "\u00b0C"
+      }
+    ]
+  }, 
+  {
+    "information": {
+      "Description": "", 
+      "EndPoint": "http://0.0.0.0:8123/api/states", 
+      "Label": "{'thing_local_type': 'light'}", 
+      "LocalId": "thing-light.red_light", 
+      "PlatformId": "f2845f4c-0d4a-4f6a-a463-359261bc71d0", 
+      "ResourceId": "5a0b35e2-8355-45ab-91ee-31e7caa34ca9", 
+      "ResourceStatus": "active", 
+      "ResourceType": "Thing", 
+      "ThingName": "Red Light"
+    }, 
+    "metrics": [
+      {
+        "DataPoint": {
+          "DataType": "string", 
+          "TimeCollect": "2018-08-04T14:44:14Z", 
+          "Value": "off"
+        }, 
+        "MetricDomain": "switch", 
+        "MetricId": "c2ff049a-962a-4c8b-ab47-9de0e86b4f08", 
+        "MetricLocalId": "light.red_light", 
+        "MetricName": "Red Light", 
+        "MetricStatus": "active", 
+        "MetricType": "Gauge", 
+        "Unit": "unknown"
+      }
+    ]
+  }, 
+  {
+    "information": {
+      "Description": "", 
+      "EndPoint": "http://0.0.0.0:8123/api/states", 
+      "Label": "{'thing_local_type': 'binary_sensor'}", 
+      "LocalId": "thing-binary_sensor.motion_detection", 
+      "PlatformId": "f2845f4c-0d4a-4f6a-a463-359261bc71d0", 
+      "ResourceId": "b2ae57b9-d107-47a9-a3c8-4492f338fbc3", 
+      "ResourceStatus": "active", 
+      "ResourceType": "Thing", 
+      "ThingName": "Motion Detection"
+    }, 
+    "metrics": [
+      {
+        "DataPoint": {
+          "DataType": "string", 
+          "TimeCollect": "2018-08-04T14:44:14Z", 
+          "Value": "off"
+        }, 
+        "MetricDomain": "binary_sensor", 
+        "MetricId": "d9fec3cb-07df-4b6c-9d37-e0d74ff46c59", 
+        "MetricLocalId": "binary_sensor.motion_detection", 
+        "MetricName": "Motion Detection", 
+        "MetricStatus": "active", 
+        "MetricType": "Gauge", 
+        "Unit": "unknown"
+      }
+    ]
+  }, 
+  {
+    "information": {
+      "Description": "", 
+      "EndPoint": "http://0.0.0.0:8123/api/states", 
+      "Label": "{'thing_local_type': 'light'}", 
+      "LocalId": "thing-light.yellow_light", 
+      "PlatformId": "f2845f4c-0d4a-4f6a-a463-359261bc71d0", 
+      "ResourceId": "b4f666cc-c26e-4ae8-88bc-cbcf4b36b5d4", 
+      "ResourceStatus": "active", 
+      "ResourceType": "Thing", 
+      "ThingName": "Yellow Light"
+    }, 
+    "metrics": [
+      {
+        "DataPoint": {
+          "DataType": "string", 
+          "TimeCollect": "2018-08-04T14:44:14Z", 
+          "Value": "off"
+        }, 
+        "MetricDomain": "switch", 
+        "MetricId": "266dbe94-c182-4413-8ce0-7267682a2fac", 
+        "MetricLocalId": "light.yellow_light", 
+        "MetricName": "Yellow Light", 
+        "MetricStatus": "active", 
+        "MetricType": "Gauge", 
+        "Unit": "unknown"
+      }
+    ]
+  }, 
+  {
+    "information": {
+      "Description": "", 
+      "EndPoint": "http://0.0.0.0:8123/api/states", 
+      "Label": "{'thing_local_type': 'sensor'}", 
+      "LocalId": "thing-sensor.temperature_1", 
+      "PlatformId": "f2845f4c-0d4a-4f6a-a463-359261bc71d0", 
+      "ResourceId": "bc595714-9fbb-4b61-940a-0fcd8e390101", 
+      "ResourceStatus": "active", 
+      "ResourceType": "Thing", 
+      "ThingName": "Temperature_1"
+    }, 
+    "metrics": [
+      {
+        "DataPoint": {
+          "DataType": "int", 
+          "TimeCollect": "2018-08-04T14:44:14Z", 
+          "Value": 96
+        }, 
+        "MetricDomain": "sensor", 
+        "MetricId": "d875a3c4-1e88-4a9b-81e4-3665187a2c72", 
+        "MetricLocalId": "sensor.temperature_1", 
+        "MetricName": "Temperature_1", 
+        "MetricStatus": "active", 
+        "MetricType": "Gauge", 
+        "Unit": "\u00b0C"
+      }
+    ]
+  }, 
+  {
+    "information": {
+      "Description": "", 
+      "EndPoint": "http://0.0.0.0:8123/api/states", 
+      "Label": "{'thing_local_type': 'light'}", 
+      "LocalId": "thing-light.green_light", 
+      "PlatformId": "f2845f4c-0d4a-4f6a-a463-359261bc71d0", 
+      "ResourceId": "cdd46219-32e6-45b6-aa24-3fa276045412", 
+      "ResourceStatus": "active", 
+      "ResourceType": "Thing", 
+      "ThingName": "Green Light"
+    }, 
+    "metrics": [
+      {
+        "DataPoint": {
+          "DataType": "string", 
+          "TimeCollect": "2018-08-04T14:44:14Z", 
+          "Value": "off"
+        }, 
+        "MetricDomain": "switch", 
+        "MetricId": "a263e769-1791-401d-8de4-4d7b617976ba", 
+        "MetricLocalId": "light.green_light", 
+        "MetricName": "Green Light", 
+        "MetricStatus": "active", 
+        "MetricType": "Gauge", 
+        "Unit": "unknown"
+      }
+    ]
+  }, 
+  {
+    "information": {
+      "Description": "", 
+      "EndPoint": "http://0.0.0.0:8123/api/states", 
+      "Label": "{'thing_local_type': 'sensor'}", 
+      "LocalId": "thing-sensor.temperature_3", 
+      "PlatformId": "f2845f4c-0d4a-4f6a-a463-359261bc71d0", 
+      "ResourceId": "dbc0895a-a8cb-4c4c-afae-bba87ac33445", 
+      "ResourceStatus": "active", 
+      "ResourceType": "Thing", 
+      "ThingName": "Temperature_3"
+    }, 
+    "metrics": [
+      {
+        "DataPoint": {
+          "DataType": "int", 
+          "TimeCollect": "2018-08-04T14:44:14Z", 
+          "Value": 26
+        }, 
+        "MetricDomain": "sensor", 
+        "MetricId": "909b46bf-0edc-4e9a-a4fa-f7532cbcfb13", 
+        "MetricLocalId": "sensor.temperature_3", 
+        "MetricName": "Temperature_3", 
+        "MetricStatus": "active", 
+        "MetricType": "Gauge", 
+        "Unit": "\u00b0C"
+      }
+    ]
+  }
+]

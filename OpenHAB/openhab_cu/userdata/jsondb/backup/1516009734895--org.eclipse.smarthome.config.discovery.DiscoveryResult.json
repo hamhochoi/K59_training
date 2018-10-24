@@ -1,0 +1,28 @@
+{
+  "network:servicedevice:192_168_60_110_548": {
+    "class": "org.eclipse.smarthome.config.discovery.internal.DiscoveryResultImpl",
+    "value": {
+      "thingUID": {
+        "segments": [
+          "network",
+          "servicedevice",
+          "192_168_60_110_548"
+        ]
+      },
+      "thingTypeUID": {
+        "segments": [
+          "network",
+          "servicedevice"
+        ]
+      },
+      "properties": {
+        "port": 548,
+        "hostname": "192.168.60.110"
+      },
+      "flag": "NEW",
+      "label": "Device providing the Apple AFP Service (192.168.60.110:548)",
+      "timestamp": 1516009124600,
+      "timeToLive": 600
+    }
+  }
+}

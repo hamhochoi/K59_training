@@ -1,0 +1,920 @@
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-02 19:27:52.004294
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-02 19:27:57.009535
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-02 19:28:02.014319
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:28:07.015219
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 19:28:12.019388
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 19:28:17.025242
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 19:28:22.030988
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-02 19:28:27.034155
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 19:28:32.039616
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:28:37.045455
+zone_1/box_1/motion/id_1 {"motion":56,"battery":49} 2018-07-02 19:28:42.049660
+zone_1/box_1/motion/id_1 {"motion":49,"battery":125} 2018-07-02 19:28:47.053328
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-02 19:28:52.056806
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-02 19:28:57.062551
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-02 19:29:02.068210
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-02 19:29:07.070115
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-02 19:29:12.074130
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-02 19:29:17.076826
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:29:22.079481
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 19:29:27.082121
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 19:29:32.086123
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 19:29:37.091909
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-02 19:29:42.096653
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 19:29:47.101065
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 19:29:54.302162
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-02 19:29:59.307141
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 19:30:04.311383
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:30:09.314413
+zone_1/box_1/motion/id_1 {"motion":56,"battery":49} 2018-07-02 19:30:14.318136
+zone_1/box_1/motion/id_1 {"motion":54,"battery":125} 2018-07-02 19:30:19.320358
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-02 19:30:24.323098
+zone_1/box_1/motion/id_1 {"motion":51,"battery":125} 2018-07-02 19:30:29.326392
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-02 19:30:34.331802
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-02 19:30:39.337589
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-02 19:30:44.342614
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-02 19:30:49.346150
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:30:54.351620
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 19:30:59.354115
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 19:31:04.358490
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 19:31:09.362776
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-02 19:31:14.368487
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 19:31:19.374160
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:31:24.378905
+zone_1/box_1/motion/id_1 {"motion":56,"battery":50} 2018-07-02 19:31:29.382359
+zone_1/box_1/motion/id_1 {"motion":53,"battery":125} 2018-07-02 19:31:34.386126
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-02 19:31:39.391711
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-02 19:31:44.394379
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-02 19:31:49.399858
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:31:56.498102
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 19:32:01.503838
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:32:06.508111
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 19:32:11.513415
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 19:32:16.518126
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 19:32:21.523937
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-02 19:32:26.527330
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 19:32:31.530955
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:32:36.534545
+zone_1/box_1/motion/id_1 {"motion":56,"battery":50} 2018-07-02 19:32:41.540248
+zone_1/box_1/motion/id_1 {"motion":57,"battery":125} 2018-07-02 19:32:46.542111
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-02 19:32:51.547743
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-02 19:32:56.553398
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-02 19:33:01.559199
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-02 19:33:06.564491
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:33:11.570209
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 19:33:16.576005
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 19:33:21.578152
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 19:33:26.582907
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-02 19:33:31.584140
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 19:33:36.589792
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:33:41.595272
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 19:33:46.601097
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:33:51.606335
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":125,"battery":123} 2018-07-02 19:33:58.810712
+zone_1/box_1/motion/id_1 {"motion":34,"battery":109} 2018-07-02 19:34:03.814915
+zone_1/box_1/motion/id_1 {"motion":111,"battery":116} 2018-07-02 19:34:08.820672
+zone_1/box_1/motion/id_1 {"motion":105,"battery":111} 2018-07-02 19:34:13.826174
+zone_1/box_1/motion/id_1 {"motion":110,"battery":34} 2018-07-02 19:34:18.831898
+zone_1/box_1/motion/id_1 {"motion":58,"battery":48} 2018-07-02 19:34:23.834124
+zone_1/box_1/motion/id_1 {"motion":44,"battery":34} 2018-07-02 19:34:28.836330
+zone_1/box_1/motion/id_1 {"motion":98,"battery":97} 2018-07-02 19:34:33.838122
+zone_1/box_1/motion/id_1 {"motion":116,"battery":116} 2018-07-02 19:34:38.843805
+zone_1/box_1/motion/id_1 {"motion":101,"battery":114} 2018-07-02 19:34:43.849579
+zone_1/box_1/motion/id_1 {"motion":121,"battery":34} 2018-07-02 19:34:48.855187
+zone_1/box_1/motion/id_1 {"motion":58,"battery":56} 2018-07-02 19:34:53.860967
+zone_1/box_1/motion/id_1 {"motion":50,"battery":54} 2018-07-02 19:34:58.864107
+zone_1/box_1/motion/id_1 {"motion":125,"battery":123} 2018-07-02 19:35:03.868099
+zone_1/box_1/motion/id_1 {"motion":51,"battery":49} 2018-07-02 19:35:08.870155
+zone_1/box_1/motion/id_1 {"motion":125,"battery":-1} 2018-07-02 19:35:13.874119
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-02 19:35:18.875436
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-02 19:35:23.881379
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-02 19:35:28.883709
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-02 19:35:33.886890
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:35:38.891504
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 19:35:43.894135
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 19:35:48.899844
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 19:35:53.905621
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":56,"battery":50} 2018-07-02 19:36:01.029821
+zone_1/box_1/motion/id_1 {"motion":52,"battery":125} 2018-07-02 19:36:06.035420
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-02 19:36:11.039613
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-02 19:36:16.045433
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-02 19:36:21.050115
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-02 19:36:26.055932
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:36:31.058125
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 19:36:36.063792
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:36:41.069545
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 19:36:46.072518
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 19:36:51.076205
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 19:36:56.080841
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-02 19:37:01.086172
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 19:37:06.091945
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:37:11.094162
+zone_1/box_1/motion/id_1 {"motion":56,"battery":48} 2018-07-02 19:37:16.096110
+zone_1/box_1/motion/id_1 {"motion":57,"battery":125} 2018-07-02 19:37:21.101836
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-02 19:37:26.104156
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-02 19:37:31.106725
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-02 19:37:36.108624
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-02 19:37:41.114153
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:37:46.119776
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 19:37:51.125579
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 19:37:56.127484
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:38:03.160267
+zone_1/box_1/motion/id_1 {"motion":56,"battery":50} 2018-07-02 19:38:08.165948
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:38:13.171671
+zone_1/box_1/motion/id_1 {"motion":56,"battery":50} 2018-07-02 19:38:18.176041
+zone_1/box_1/motion/id_1 {"motion":54,"battery":125} 2018-07-02 19:38:23.178129
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-02 19:38:28.183885
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-02 19:38:33.189729
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-02 19:38:38.195303
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-02 19:38:43.199770
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:38:48.202126
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 19:38:53.204347
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 19:38:58.206126
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 19:39:03.209346
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-02 19:39:08.215124
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 19:39:13.219690
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:39:18.223443
+zone_1/box_1/motion/id_1 {"motion":56,"battery":50} 2018-07-02 19:39:23.225764
+zone_1/box_1/motion/id_1 {"motion":56,"battery":125} 2018-07-02 19:39:28.231170
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-02 19:39:33.236956
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-02 19:39:38.242617
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-02 19:39:43.248076
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-02 19:39:48.253828
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:39:53.257003
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-02 19:39:58.262791
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 19:40:05.243632
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 19:40:10.246142
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-02 19:40:15.251745
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 19:40:20.257407
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:40:25.259121
+zone_1/box_1/motion/id_1 {"motion":56,"battery":49} 2018-07-02 19:40:30.263310
+zone_1/box_1/motion/id_1 {"motion":54,"battery":125} 2018-07-02 19:40:35.264095
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-02 19:40:40.269746
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-02 19:40:45.273300
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-02 19:40:50.276827
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-02 19:40:55.279654
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:41:00.282781
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 19:41:05.286517
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 19:41:10.292296
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 19:41:15.298065
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-02 19:41:20.302136
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 19:41:25.307741
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-02 19:41:30.310122
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 19:41:35.315450
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:41:40.318238
+zone_1/box_1/motion/id_1 {"motion":56,"battery":50} 2018-07-02 19:41:45.323632
+zone_1/box_1/motion/id_1 {"motion":51,"battery":125} 2018-07-02 19:41:50.329100
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-02 19:41:55.334471
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-02 19:42:00.339916
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":110,"battery":34} 2018-07-02 19:42:07.478865
+zone_1/box_1/motion/id_1 {"motion":58,"battery":48} 2018-07-02 19:42:12.480581
+zone_1/box_1/motion/id_1 {"motion":44,"battery":34} 2018-07-02 19:42:17.486122
+zone_1/box_1/motion/id_1 {"motion":98,"battery":97} 2018-07-02 19:42:22.489092
+zone_1/box_1/motion/id_1 {"motion":116,"battery":116} 2018-07-02 19:42:27.494126
+zone_1/box_1/motion/id_1 {"motion":101,"battery":114} 2018-07-02 19:42:32.498238
+zone_1/box_1/motion/id_1 {"motion":121,"battery":34} 2018-07-02 19:42:37.502117
+zone_1/box_1/motion/id_1 {"motion":58,"battery":56} 2018-07-02 19:42:42.506123
+zone_1/box_1/motion/id_1 {"motion":50,"battery":50} 2018-07-02 19:42:47.508095
+zone_1/box_1/motion/id_1 {"motion":125,"battery":123} 2018-07-02 19:42:52.513712
+zone_1/box_1/motion/id_1 {"motion":50,"battery":56} 2018-07-02 19:42:57.519329
+zone_1/box_1/motion/id_1 {"motion":125,"battery":-1} 2018-07-02 19:43:02.525104
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-02 19:43:07.530180
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-02 19:43:12.535965
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-02 19:43:17.540561
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-02 19:43:22.546262
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:43:27.549378
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 19:43:32.555195
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 19:43:37.558126
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 19:43:42.562239
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-02 19:43:47.567393
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 19:43:52.570172
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:43:57.574124
+zone_1/box_1/motion/id_1 {"motion":56,"battery":50} 2018-07-02 19:44:02.575985
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-02 19:44:09.499864
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-02 19:44:14.505628
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:44:19.508964
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 19:44:24.514405
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 19:44:29.518155
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 19:44:34.518872
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 19:44:39.524590
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 19:44:44.530158
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-02 19:44:49.534149
+zone_1/box_1/motion/id_1 {"motion":114,"batteryConnected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:48:25.073412
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 19:53:25.167849
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 19:58:27.233919
+zone_1/box_1/motion/id_1 {"motion":56,"battery":50} 2018-07-02 20:03:27.325362
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 20:08:29.522776
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-02 20:13:29.617814
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":105,"battery":111} 2018-07-02 20:18:31.618942
+zone_1/box_1/motion/id_1 {"motion":110,"battery":34} 2018-07-02 20:23:31.718380
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":58,"battery":56} 2018-07-02 20:28:33.865201
+zone_1/box_1/motion/id_1 {"motion":50,"battery":50} 2018-07-02 20:33:33.959404
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 20:38:36.227152
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 20:43:36.327959
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 20:48:38.509732
+zone_1/box_1/motion/id_1 {"motion":56,"battery":48} 2018-07-02 20:53:38.610551
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 20:58:40.720082
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 21:03:40.820983
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":101,"battery":114} 2018-07-02 21:08:43.185754
+zone_1/box_1/motion/id_1 {"motion":121,"battery":34} 2018-07-02 21:13:43.286360
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 21:18:45.320698
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 21:23:45.420899
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-02 21:28:47.758380
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 21:33:47.858857
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":55,"battery":125} 2018-07-02 21:38:50.063884
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-02 21:43:50.162162
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":121,"battery":34} 2018-07-02 21:48:52.302282
+zone_1/box_1/motion/id_1 {"motion":58,"battery":55} 2018-07-02 21:53:52.358563
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 21:58:54.609936
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 22:03:54.708877
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 22:08:56.733457
+zone_1/box_1/motion/id_1 {"motion":56,"battery":48} 2018-07-02 22:13:56.834175
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":110,"battery":34} 2018-07-02 22:18:59.005610
+zone_1/box_1/motion/id_1 {"motion":58,"battery":48} 2018-07-02 22:23:59.092058
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-02 22:29:01.187954
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-02 22:34:01.272692
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-02 22:39:03.635648
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-02 22:44:03.734172
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":55,"battery":57} 2018-07-02 22:49:05.997672
+zone_1/box_1/motion/id_1 {"motion":50,"battery":125} 2018-07-02 22:54:06.096174
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 22:59:08.222344
+zone_1/box_1/motion/id_1 {"motion":56,"battery":48} 2018-07-02 23:04:08.301236
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 23:09:10.525142
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 23:14:10.622887
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-02 23:19:12.995417
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 23:24:13.093207
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":105,"battery":111} 2018-07-02 23:29:15.146385
+zone_1/box_1/motion/id_1 {"motion":110,"battery":34} 2018-07-02 23:34:15.294158
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":110,"battery":34} 2018-07-02 23:39:17.877032
+zone_1/box_1/motion/id_1 {"motion":58,"battery":48} 2018-07-02 23:44:17.974294
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-02 23:49:20.230554
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-02 23:54:20.330164
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-02 23:59:22.365817
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-03 00:04:22.468456
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":55,"battery":55} 2018-07-03 00:09:24.748104
+zone_1/box_1/motion/id_1 {"motion":51,"battery":125} 2018-07-03 00:14:24.848916
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":101,"battery":114} 2018-07-03 00:19:27.047679
+zone_1/box_1/motion/id_1 {"motion":121,"battery":34} 2018-07-03 00:24:27.146156
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 00:29:29.266200
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 00:34:29.366191
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":55,"battery":54} 2018-07-03 00:39:31.782476
+zone_1/box_1/motion/id_1 {"motion":55,"battery":125} 2018-07-03 00:44:31.882150
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 00:49:34.535118
+zone_1/box_1/motion/id_1 {"motion":55,"battery":56} 2018-07-03 00:54:34.634152
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 00:59:36.907458
+zone_1/box_1/motion/id_1 {"motion":55,"battery":56} 2018-07-03 01:04:37.006156
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 01:09:39.234072
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-03 01:14:39.338196
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":105,"battery":111} 2018-07-03 01:19:41.539168
+zone_1/box_1/motion/id_1 {"motion":110,"battery":34} 2018-07-03 01:24:41.638150
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-03 01:29:44.224583
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-03 01:34:44.325414
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-03 01:39:46.708762
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-03 01:44:46.807402
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-03 01:49:49.594062
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-03 01:54:49.698167
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 01:59:51.981732
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-03 02:04:52.082178
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":55,"battery":53} 2018-07-03 02:09:54.922580
+zone_1/box_1/motion/id_1 {"motion":56,"battery":125} 2018-07-03 02:14:55.022159
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":125} 2018-07-03 02:19:57.659141
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-03 02:24:57.725691
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":44,"battery":34} 2018-07-03 02:29:59.783986
+zone_1/box_1/motion/id_1 {"motion":98,"battery":97} 2018-07-03 02:34:59.882190
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-03 02:40:03.240587
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-03 02:45:03.342191
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-03 02:50:05.621028
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-03 02:55:05.718166
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-03 03:00:07.807380
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-03 03:05:07.904131
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":54,"battery":52} 2018-07-03 03:10:10.180219
+zone_1/box_1/motion/id_1 {"motion":58,"battery":55} 2018-07-03 03:15:10.278188
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 03:20:12.496230
+zone_1/box_1/motion/id_1 {"motion":55,"battery":54} 2018-07-03 03:25:12.594154
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 03:30:14.693073
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 03:35:14.791107
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-03 03:40:17.392754
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-03 03:45:17.458880
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-03 03:50:19.572722
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-03 03:55:19.670141
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-03 04:00:22.239771
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 04:05:22.282032
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":98,"battery":97} 2018-07-03 04:10:24.561132
+zone_1/box_1/motion/id_1 {"motion":116,"battery":116} 2018-07-03 04:15:24.670166
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 04:20:26.985503
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 04:25:27.086162
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-03 04:30:29.259098
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-03 04:35:29.367338
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-03 04:40:31.607478
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 04:45:31.709273
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":55,"battery":53} 2018-07-03 04:50:33.781042
+zone_1/box_1/motion/id_1 {"motion":50,"battery":125} 2018-07-03 04:55:33.879867
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 05:00:36.643122
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 05:05:36.742151
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-03 05:10:39.526254
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-03 05:15:39.626188
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 05:20:41.886115
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-03 05:25:41.962470
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-03 05:30:44.143274
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-03 05:35:44.246145
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 05:40:46.259577
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-03 05:45:46.359721
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-03 05:50:48.675101
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-03 05:55:48.774236
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-03 06:00:50.845128
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-03 06:05:50.942175
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 06:10:53.261887
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-03 06:15:53.362170
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 06:20:56.128150
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 06:25:56.226176
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":101,"battery":114} 2018-07-03 06:30:58.313612
+zone_1/box_1/motion/id_1 {"motion":121,"battery":34} 2018-07-03 06:35:58.414156
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 06:41:00.759729
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 06:46:00.858146
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 06:51:02.935557
+zone_1/box_1/motion/id_1 {"motion":55,"battery":53} 2018-07-03 06:56:03.034375
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":101,"battery":114} 2018-07-03 07:01:05.035596
+zone_1/box_1/motion/id_1 {"motion":121,"battery":34} 2018-07-03 07:06:05.138166
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 07:11:07.254730
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 07:16:07.354174
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-03 07:21:09.782734
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 07:26:09.882154
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-03 07:31:11.902038
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-03 07:36:12.002152
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":121,"battery":34} 2018-07-03 07:41:14.576068
+zone_1/box_1/motion/id_1 {"motion":58,"battery":55} 2018-07-03 07:46:14.674156
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-03 07:51:16.668627
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-03 07:56:16.736285
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-03 08:01:18.775808
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-03 08:06:18.874153
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":116} 2018-07-03 08:11:21.898904
+zone_1/box_1/motion/id_1 {"motion":98,"battery":97} 2018-07-03 08:16:21.999794
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 08:21:23.745184
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-03 08:26:23.842191
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-03 08:31:25.847775
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-03 08:36:25.946163
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":58,"battery":55} 2018-07-03 08:41:28.078060
+zone_1/box_1/motion/id_1 {"motion":51,"battery":52} 2018-07-03 08:46:28.178183
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":98,"battery":97} 2018-07-03 08:51:30.183069
+zone_1/box_1/motion/id_1 {"motion":116,"battery":116} 2018-07-03 08:56:30.286240
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-03 09:01:32.389112
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-03 09:06:32.476555
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 09:11:34.571381
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 09:16:34.670154
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-03 09:21:37.309041
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-03 09:26:37.406150
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-03 09:31:39.427424
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-03 09:36:39.527246
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-03 09:41:41.609410
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-03 09:46:41.706222
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 09:51:43.637432
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-03 09:56:43.695983
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-03 10:01:45.776576
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-03 10:06:45.874146
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":53,"battery":125} 2018-07-03 10:11:48.232756
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-0Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-07 02:54:30.582724
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-07 02:59:30.641068
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-07 03:04:32.810359
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-07 03:09:32.884241
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-07 03:14:35.149860
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-07 03:19:35.207144
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-07 03:24:37.245762
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-07 03:29:37.341643
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-07 03:34:39.388164
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-07 03:39:39.490001
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-07 03:44:41.441796
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-07 03:49:41.530963
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":58,"battery":56} 2018-07-07 03:54:43.618483
+zone_1/box_1/motion/id_1 {"motion":50,"battery":57} 2018-07-07 03:59:43.715397
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":110,"battery":34} 2018-07-07 04:04:45.749461
+zone_1/box_1/motion/id_1 {"motion":58,"battery":48} 2018-07-07 04:09:45.810713
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-07 04:14:47.859713
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-07 04:19:47.932330
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-07 04:24:49.709135
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-07 04:29:49.799651
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":58,"battery":48} 2018-07-07 04:34:51.966258
+zone_1/box_1/motion/id_1 {"motion":44,"battery":34} 2018-07-07 04:39:52.052638
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-07 04:44:53.980367
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-07 04:49:53.987172
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-07 04:54:56.082707
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-07 04:59:56.168570
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-07 05:04:58.262001
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-07 05:09:58.358858
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-07 05:15:00.270918
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-07 05:20:00.355612
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-07 05:25:02.374178
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-07 05:30:02.469595
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-07 05:35:04.572943
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-07 05:40:04.607320
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-07 05:45:06.979499
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-07 05:50:07.025799
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-07 05:55:09.224784
+zone_1/box_1/motion/id_1 {"motion":56,"battery":48} 2018-07-07 06:00:09.227198
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-07 06:05:11.468766
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-07 06:10:11.559557
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-07 06:15:13.512019
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-07 06:20:13.532182
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-07 06:25:15.651125
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-07 06:30:15.722926
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-07 06:35:17.883109
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-07 06:40:17.952125
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-07 06:45:20.086961
+zone_1/box_1/motion/id_1 {"motion":55,"battery":57} 2018-07-07 06:50:20.188405
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":55,"battery":55} 2018-07-07 06:55:22.423749
+zone_1/box_1/motion/id_1 {"motion":50,"battery":125} 2018-07-07 07:00:22.522822
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":55,"battery":56} 2018-07-07 07:05:24.558223
+zone_1/box_1/motion/id_1 {"motion":57,"battery":125} 2018-07-07 07:10:24.641345
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-07 07:15:26.724079
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-07 07:20:26.824795
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":101,"battery":114} 2018-07-07 07:25:29.048700
+zone_1/box_1/motion/id_1 {"motion":121,"battery":34} 2018-07-07 07:30:29.120395
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-07 07:35:31.251098
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-07 07:40:31.352927
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-07 07:45:33.621831
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-07 07:50:33.703609
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-07 07:55:35.714124
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-07 08:00:35.803266
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-07 08:05:37.858874
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-07 08:10:37.930531
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-07 08:15:40.321245
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-07 08:20:40.338537
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":58,"battery":55} 2018-07-07 08:25:42.477152
+zone_1/box_1/motion/id_1 {"motion":54,"battery":49} 2018-07-07 08:30:42.578311
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-07 08:35:44.761403
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-07 08:40:44.846752
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":105,"battery":111} 2018-07-07 08:45:47.276027
+zone_1/box_1/motion/id_1 {"motion":110,"battery":34} 2018-07-07 08:50:47.372954
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-07 08:55:49.085058
+zone_1/box_1/motion/id_1 {"motion":116,"battery":101} 2018-07-07 09:00:49.150457
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":58,"battery":55} 2018-07-07 09:05:51.305588
+zone_1/box_1/motion/id_1 {"motion":54,"battery":53} 2018-07-07 09:10:51.317577
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":58,"battery":55} 2018-07-07 09:15:53.181195
+zone_1/box_1/motion/id_1 {"motion":53,"battery":52} 2018-07-07 09:20:53.275530
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-07 09:25:55.472361
+zone_1/box_1/motion/id_1 {"motion":55,"battery":55} 2018-07-07 09:30:55.570820
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-07 09:35:57.549840
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-07 09:40:57.640180
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-07 09:45:59.724606
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-07 09:50:59.727578
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":52,"battery":125} 2018-07-07 09:56:01.819277
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-07 10:01:01.916721
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-07 10:06:04.010499
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-07 10:11:04.077761
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-07 10:16:06.200459
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-07 10:21:06.204057
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":50,"battery":125} 2018-07-07 10:26:08.459994
+zone_1/box_1/motion/id_1 {"motion":55,"battery":52} 2018-07-07 10:31:08.561683
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-07 10:36:10.600873
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-07 10:41:10.698865
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-07 10:46:12.777631
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-07 10:51:12.848855
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":114,"battery":121} 2018-07-07 10:56:15.815250
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-07 11:01:15.870020
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":49,"battery":125} 2018-07-07 11:06:18.235702
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-07 11:11:18.259270
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":125} 2018-07-07 11:16:21.652769
+zone_1/box_1/motion/id_1 {"motion":55,"battery":52} 2018-07-07 11:21:21.738684
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-07 11:26:24.412563
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-07 11:31:24.475790
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-07 11:36:27.155532
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-07 11:41:27.215315
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":44,"battery":34} 2018-07-07 11:46:29.758270
+zone_1/box_1/motion/id_1 {"motion":98,"battery":97} 2018-07-07 11:51:29.835029
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-07 11:56:31.721142
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-07 12:01:31.791449
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-07 12:06:34.066163
+zone_1/box_1/motion/id_1 {"motion":97,"battery":116} 2018-07-07 12:11:34.106135
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":48,"battery":44} 2018-07-07 12:16:36.950028
+zone_1/box_1/motion/id_1 {"motion":34,"battery":98} 2018-07-07 12:21:37.042789
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":52,"battery":125} 2018-07-07 12:26:41.562360
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-07 12:31:41.659142
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":44,"battery":34} 2018-07-07 12:36:43.886166
+zone_1/box_1/motion/id_1 {"motion":98,"battery":97} 2018-07-07 12:41:43.987988
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-07 12:46:46.223268
+zone_1/box_1/motion/id_1 {"motion":34,"battery":58} 2018-07-07 12:51:46.226444
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":116,"battery":105} 2018-07-07 12:56:49.595408
+zone_1/box_1/motion/id_1 {"motion":111,"battery":110} 2018-07-07 13:01:49.697387
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":55,"battery":51} 2018-07-07 13:06:52.094154
+zone_1/box_1/motion/id_1 {"motion":49,"battery":125} 2018-07-07 13:11:52.185378
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-07 13:16:54.331096
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-07 13:21:54.359580
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":123,"battery":34} 2018-07-07 13:26:56.324336
+zone_1/box_1/motion/id_1 {"motion":109,"battery":111} 2018-07-07 13:31:56.337395
+Connected with result code 0
+zone_1/box_1/motion/id_1 {"motion":121,"battery":34} 2018-07-07 13:36:58.526027
+zone_1/box_1/motion/id_1 {"motion":58,"battery":55} 2018-07-07 13:41:58.623010
+Connected with result coConnected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":31,"humidity":53,"battery":854} 2018-07-08 22:39:29.382429
+zone_1/box_1/light/id_1 {"light":0,"temperature":31,"humidity":53,"battery":853} 2018-07-08 22:44:29.414466
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":43,"battery":856} 2018-07-08 22:49:33.972122
+Traceback (most recent call last):
+  File "readLight.py", line 32, in <module>
+    client.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1481, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1003, in loop
+    rc = self.loop_read(max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1284, in loop_read
+    rc = self._packet_read()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1849, in _packet_read
+    rc = self._packet_handle()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2305, in _packet_handle
+    return self._handle_publish()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2500, in _handle_publish
+    self._handle_on_message(message)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2647, in _handle_on_message
+    self.on_message(self, self._userdata, message)
+  File "readLight.py", line 16, in on_message
+    print(msg.topic+" "+str(msg.payload) + " " + str(datetime.now()))
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe9 in position 32: ordinal not in range(128)
+Connected with result code 0
+Traceback (most recent call last):
+  File "readLight.py", line 32, in <module>
+    client.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1481, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1003, in loop
+    rc = self.loop_read(max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1284, in loop_read
+    rc = self._packet_read()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1849, in _packet_read
+    rc = self._packet_handle()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2305, in _packet_handle
+    return self._handle_publish()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2500, in _handle_publish
+    self._handle_on_message(message)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2647, in _handle_on_message
+    self.on_message(self, self._userdata, message)
+  File "readLight.py", line 16, in on_message
+    print(msg.topic+" "+str(msg.payload) + " " + str(datetime.now()))
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xd9 in position 13: ordinal not in range(128)
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":44,"battery":845} 2018-07-08 23:36:16.138729
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":44,"battery":845} 2018-07-08 23:41:16.197809
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":44,"battery":845} 2018-07-08 23:46:19.439926
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":44,"battery":848} 2018-07-08 23:51:19.540334
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":44,"battery":843} 2018-07-08 23:56:23.527622
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":44,"battery":846} 2018-07-09 00:01:23.581473
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":43,"battery":841} 2018-07-09 00:06:27.182956
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":43,"battery":842} 2018-07-09 00:11:27.244506
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":43,"battery":842} 2018-07-09 00:16:31.746336
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":43,"battery":840} 2018-07-09 00:21:31.811557
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":43,"battery":838} 2018-07-09 00:26:35.415664
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":43,"battery":839} 2018-07-09 00:31:35.437154
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":43,"battery":839} 2018-07-09 00:36:39.410532
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":43,"battery":839} 2018-07-09 00:41:39.512202
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":43,"battery":838} 2018-07-09 00:46:43.048936
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":43,"battery":837} 2018-07-09 00:51:43.138104
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":43,"battery":836} 2018-07-09 00:56:46.708611
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":44,"battery":840} 2018-07-09 01:01:46.785944
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":834} 2018-07-09 01:06:51.243116
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":838} 2018-07-09 01:11:51.301371
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":833} 2018-07-09 01:16:54.923471
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":837} 2018-07-09 01:21:54.942234
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":831} 2018-07-09 01:26:58.336546
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":836} 2018-07-09 01:31:58.427371
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":835} 2018-07-09 01:37:02.704342
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":831} 2018-07-09 01:42:02.789243
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":829} 2018-07-09 01:47:06.067728
+Traceback (most recent call last):
+  File "readLight.py", line 32, in <module>
+    client.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1481, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1003, in loop
+    rc = self.loop_read(max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1284, in loop_read
+    rc = self._packet_read()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1849, in _packet_read
+    rc = self._packet_handle()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2305, in _packet_handle
+    return self._handle_publish()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2500, in _handle_publish
+    self._handle_on_message(message)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2647, in _handle_on_message
+    self.on_message(self, self._userdata, message)
+  File "readLight.py", line 16, in on_message
+    print(msg.topic+" "+str(msg.payload) + " " + str(datetime.now()))
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xfd in position 55: ordinal not in range(128)
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":826} 2018-07-09 02:20:24.808848
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":826} 2018-07-09 02:25:24.902696
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":829} 2018-07-09 02:30:27.998478
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":825} 2018-07-09 02:35:28.109086
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":824} 2018-07-09 02:40:32.129944
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":823} 2018-07-09 02:45:32.230413
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":821} 2018-07-09 02:50:35.756389
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":823} 2018-07-09 02:55:35.854612
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":823} 2018-07-09 03:00:39.999826
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":822} 2018-07-09 03:05:40.019539
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":822} 2018-07-09 03:10:43.860123
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":819} 2018-07-09 03:15:43.960098
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":821} 2018-07-09 03:20:47.773605
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":824} 2018-07-09 03:25:47.870417
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":817} 2018-07-09 03:30:50.984256
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":817} 2018-07-09 03:35:51.082436
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":819} 2018-07-09 03:40:55.534003
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":817} 2018-07-09 03:45:55.634410
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":814} 2018-07-09 03:50:59.507437
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":815} 2018-07-09 03:55:59.615820
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":818} 2018-07-09 04:01:02.642131
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":814} 2018-07-09 04:06:02.742390
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":42,"battery":815} 2018-07-09 04:11:12.436195
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":43,"battery":817} 2018-07-09 04:16:12.531786
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":812} 2018-07-09 04:21:16.332642
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":811} 2018-07-09 04:26:16.430424
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":814} 2018-07-09 04:31:19.782915
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":816} 2018-07-09 04:36:19.883359
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":810} 2018-07-09 04:41:23.580300
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":812} 2018-07-09 04:46:23.679401
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":808} 2018-07-09 04:51:27.819389
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":813} 2018-07-09 04:56:27.903291
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":808} 2018-07-09 05:01:31.796114
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":812} 2018-07-09 05:06:31.894394
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":808} 2018-07-09 05:11:35.798716
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":812} 2018-07-09 05:16:35.898394
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":42,"battery":808} 2018-07-09 05:21:39.734345
+Traceback (most recent call last):
+  File "readLight.py", line 32, in <module>
+    client.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1481, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1003, in loop
+    rc = self.loop_read(max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1284, in loop_read
+    rc = self._packet_read()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1849, in _packet_read
+    rc = self._packet_handle()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2305, in _packet_handle
+    return self._handle_publish()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2500, in _handle_publish
+    self._handle_on_message(message)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2647, in _handle_on_message
+    self.on_message(self, self._userdata, message)
+  File "readLight.py", line 16, in on_message
+    print(msg.topic+" "+str(msg.payload) + " " + str(datetime.now()))
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xdd in position 20: ordinal not in range(128)
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":41,"battery":767} 2018-07-09 13:06:26.333481
+zone_1/box_1/light/id_1 {"light":0,"temperature":34,"humidity":41,"battery":767} 2018-07-09 13:11:26.430407
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":43,"battery":774} 2018-07-09 13:16:30.415874
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":43,"battery":769} 2018-07-09 13:21:30.503126
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":42,"battery":767} 2018-07-09 13:26:33.959126
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":42,"battery":769} 2018-07-09 13:31:34.058385
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":1,"temperature":32,"humidity":42,"battery":766} 2018-07-09 13:36:38.104322
+zone_1/box_1/light/id_1 {"light":1,"temperature":32,"humidity":42,"battery":767} 2018-07-09 13:41:38.202416
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":42,"battery":766} 2018-07-09 13:46:42.154874
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":43,"battery":772} 2018-07-09 13:51:42.266418
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":42,"battery":769} 2018-07-09 13:56:46.430249
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":42,"battery":769} 2018-07-09 14:01:46.525505
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":42,"battery":766} 2018-07-09 14:06:49.540164
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":42,"battery":766} 2018-07-09 14:11:49.589467
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":42,"battery":764} 2018-07-09 14:16:53.594503
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":42,"battery":764} 2018-07-09 14:21:53.694428
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":42,"battery":765} 2018-07-09 14:26:57.149278
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":42,"battery":768} 2018-07-09 14:31:57.246389
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":41,"battery":764} 2018-07-09 14:37:01.087441
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":43,"battery":769} 2018-07-09 14:42:01.186412
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":32,"humidity":41,"battery":765} 2018-07-09 14:47:05.034857
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":40,"battery":768} 2018-07-09 14:52:05.134407
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":1,"temperature":33,"humidity":40,"battery":767} 2018-07-09 14:57:08.776550
+zone_1/box_1/light/id_1 {"light":1,"temperature":33,"humidity":40,"battery":764} 2018-07-09 15:02:08.874395
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":1,"temperature":33,"humidity":40,"battery":762} 2018-07-09 15:07:13.714074
+zone_1/box_1/light/id_1 {"light":1,"temperature":33,"humidity":40,"battery":762} 2018-07-09 15:12:13.814422
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":41,"battery":761} 2018-07-09 15:17:16.721498
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":41,"battery":767} 2018-07-09 15:22:16.820004
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":41,"battery":767} 2018-07-09 15:27:20.925816
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":41,"battery":763} 2018-07-09 15:32:21.022381
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":41,"battery":763} 2018-07-09 15:37:24.823354
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":41,"battery":760} 2018-07-09 15:42:24.922392
+Connected with result code 0
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":44,"battery":760} 2018-07-09 15:47:28.631215
+zone_1/box_1/light/id_1 {"light":0,"temperature":33,"humidity":44,"battery":766} 2018-07-09 15:52:28.730397
+Connected with result code 0
+Traceback (most recent call last):
+  File "readLight.py", line 32, in <module>
+    client.loop_forever()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1481, in loop_forever
+    rc = self.loop(timeout, max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1003, in loop
+    rc = self.loop_read(max_packets)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1284, in loop_read
+    rc = self._packet_read()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 1849, in _packet_read
+    rc = self._packet_handle()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2305, in _packet_handle
+    return self._handle_publish()
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2500, in _handle_publish
+    self._handle_on_message(message)
+  File "/usr/local/lib/python2.7/dist-packages/paho/mqtt/client.py", line 2647, in _handle_on_message
+    self.on_message(self, self._userdata, message)
+  File "readLight.py", line 16, in on_message
+    print(msg.topic+" "+str(msg.payload) + " " + str(datetime.now()))
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x9d in position 51: ordinal not in range(128)

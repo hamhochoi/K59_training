@@ -1,0 +1,59 @@
+rule = {
+    "rule_id": str(random.randint(0, 1000000000)),
+    "rule_name": "send alert",
+    "rule_status" : "active",
+    "rule_condition" : {
+        "bitwise" : {
+            "things" : [
+                {
+                    "timer": "60s",
+                    "thing_global_id": "f3fe8c9a-f524-481e-acff-fb2791f0a0b5-Temperature",
+                    "item_global_id": "f3fe8c9a-f524-481e-acff-fb2791f0a0b5-Temperature-Temperature",
+                    "item_name": "Motion Detection",
+                    "item_type" : "Number",
+                    "platform_id": "d7fefe33-2f39-47f8-a229-18cf4376a3c9",
+                    "operator": "LEQ",
+                    "value" : "100"
+                }
+            ],
+
+            "bitwise_operator" : "AND",
+
+            "bitwise" : [
+                {
+                    "things" : [
+                        {
+                            "timer": "60s",
+                            "thing_global_id": "f3fe8c9a-f524-481e-acff-fb2791f0a0b5-Humidity",
+                            "item_global_id": "f3fe8c9a-f524-481e-acff-fb2791f0a0b5-Humidity-Humidity",
+                            "item_name": "Motion Detection",
+                            "item_type" : "Number",
+                            "platform_id": "d7fefe33-2f39-47f8-a229-18cf4376a3c9",
+                            "operator": "LEQ",
+                            "value" : "100"
+                        }
+                    ],
+                    "bitwise_operator" : "None",
+                    "bitwise" : []
+                }
+            ]
+        }
+    },
+
+    "rule_action": [
+        {
+            "timer": "0s",
+            "action_name": "update",
+            "thing_global_id": "7ad2c82e-1036-4da7-8ccc-63d2dc52fb89-light.green_light",
+            "item_global_id": "7ad2c82e-1036-4da7-8ccc-63d2dc52fb89-light.green_light-light.green_light",
+            "new_state" : 'ON'
+        },
+        {
+            "timer": "0s",
+            "action_name": "send_alert",
+            "thing_global_id": "a674ce40-8fc6-4f57-912c-d4679e189023-Switch3-Switch2",
+            "item_global_id": "a674ce40-8fc6-4f57-912c-d4679e189023-Switch3-Switch2",
+            "new_state" : 'OFF'
+        }
+    ]
+}
